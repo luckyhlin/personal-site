@@ -1,1 +1,10 @@
+.idea/
+.next/
+node_modules/
+package-lock.json
+
+# local env vars
 .env.local
+
+#
+/test.js
