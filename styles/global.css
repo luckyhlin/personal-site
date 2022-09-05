@@ -1,0 +1,33 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, "JetBrains Mono", sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    background-color: antiquewhite;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    margin: 1rem 0.5rem;
+    padding: 0 0.5rem;
+    line-height: 18px;
+}
