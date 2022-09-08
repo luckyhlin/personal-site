@@ -1,5 +1,6 @@
 import styles from "./rich-text.module.css"
 import Link from "next/link";
+import {useEffect, useState} from "react";
 
 export function RichText({ richTexts }) {
     return richTexts.map((value) => {
@@ -7,6 +8,11 @@ export function RichText({ richTexts }) {
             annotations: {bold, code, color, italic, strikethrough, underline},
             text
         } = value
+        //
+        // const {defaultColor, setDefaultColor} = useState()
+        //
+        // useEffect(setDefaultColor(color))
+        //
         return (
             <span
                 className={[

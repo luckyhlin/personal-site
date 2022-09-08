@@ -5,6 +5,7 @@ package-lock.json
 
 # local env vars
 .env.local
+.env.test
 
 #
 /test.js

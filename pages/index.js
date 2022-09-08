@@ -40,6 +40,9 @@ export default function HomePage() {
                 />
                 <p>Hello</p>
             </section>
+            {/*<section className={utilStyles.headingMd}>*/}
+            {/*    <Link href="/posts/Post">Blocks</Link>*/}
+            {/*</section>*/}
         </Layout>
     )
 }
