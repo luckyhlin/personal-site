@@ -1,5 +1,5 @@
 import { Client } from "@notionhq/client"
-import { getPageBlocks } from "../lib/notion"
+import {getBlocks, getPageBlocks} from "../lib/notion"
 import * as util from "util";
 import "@testing-library/jest-dom"
 import {wait} from "next/dist/build/output/log";
@@ -41,8 +41,15 @@ const notion = new Client({
 //     console.log(util.inspect(response, {depth: null, colors: true}))
 // })();
 
-it('should page blocks are fetched correctly', async () => {
-    const response = await getPageBlocks("fbef4fcd-8a8e-4f64-a573-c75dade3293b")
+it('retrieve a page', async () => {
+    const response = await notion.pages.retrieve({
+        page_id: "bb59fe59-842c-46f1-9f4b-94f40bbd75e5",
+    })
     console.log(util.inspect(response, {depth: null, colors: true}))
 });
+
+// it('should page blocks are fetched correctly', async () => {
+//     const response = await getBlocks("fbef4fcd-8a8e-4f64-a573-c75dade3293b", {level: 1})
+//     console.log(util.inspect(response, {depth: null, colors: true}))
+// });
 

@@ -1,0 +1,121 @@
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    /*25% {*/
+    /*    background-position: 0 100%;*/
+    /*}*/
+    50% {
+        background-position: 100% 100%;
+    }
+    /*75% {*/
+    /*    background-position: 100% 0;*/
+    /*}*/
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+/* NOT PURE */
+/*:root {*/
+/*    --bg-size: 200% 200%;*/
+/*    --animation: gradient 15s ease infinite;*/
+/*}*/
+
+.bgContainer {
+    overflow: auto;
+    background-image: linear-gradient(
+            to right bottom,
+            #5227dc, #e73cc5,
+            #0a98cc, #0070f3
+    );
+    background-size: 200% 200%;
+    background-position: 100% 100%;
+    animation: gradient 15s ease infinite;
+    display: block;
+    position: relative;
+}
+
+.mainContainer {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    margin-left: 10%;
+    width: 70%;
+    max-width: 1000px;
+}
+
+.headingTextBox {
+
+}
+
+.headingTextPrimary {
+    display: block;
+    font-size: 60px;
+    color: white;
+    animation: moveInLeft 2s;
+}
+
+.headingTextDescription {
+    display: block;
+    font-size: 28px;
+    margin-top: 28px;
+    color: #e0ffe0;
+    position: relative;
+    animation: moveInRight 2s;
+}
+
+.textInlineBox {
+    display: inline-block;
+    background: rgba(169, 169, 169, 0.2);
+    padding: 0 10px;
+    margin: 0 -10px;
+}
+
+.textLink:link,
+.textLink:active {
+    display: inline-block;
+    text-decoration: underline;
+    transition: all .5s;
+}
+
+.textLink:hover {
+    transform: translateY(-1px);
+    opacity: 0.8;
+}
+
+.textLinkColor {
+    color: #e0ffe0;
+}
+
+.postSummaryContainer {
+    margin-top: 100px;
+}
+
+.postSummaryHeading {
+    /*margin-left: 10px;*/
+    display: block;
+    color: white;
+    font-size: 50px;
+}

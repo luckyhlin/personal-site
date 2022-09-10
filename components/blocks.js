@@ -1,5 +1,6 @@
 import {RichText} from "./rich-text";
 import styles from "./blocks.module.css"
+import Image from "next/image";
 
 // blocks: array of blocks (each block may contain its children)
 export default function Blocks({ blocks }) {
@@ -27,7 +28,7 @@ export function Block({ block, index, blocks }) {
     switch (block.type) {
         case "paragraph":
             return (
-                <div>
+                <div className={styles.blockParagraph} key={id} >
                     <RichText richTexts={content.rich_text}/>
                     {has_children && (
                         <div className={styles.blockChildren}>
@@ -38,21 +39,21 @@ export function Block({ block, index, blocks }) {
             )
         case "heading_1":
             return (
-                <h1>
-                    <RichText richTexts={content.rich_text}/>
-                </h1>
-            )
-        case "heading_2":
-            return (
-                <h2>
+                <h2 key={id}>
                     <RichText richTexts={content.rich_text}/>
                 </h2>
             )
-        case "heading_3":
+        case "heading_2":
             return (
-                <h3>
+                <h3 key={id}>
                     <RichText richTexts={content.rich_text}/>
                 </h3>
+            )
+        case "heading_3":
+            return (
+                <h4 key={id}>
+                    <RichText richTexts={content.rich_text}/>
+                </h4>
             )
         case "callout":
             return callout(block)
@@ -60,7 +61,10 @@ export function Block({ block, index, blocks }) {
             return quote(block)
         case "bulleted_list_item":
             return (
-                <ul className={isTopLevel ? styles.blockTopLevelList : ""}>
+                <ul className={isTopLevel ?
+                    styles.blockTopLevelList :
+                    styles.blockNonTopLevelList
+                }>
                     <li>
                         <RichText richTexts={content.rich_text}/>
                         {has_children && (
@@ -74,7 +78,10 @@ export function Block({ block, index, blocks }) {
         case "numbered_list_item":
             const start = getIndexWithinGroup(id, blocks)
             return (
-                <ol start={start} className={isTopLevel ? styles.blockTopLevelList : ""}>
+                <ol start={start} className={isTopLevel ?
+                    styles.blockTopLevelList :
+                    styles.blockNonTopLevelList
+                }>
                     <li>
                         <RichText richTexts={content.rich_text}/>
                         {has_children && (
@@ -86,11 +93,61 @@ export function Block({ block, index, blocks }) {
                 </ol>
             )
         case "to_do":
-            return to_do(block)
+            return (
+                <div>
+                    <label htmlFor={id}>
+                        <input
+                            type="checkbox"
+                            id={id}
+                            defaultChecked={content.checked}
+                            readOnly
+                        />
+                         {/*TODO*/}
+                        ❌
+                        <RichText richTexts={content.rich_text}/>
+                    </label>
+                </div>
+            )
         case "toggle":
-            return toggle(block)
+            return (
+                <details>
+                    <summary>
+                        <RichText richTexts={content.rich_text}/>
+                    </summary>
+                    {children && (
+                        <div className={styles.blockChildren}>
+                            <Blocks blocks={children}/>
+                        </div>
+                    )}
+                </details>
+            )
         case "code":
-            return code(block)
+            return (
+                <div className={styles.blockCode} key={id}>
+                    <RichText richTexts={content.rich_text}/>
+                </div>
+            )
+        case "image":
+            const src = content.type === "external" ?
+                content.external.url :
+                content.file.url
+            const caption = content.caption ?
+                content.caption[0]?.plain_text :
+                ""
+            return (
+                <figure>
+                    <img src={src}
+                         alt={caption}
+                         key={id}
+                         className={styles.blockImg}
+                    />
+                    {caption &&
+                        <figcaption>
+                            {caption}
+                        </figcaption>
+                    }
+                </figure>
+            )
         default:
             return <div>❌ Unsupported Block Type {block.type}</div>
     }
@@ -124,30 +181,3 @@ export function quote(block) {
         </p>
     )
 }
-
-export function to_do(block) {
-    return (
-        <p>
-            <RichText richTexts={block.to_do.rich_text}/>
-        </p>
-    )
-}
-
-export function toggle(block) {
-    return (
-        <p>
-            <RichText richTexts={block.toggle.rich_text}/>
-        </p>
-    )
-}
-
-export function code(block) {
-    return (
-        <p>
-            <RichText richTexts={block.code.rich_text}/>
-        </p>
-    )
-}
-
-
-

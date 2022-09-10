@@ -1,7 +1,39 @@
-.block-children {
+.blockChildren {
     margin-left: 1rem;
 }
 
-.block-top-level-list {
-    margin-left: 0;
+ul.blockTopLevelList {
+    /*margin: 0.2em;*/
+    padding-left: 20px;
+}
+
+ul.blockNonTopLevelList {
+    /*margin: 0.2em;*/
+    padding-left: 20px;
+}
+
+ol.blockTopLevelList {
+    margin: 0.2em;
+}
+
+ol.blockNonTopLevelList {
+    margin: 0.2em;
+}
+
+.blockParagraph {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    /*padding-left: 0.3rem;*/
+}
+
+.blockCode {
+    margin: 0.5em auto;
+    padding: 0.8em 2em;
+    color: beige;
+    background-color: darksalmon;
+    border-radius: 0.5em;
+}
+
+.blockImg {
+    max-height: 50vh;
 }
