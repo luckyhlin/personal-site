@@ -25,7 +25,7 @@ export function RichText({ richTexts }) {
                 style={color !== "default" ? { color } : {}}
             >
                 {text.link ?
-                    <Link href={text.link}>{text.content}</Link>
+                    <Link href={text.link.url}>{text.content}</Link>
                     :
                     text.content
                 }

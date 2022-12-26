@@ -5,7 +5,7 @@ import "@testing-library/jest-dom"
 import {wait} from "next/dist/build/output/log";
 
 const notion = new Client({
-    auth: process.env.NOTION_KEY,
+    auth: process.env.NOTION_TOKEN,
 });
 
 // it("page info", async () => {

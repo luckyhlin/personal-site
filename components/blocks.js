@@ -1,6 +1,8 @@
 import {RichText} from "./rich-text";
 import styles from "./blocks.module.css"
 import Image from "next/image";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import {dark} from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 // blocks: array of blocks (each block may contain its children)
 export default function Blocks({ blocks }) {
@@ -123,9 +125,20 @@ export function Block({ block, index, blocks }) {
             )
         case "code":
             return (
-                <div className={styles.blockCode} key={id}>
-                    <RichText richTexts={content.rich_text}/>
-                </div>
+                // <div className={styles.blockCode} key={id}>
+                //     {
+                //         content.rich_text.map((rt) => {
+                //             return rt.text.content.replace
+                //         })
+                //     }
+                // </div>
+                <SyntaxHighlighter language={content.rich_text.language} style={dark}>
+                    {
+                        content.rich_text.map((rt) => {
+                            return rt.text.content
+                        })
+                    }
+                </SyntaxHighlighter>
             )
         case "image":
             const src = content.type === "external" ?

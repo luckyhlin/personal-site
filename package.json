@@ -7,7 +7,9 @@
     "notion-client": "^6.13.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-notion-x": "^6.13.9"
+    "react-notion-x": "^6.13.9",
+    "react-syntax-highlighter": "^15.5.0",
+    "upload-notion-images-to-cloudinary": "^1.2.0"
   },
   "scripts": {
     "dev": "next dev",

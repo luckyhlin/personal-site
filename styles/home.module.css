@@ -61,6 +61,7 @@
     position: absolute;
     top: 20vh;
     left: 0;
+    /*min-height: 100vh;*/
     margin-left: 10%;
     width: 70%;
     max-width: 1000px;
@@ -118,4 +119,9 @@
     display: block;
     color: white;
     font-size: 50px;
+}
+
+.footageContainer {
+    margin: 60px 0px 30px 0px;
+    color: white;
 }

@@ -34,7 +34,7 @@ export default function HomePage({pages}) {
                         Blog.
                     </span>
                     {!!pages && pages.map((page) => (
-                            <PostSummary page={page}/>
+                            <PostSummary page={page} idKey={page.id}/>
                         )
                     )}
                     {/*{(!pages || pages.length === 0) && (*/}
@@ -42,6 +42,9 @@ export default function HomePage({pages}) {
                     {/*        */}
                     {/*    </span>*/}
                     {/*)}*/}
+                </div>
+                <div className={styles.footageContainer}>
+                    Built by Jimmy Lin
                 </div>
             </div>
         </div>

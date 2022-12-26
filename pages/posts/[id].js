@@ -38,8 +38,8 @@ export async function getStaticProps({ params }) {
     const blocks = await getBlocks(pageID, {
         level: 1
     })
-    console.log(util.inspect(blocks.slice(-5), {depth: null, colors: true}))
-    console.log(util.inspect(blocks[23], {depth: null, colors: true}))
+    console.log(util.inspect(blocks.slice(-15), {depth: null, colors: true}))
+    // console.log(util.inspect(blocks[23], {depth: null, colors: true}))
 
     return {
         props: {
