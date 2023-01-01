@@ -41,19 +41,19 @@ export function Block({ block, index, blocks }) {
             )
         case "heading_1":
             return (
-                <h2 key={id}>
+                <h2 key={id} className={styles.heading1}>
                     <RichText richTexts={content.rich_text}/>
                 </h2>
             )
         case "heading_2":
             return (
-                <h3 key={id}>
+                <h3 key={id} className={styles.heading2}>
                     <RichText richTexts={content.rich_text}/>
                 </h3>
             )
         case "heading_3":
             return (
-                <h4 key={id}>
+                <h4 key={id} className={styles.heading3}>
                     <RichText richTexts={content.rich_text}/>
                 </h4>
             )
@@ -181,15 +181,20 @@ function getIndexWithinGroup(id, blocks) {
 
 export function callout(block) {
     return (
-        <p>
-            <RichText richTexts={block.callout.rich_text}/>
-        </p>
+        <div className={styles.callout}>
+                <div className={styles.calloutIcon}>
+                    {block.callout.icon.emoji}
+                </div>
+                <div className={styles.calloutText}>
+                    <RichText richTexts={block.callout.rich_text}/>
+                </div>
+        </div>
     )
 }
 
 export function quote(block) {
     return (
-        <p>
+        <p className={styles.quote}>
             <RichText richTexts={block.quote.rich_text}/>
         </p>
     )

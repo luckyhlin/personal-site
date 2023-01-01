@@ -23,7 +23,7 @@ export async function getStaticPaths() {
         paths: pages.map((page) => {
             return {
                 params: {
-                    id: page.id
+                    name: page.name
                 }
             }
         }),
@@ -32,7 +32,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const { id: pageID } = params
+    const { name: pageName } = params
+    const pages = await getDatabase(process.env.NOTION_DATABASE_ID)
+    const pageID = pages.find((page) =>
+        page.name === pageName
+    ).id
     const title = await getPageTitle(pageID)
     console.log(title)
     const blocks = await getBlocks(pageID, {

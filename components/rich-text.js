@@ -1,12 +1,14 @@
 import styles from "./rich-text.module.css"
 import Link from "next/link";
-import {useEffect, useState} from "react";
+import 'katex/dist/katex.min.css';
+import TeX from "@matejmazur/react-katex";
 
 export function RichText({ richTexts }) {
     return richTexts.map((value) => {
         const {
+            text,
+            equation,
             annotations: {bold, code, color, italic, strikethrough, underline},
-            text
         } = value
         //
         // const {defaultColor, setDefaultColor} = useState()
@@ -24,11 +26,14 @@ export function RichText({ richTexts }) {
                 ].join(" ")}
                 style={color !== "default" ? { color } : {}}
             >
-                {text.link ?
-                    <Link href={text.link.url}>{text.content}</Link>
-                    :
-                    text.content
-                }
+                {!!text && (
+                    text.link ?
+                        <Link href={text.link.url}>{text.content}</Link>
+                    :   text.content
+                )}
+                {!!equation && (
+                    <TeX math={equation.expression} />
+                )}
             </span>
         )
     })

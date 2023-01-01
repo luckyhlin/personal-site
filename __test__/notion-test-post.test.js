@@ -1,5 +1,5 @@
 import { Client } from "@notionhq/client"
-import {getBlocks, getPageBlocks} from "../lib/notion"
+import {getBlocks, getDatabase, getPageBlocks} from "../lib/notion"
 import * as util from "util";
 import "@testing-library/jest-dom"
 import {wait} from "next/dist/build/output/log";
@@ -8,16 +8,16 @@ const notion = new Client({
     auth: process.env.NOTION_TOKEN,
 });
 
-// it("page info", async () => {
-//     const response = await notion.databases.query({
-//         database_id: process.env.NOTION_DATABASE_ID,
-//     })
-//
-//     console.log(util.inspect(response.results, {depth: null, colors: true}))
-//     console.log(response.results.map((post) => {
-//         return post.properties.Name.title
-//     }))
-// });
+it("page info", async () => {
+    const pages = await getDatabase(
+        process.env.NOTION_DATABASE_ID,
+    )
+
+    console.log(util.inspect(pages, {depth: null, colors: true}))
+    // console.log(pages.map((post) => {
+    //     return post.properties.Name.title
+    // }))
+});
 
 // (async () => {
 //     const response = await notion.pages.retrieve({
