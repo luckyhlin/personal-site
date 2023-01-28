@@ -28,10 +28,17 @@ export default function HomePage({pages}) {
                             </Link>
                         </span> for a year.
                     </span>
+                    <span className={styles.headingTextDescription}>
+                        If necessary, reach me via <span className={styles.textInlineBox}>
+                            <Link href="mailto:jimmylinh@icloud.com">
+                                <a className={[styles.textLink, styles.textLinkColor].join(" ")}>jimmylinh@icloud.com</a>
+                            </Link>
+                        </span>
+                    </span>
                 </div>
                 <div className={styles.postSummaryContainer}>
                     <span className={styles.postSummaryHeading}>
-                        Blog.
+                        Blog. (Under Construction)
                     </span>
                     {!!pages && pages.map((page) => (
                             <PostSummary page={page}/>

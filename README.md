@@ -10,5 +10,15 @@ Here are the supported blocks so far:
 | Heading            | ✔️           |
 | Bulleted Item List | ✔️           |
 | Numbered Item List | ✔️           |
-| Toggle             | ❌            |
+| Toggle             | partial      |
+| Callout            | partial      |
+| Inline Equation    | ✔            |
+| Image              | ✔            |
 
+---
+TODO:
+
+* callout layout
+* icon & title
+* home page compatibility support on mobile (UI)
+* DNS acceleration (to increase efficiency)
