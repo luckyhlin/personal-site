@@ -20,8 +20,10 @@
 
 .callout {
     border-radius: 10px;
-    border: 0.5rem ridge dodgerblue;
+    border: 0.5rem double rgba(255, 215, 137, 0.8);
+    background: rgba(250, 250, 150, 0.2);
     padding: 10px 20px;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -29,15 +31,14 @@
 }
 
 .calloutIcon {
-    display: flex;
-    flex: 0 0 auto;
+    display: inline;
 }
 
 .calloutText {
-    display: flex;
+    display: inline;
     margin-left: 20px;
-    flex: 1 1 auto;
     word-wrap: break-word;
+    overflow: hidden;
 }
 
 .quote {
