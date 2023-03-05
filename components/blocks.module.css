@@ -1,26 +1,26 @@
-.heading1 {
-    font-size: 2rem;
+.blockHeading1 {
+    font-size: 2em;
     line-height: 1.5;
     font-weight: 800;
 }
 
-.heading2 {
-    font-size: 1.5rem;
+.blockHeading2 {
+    font-size: 1.5em;
     line-height: 1.5;
     font-weight: 600;
     margin-top: 20px;
 }
 
-.heading3 {
-    font-size: 1.2rem;
+.blockHeading3 {
+    font-size: 1.2em;
     line-height: 1.4;
     font-weight: 600;
     margin-top: 10px;
 }
 
-.callout {
+.blockCallout {
     border-radius: 10px;
-    border: 0.5rem double rgba(255, 215, 137, 0.8);
+    border: 0.5em double rgba(255, 215, 137, 0.8);
     background: rgba(250, 250, 150, 0.2);
     padding: 10px 20px;
     margin: 20px auto;
@@ -30,23 +30,28 @@
     max-width: 100vw;
 }
 
-.calloutIcon {
+.blockCalloutIcon {
     display: inline;
 }
 
-.calloutText {
+.blockCalloutText {
     display: inline;
     margin-left: 20px;
     word-wrap: break-word;
     overflow: hidden;
 }
 
-.quote {
-
+.blockQuote {
+    display: block;
+    border-left: 0.3em solid #878a87;
+    background: rgba(0, 0, 0, 10%);
+    padding-left: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
 }
 
 .blockChildren {
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 ul.blockTopLevelList {
@@ -86,9 +91,13 @@ ol.blockNonTopLevelList li {
 }
 
 .blockParagraph {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     /*padding-left: 0.3rem;*/
+}
+
+.blockToggle {
+    margin: 0.5em 0;
 }
 
 .blockCode {
@@ -100,5 +109,6 @@ ol.blockNonTopLevelList li {
 }
 
 .blockImg {
-    max-height: 50vh;
+    margin: 0.5em auto;
+    max-height: 70vh;
 }

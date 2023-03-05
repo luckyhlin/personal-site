@@ -1,8 +1,7 @@
 import {RichText} from "./rich-text";
 import styles from "./blocks.module.css"
-import Image from "next/image";
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import {dark} from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
+import {solarizedlight} from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 // blocks: array of blocks (each block may contain its children)
 export default function Blocks({ blocks }) {
@@ -41,26 +40,39 @@ export function Block({ block, index, blocks }) {
             )
         case "heading_1":
             return (
-                <h2 key={id} className={styles.heading1}>
+                <h2 key={id} className={styles.blockHeading1}>
                     <RichText richTexts={content.rich_text}/>
                 </h2>
             )
         case "heading_2":
             return (
-                <h3 key={id} className={styles.heading2}>
+                <h3 key={id} className={styles.blockHeading2}>
                     <RichText richTexts={content.rich_text}/>
                 </h3>
             )
         case "heading_3":
             return (
-                <h4 key={id} className={styles.heading3}>
+                <h4 key={id} className={styles.blockHeading3}>
                     <RichText richTexts={content.rich_text}/>
                 </h4>
             )
         case "callout":
-            return callout(block)
+            return (
+                <div className={styles.blockCallout}>
+                    <div className={styles.blockCalloutIcon}>
+                        {block.callout.icon.emoji}
+                    </div>
+                    <div className={styles.blockCalloutText}>
+                        <RichText richTexts={block.callout.rich_text}/>
+                    </div>
+                </div>
+            )
         case "quote":
-            return quote(block)
+            return (
+                <div className={styles.blockQuote}>
+                    <RichText richTexts={block.quote.rich_text}/>
+                </div>
+            )
         case "bulleted_list_item":
             return (
                 <ul className={isTopLevel ?
@@ -112,7 +124,7 @@ export function Block({ block, index, blocks }) {
             )
         case "toggle":
             return (
-                <details>
+                <details className={styles.blockToggle}>
                     <summary>
                         <RichText richTexts={content.rich_text}/>
                     </summary>
@@ -124,6 +136,25 @@ export function Block({ block, index, blocks }) {
                 </details>
             )
         case "code":
+            // To solve unmatched language names, add a conversion to the map. Find supported Prism names here:
+            // https://github.com/react-syntax-highlighter/react-syntax-highlighter/blob/master/AVAILABLE_LANGUAGES_PRISM.MD
+            const prismLanguageMap = {
+            }
+            let language = content.language
+            if (language in prismLanguageMap) language = prismLanguageMap[language]
+            const customStyle = {
+                borderRadius: "0.5rem",
+                background: "linear-gradient(143deg, rgb(255 253 141 / 50%) 0%, rgb(0 0 0 / 0%) 20%, rgb(252 183 255 / 30%) 75%, rgb(144 236 255) 100%)",
+
+            }
+            const lineNumberStyle = {
+                textAlign: 'right',
+                color: 'rgb(169,169,169)',
+                marginLeft: '-0.5em',
+                paddingRight: '1em',
+                minWidth: '2.25em'
+            }
+
             return (
                 // <div className={styles.blockCode} key={id}>
                 //     {
@@ -132,7 +163,14 @@ export function Block({ block, index, blocks }) {
                 //         })
                 //     }
                 // </div>
-                <SyntaxHighlighter language={content.rich_text.language} style={dark}>
+                <SyntaxHighlighter language={language}
+                                   style={solarizedlight}
+                                   customStyle={customStyle}
+                                   showLineNumbers={true}
+                                   showInlineLineNumbers={true}
+                                   lineNumberStyle={lineNumberStyle}
+                                   wrapLines={true}
+                >
                     {
                         content.rich_text.map((rt) => {
                             return rt.text.content
@@ -179,23 +217,3 @@ function getIndexWithinGroup(id, blocks) {
     return groupIndex
 }
 
-export function callout(block) {
-    return (
-        <div className={styles.callout}>
-                <div className={styles.calloutIcon}>
-                    {block.callout.icon.emoji}
-                </div>
-                <div className={styles.calloutText}>
-                    <RichText richTexts={block.callout.rich_text}/>
-                </div>
-        </div>
-    )
-}
-
-export function quote(block) {
-    return (
-        <p className={styles.quote}>
-            <RichText richTexts={block.quote.rich_text}/>
-        </p>
-    )
-}
