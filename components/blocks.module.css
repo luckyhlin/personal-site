@@ -100,6 +100,10 @@ ol.blockNonTopLevelList li {
     /*padding-left: 0.3rem;*/
 }
 
+/*
+    Part of the toggle block design follows
+    https://codepen.io/keithpickering/pen/PeBpwG
+*/
 .blockToggle {
     margin: 0.5em 0;
     padding: 0.2em 0.5em 0.5em 0.5em;
@@ -110,6 +114,7 @@ ol.blockNonTopLevelList li {
     border-radius: 0.5em;
     border: 0.1em solid rgba(178, 178, 255, 0.5);
     box-shadow: rgba(178, 178, 255, 0.5) 0 10px 16px 0, rgba(178, 178, 255, 0.16) 0 0 0 1px;
+    transition: all 0.5s ease;
 }
 
 .blockToggle[open] {
@@ -117,7 +122,42 @@ ol.blockNonTopLevelList li {
 }
 
 .blockToggleSummary {
-    padding: 0.1em 0.1em 0.1em 0.3em;
+    padding: 0.1em 0.1em 0.1em 1.8em;
+    cursor: pointer;
+    position: relative;
+    list-style-type: none;
+}
+
+.blockToggleSummary::-webkit-details-marker {
+    display: none;
+}
+
+.blockToggleSummary:before {
+    content: '';
+    position: absolute;
+    left: 0.2em;
+    top: 0.8em;
+    height: 0.15em;
+    width: 1em;
+    background: rgba(178, 178, 255, 1);
+    transform: rotate(0);
+    transition: all .5s ease;
+}
+.blockToggleSummary:after {
+    content: '';
+    position: absolute;
+    left: 0.65em;
+    top: 0.4em;
+    height: 1em;
+    width: 0.15em;
+    background: rgba(178, 178, 255, 1);
+    transform: rotate(0);
+    transition: all .5s ease;
+}
+
+.blockToggle[open] > .blockToggleSummary:after {
+    opacity: 0;
+    transform: translateY(25%);
 }
 
 .blockImg {
