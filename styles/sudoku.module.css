@@ -1,8 +1,25 @@
 .board {
     background: rgb(225, 255, 170);
     margin: 10px;
-    height: 100px;
+    height: 100%;
     width: 100%;
+}
+
+.boardCol {
+    margin: 0;
+    padding: 0;
+    /*border: 0.1em rgb(40, 40, 20) solid;*/
+    height: 1.5em;
+}
+
+.boardElem {
+    margin: 0;
+    padding: 0;
+    border: 1px rgb(60, 60, 60) solid;
+    height: 100%;
+    width: 1.5em;
+    text-align: center;
+    display: inline-block;
 }
 
 .newBoardBtn {
