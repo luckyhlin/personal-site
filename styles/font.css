@@ -1,7 +1,14 @@
+/*@font-face {*/
+/*    font-family: 'JetBrains Mono';*/
+/*    !*src: url("../fonts/JetBrainsMonoNL-ExtraLight.ttf");*!*/
+/*    src: url("../fonts/JetBrainsMonoNL-Light.ttf");*/
+/*    font-weight: auto;*/
+/*    font-style: auto;*/
+/*}*/
+
 @font-face {
-    font-family: 'JetBrains Mono';
-    /*src: url("../fonts/JetBrainsMonoNL-ExtraLight.ttf");*/
-    src: url("../fonts/JetBrainsMonoNL-Light.ttf");
+    font-family: 'Rubik';
+    src: url("../fonts/Rubik-Light.ttf");
     font-weight: auto;
     font-style: auto;
 }

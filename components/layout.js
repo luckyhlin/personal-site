@@ -3,28 +3,22 @@ import utilStyles from "../styles/utils.module.css";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 const name = 'Jimmy Lin';
-export const siteTitle = 'Jimmy Lin -- personal site';
 
-export default function Layout({ children, home }) {
+export default function Layout({ title, useComment, children, home }) {
     return (
         <div className={styles.container}>
             <Head>
                 <link rel="icon" href="/public/favicon.ico"/>
+                {/* TODO: modify the content of the `name` meta tag, as it will display on Github Discussion */}
                 <meta
                     name="description"
                     content="A demo of my personal site"
                 />
-                <meta
-                    property="og:image"
-                    content={`https://og-image.vercel.app/${encodeURI(
-                        siteTitle,
-                    )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-                />
-                <meta property="og:title" content={siteTitle}/>
-                <meta name="twitter:card" content="summary_large_image"/>
-                <title>{siteTitle}</title>
+                <meta property="og:title" content={title}/>
+                <title>{title}</title>
             </Head>
             <header className={styles.header}>
                 {home ? (
@@ -67,8 +61,27 @@ export default function Layout({ children, home }) {
                     </Link>
                 </div>
             )}
+            {!!useComment && (
+                <div className="giscus"></div>
+            )}
             <div className={styles.clearfix}>
             </div>
+            <Script
+                src="https://giscus.app/client.js"
+                data-repo="jimmylin99/personal-site"
+                data-repo-id="R_kgDOHsJs8Q"
+                data-category="Announcements"
+                data-category-id="DIC_kwDOHsJs8c4CVf2Q"
+                data-mapping="title"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="preferred_color_scheme"
+                data-lang="en"
+                crossOrigin="anonymous"
+                async
+            />
         </div>
     );
 }

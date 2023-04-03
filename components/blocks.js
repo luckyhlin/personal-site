@@ -144,7 +144,7 @@ export function Block({ block, index, blocks }) {
             if (language in prismLanguageMap) language = prismLanguageMap[language]
             const customStyle = {
                 borderRadius: "0.5rem",
-                background: "linear-gradient(143deg, rgb(255 253 141 / 50%) 0%, rgb(0 0 0 / 0%) 20%, rgb(252 183 255 / 30%) 75%, rgb(144 236 255) 100%)",
+                background: "linear-gradient(143deg, rgb(255 253 141 / 50%) 0%, rgb(0 0 0 / 0%) 20%, rgb(252 183 255 / 30%) 100%)",
                 boxShadow: "rgba(255, 50, 50, 0.12) 0 10px 16px 0, rgba(255, 0, 0, 0.06) 0 0 0 1px",
             }
             const lineNumberStyle = {

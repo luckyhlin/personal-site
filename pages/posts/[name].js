@@ -3,12 +3,10 @@ import Layout from "../../components/layout";
 import * as util from "util";
 import styles from "../../styles/posts.module.css"
 import Blocks from "../../components/blocks";
-import {getPage} from "@notionhq/client/build/src/api-endpoints";
 
 export default function Post({title, blocks}) {
     return (
-        <Layout>
-            <title title={title}/>
+        <Layout title={title} useComment={true}>
             <h1 id={title} className={styles.postTitle}>
                 {title}
             </h1>
