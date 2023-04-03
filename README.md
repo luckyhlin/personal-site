@@ -18,7 +18,7 @@ Here are the supported blocks so far:
 ---
 TODO:
 
-* UI for toggle block
+* improve transition of toggle block
 * large file acceleration
 * message board
 * clearfix for the footage
