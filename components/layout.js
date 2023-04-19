@@ -3,7 +3,7 @@ import utilStyles from "../styles/utils.module.css";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import Giscus from "@giscus/react";
 
 const name = 'Jimmy Lin';
 
@@ -62,26 +62,43 @@ export default function Layout({ title, useComment, children, home }) {
                 </div>
             )}
             {!!useComment && (
-                <div className="giscus"></div>
+                <Giscus
+                    id="comments"
+                    repo="jimmylin99/personal-site"
+                    repoId="R_kgDOHsJs8Q"
+                    category="Announcements"
+                    categoryId="DIC_kwDOHsJs8c4CVf2Q"
+                    mapping="title"
+                    term="Welcome to @giscus/react component!"
+                    reactionsEnabled="1"
+                    emitMetadata="0"
+                    inputPosition="top"
+                    theme="light"
+                    lang="en"
+                    loading="lazy"
+                />
             )}
-            <div className={styles.clearfix}>
-            </div>
-            <Script
-                src="https://giscus.app/client.js"
-                data-repo="jimmylin99/personal-site"
-                data-repo-id="R_kgDOHsJs8Q"
-                data-category="Announcements"
-                data-category-id="DIC_kwDOHsJs8c4CVf2Q"
-                data-mapping="title"
-                data-strict="0"
-                data-reactions-enabled="1"
-                data-emit-metadata="0"
-                data-input-position="bottom"
-                data-theme="preferred_color_scheme"
-                data-lang="en"
-                crossOrigin="anonymous"
-                async
-            />
+            {/*{!!useComment && (*/}
+            {/*    <div className="giscus"></div>*/}
+            {/*)}*/}
+            {/*<div className={styles.clearfix}>*/}
+            {/*</div>*/}
+            {/*<Script*/}
+            {/*    src="https://giscus.app/client.js"*/}
+            {/*    data-repo="jimmylin99/personal-site"*/}
+            {/*    data-repo-id="R_kgDOHsJs8Q"*/}
+            {/*    data-category="Announcements"*/}
+            {/*    data-category-id="DIC_kwDOHsJs8c4CVf2Q"*/}
+            {/*    data-mapping="title"*/}
+            {/*    data-strict="0"*/}
+            {/*    data-reactions-enabled="1"*/}
+            {/*    data-emit-metadata="0"*/}
+            {/*    data-input-position="bottom"*/}
+            {/*    data-theme="preferred_color_scheme"*/}
+            {/*    data-lang="en"*/}
+            {/*    crossOrigin="anonymous"*/}
+            {/*    async*/}
+            {/*/>*/}
         </div>
     );
 }
