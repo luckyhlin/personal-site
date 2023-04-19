@@ -14,9 +14,11 @@ export default function HomePage({pages}) {
         <div className={styles.bgContainer}>
             <div className={styles.mainContainer}>
                 <div className={styles.headingTextBox}>
-                    <span className={styles.headingTextPrimary}>
-                        Jimmy Lin
-                    </span>
+                    <Link href={"/who-am-i"}>
+                        <a className={styles.headingTextPrimary}>
+                            Jimmy Lin
+                        </a>
+                    </Link>
                     <span className={styles.headingTextDescription}>
                         I am now in a gap year after having both received my B.Eng from <span className={styles.textInlineBox}>
                             <Link href="https://www.ji.sjtu.edu.cn/">

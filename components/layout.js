@@ -25,7 +25,7 @@ export default function Layout({ title, useComment, children, home }) {
                     <>
                         <Image
                             priority
-                            src="/images/img.png"
+                            src="/images/jager.jpeg"
                             className={utilStyles.borderCircle}
                             height={108}
                             width={108}
@@ -38,7 +38,7 @@ export default function Layout({ title, useComment, children, home }) {
                         <Link href="/">
                             <Image
                                 priority
-                                src="/images/img.png"
+                                src="/images/jager.jpeg"
                                 className={utilStyles.borderCircle}
                                 height={108}
                                 width={108}
@@ -99,6 +99,9 @@ export default function Layout({ title, useComment, children, home }) {
             {/*    crossOrigin="anonymous"*/}
             {/*    async*/}
             {/*/>*/}
+            <footer className={styles.footer}>
+                Built by Jimmy Lin with Love (◍•ᴗ•◍)
+            </footer>
         </div>
     );
 }

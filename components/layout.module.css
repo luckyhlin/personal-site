@@ -15,7 +15,12 @@
 }
 
 .clearfix::before, .clearfix::after{
-    content: "";
+    content: " ";
     display: table;
     clear: both;
+}
+
+.footer {
+    padding: 10px;
+    color: rgb(50, 50, 50);
 }
