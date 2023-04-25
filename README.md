@@ -1,6 +1,6 @@
 ## Personal Site (WIP)
 
-The site is built with Next.js and based upon Notion as the CMS.
+The site is built upon Next.js and based upon Notion as the CMS.
 
 Here are the supported blocks so far:
 
@@ -10,7 +10,7 @@ Here are the supported blocks so far:
 | Heading            | ✔️           |
 | Bulleted Item List | ✔️           |
 | Numbered Item List | ✔️           |
-| Toggle             | partial      |
+| Toggle             | ✔            |
 | Callout            | ✔            |
 | Inline Equation    | ✔            |
 | Image              | ✔            |
@@ -18,11 +18,8 @@ Here are the supported blocks so far:
 ---
 TODO:
 
-* UI for toggle block
-* large file acceleration
-* message board
-* clearfix for the footage
-* icon & title
-* home page compatibility support on mobile (UI)
 * home page redesign
+* meta description tag
+* navigation bar
+* large file acceleration
 * DNS acceleration (to increase efficiency)

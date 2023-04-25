@@ -1,0 +1,75 @@
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    /*25% {*/
+    /*    background-position: 0 100%;*/
+    /*}*/
+    50% {
+        background-position: 100% 100%;
+    }
+    /*75% {*/
+    /*    background-position: 100% 0;*/
+    /*}*/
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+}
+
+/*
+ Description Module
+ */
+
+.headingTextDescription {
+    display: block;
+    font-size: 28px;
+    margin-top: 28px;
+    color: #e0ffe0;
+    position: relative;
+    animation: moveInRight 2s;
+}
+
+.textLink:link,
+.textLink:active {
+    display: inline-block;
+    text-decoration: underline;
+    transition: all .5s;
+}
+
+.textLink:hover {
+    transform: translateY(-1px);
+    opacity: 0.8;
+}
+
+.textLinkColor {
+    color: #e0ffe0;
+}
+
+
+.textInlineBox {
+    display: inline-block;
+    background: rgba(169, 169, 169, 0.2);
+    padding: 0 10px;
+    margin: 0 -10px;
+}

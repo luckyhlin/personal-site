@@ -4,21 +4,23 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import Giscus from "@giscus/react";
+import Navigation from "./navigation";
 
 const name = 'Jimmy Lin';
 
 export default function Layout({ title, useComment, children, home }) {
     return (
+        <><Navigation/>
         <div className={styles.container}>
             <Head>
-                <link rel="icon" href="/public/favicon.ico"/>
                 {/* TODO: modify the content of the `name` meta tag, as it will display on Github Discussion */}
-                <meta
-                    name="description"
-                    content="A demo of my personal site"
-                />
+                {/*<meta*/}
+                {/*    name="description"*/}
+                {/*    content="A demo of my personal site"*/}
+                {/*/>*/}
                 <meta property="og:title" content={title}/>
                 <title>{title}</title>
+                <link rel="shortcut icon" href="/images/jager.jpeg"/>
             </Head>
             <header className={styles.header}>
                 {home ? (
@@ -103,5 +105,6 @@ export default function Layout({ title, useComment, children, home }) {
                 Built by Jimmy Lin with Love (◍•ᴗ•◍)
             </footer>
         </div>
+        </>
     );
 }
