@@ -14,9 +14,14 @@ export default function Navigation({}) {
                     Blogs
                 </a>
             </Link>
-            <Link href="/who-am-i">
+            <Link href="/about">
                 <a>
-                    Who Am I
+                    About
+                </a>
+            </Link>
+            <Link href="/resume">
+                <a>
+                    Resume
                 </a>
             </Link>
         </nav>

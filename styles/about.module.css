@@ -1,0 +1,20 @@
+/*TODO: refactor using scss to reduce redundancy*/
+@keyframes moveInRight {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
+.aboutContainer {
+    animation: moveInRight 2s;
+}
+
+.aboutParagraph {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.aboutList {
+    margin-left: 20px;
+}

@@ -15,7 +15,7 @@ export default function HomePage({pages}) {
         <div className={styles.bgContainer}>
             <div className={styles.mainContainer}>
                 <div className={styles.headingTextBox}>
-                    <Link href={"/who-am-i"}>
+                    <Link href={"/about"}>
                         <a className={styles.headingTextPrimary}>
                             Hao Lin
                         </a>
