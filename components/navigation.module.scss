@@ -1,3 +1,11 @@
 .navigation {
   max-width: 50rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+
+  a {
+    padding: 10px 20px;
+  }
 }

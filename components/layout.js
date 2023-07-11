@@ -6,11 +6,10 @@ import Link from "next/link";
 import Giscus from "@giscus/react";
 import Navigation from "./navigation";
 
-const name = 'Jimmy Lin';
+const name = 'Hao Lin';
 
 export default function Layout({ title, useComment, children, home }) {
     return (
-        <><Navigation/>
         <div className={styles.container}>
             <Head>
                 {/* TODO: modify the content of the `name` meta tag, as it will display on Github Discussion */}
@@ -37,7 +36,9 @@ export default function Layout({ title, useComment, children, home }) {
                     </>
                 ) : (
                     <>
+                        <Navigation/>
                         <Link href="/">
+                            <a>
                             <Image
                                 priority
                                 src="/images/jager.jpeg"
@@ -46,6 +47,7 @@ export default function Layout({ title, useComment, children, home }) {
                                 width={108}
                                 alt={name}
                             />
+                            </a>
                         </Link>
                         <h2 className={utilStyles.headingLg}>
                             <Link href="/">
@@ -102,9 +104,8 @@ export default function Layout({ title, useComment, children, home }) {
             {/*    async*/}
             {/*/>*/}
             <footer className={styles.footer}>
-                Built by Jimmy Lin with Love (◍•ᴗ•◍)
+                Built by Hao Lin with Love (◍•ᴗ•◍)
             </footer>
         </div>
-        </>
     );
 }

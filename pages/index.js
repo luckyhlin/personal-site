@@ -17,7 +17,7 @@ export default function HomePage({pages}) {
                 <div className={styles.headingTextBox}>
                     <Link href={"/who-am-i"}>
                         <a className={styles.headingTextPrimary}>
-                            Jimmy Lin
+                            Hao Lin
                         </a>
                     </Link>
                     <Description/>

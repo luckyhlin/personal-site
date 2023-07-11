@@ -23,3 +23,4 @@ TODO:
 * navigation bar
 * large file acceleration
 * DNS acceleration (to increase efficiency)
+* new domain name
