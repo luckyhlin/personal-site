@@ -64,7 +64,8 @@
 }
 
 .summaryDetails {
-  font-size: 18px;
+  padding-left: 10px;
+  font-size: 20px;
   color: rgb(70, 70, 70);
 }
 
