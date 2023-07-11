@@ -28,6 +28,7 @@ TODO:
 * improve blog page
   * show confidence level
   * try to show more info (summary)
+* log reduction
 * meta description tag
 * navigation bar
 * large file acceleration
