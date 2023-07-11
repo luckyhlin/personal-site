@@ -5,7 +5,7 @@ import Head from "next/head";
 import utilStyles from "../styles/utils.module.css";
 import styles from "../styles/home.module.scss";
 import {getDatabase} from "../lib/notion";
-import PostSummary from "../components/post-summary";
+import BlogSummary from "../components/blog-summary";
 import Description from "../components/description";
 
 // const databaseID = process.env.NOTION_DATABASE_ID
@@ -33,7 +33,7 @@ export default function HomePage({pages}) {
                 {/*        Blog. (Under Construction)*/}
                 {/*    </span>*/}
                 {/*    {!!pages && pages.map((page) => (*/}
-                {/*            <PostSummary page={page}/>*/}
+                {/*            <BlogSummary page={page}/>*/}
                 {/*        )*/}
                 {/*    )}*/}
                 {/*    /!*{(!pages || pages.length === 0) && (*!/*/}

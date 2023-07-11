@@ -1,8 +1,8 @@
-import styles from "./post-summary.module.css";
+import styles from "./blog-summary.module.scss";
 import Link from "next/link";
 import {RichText} from "./rich-text";
 
-export default function PostSummary({page}) {
+export default function BlogSummary({page}) {
     return (
         <div className={styles.container} id={page.id}>
             <Link href={`/blogs/${page.name}`}>
@@ -10,6 +10,12 @@ export default function PostSummary({page}) {
                     <RichText richTexts={page.properties.Name.title}/>
                 </a>
             </Link>
+            {
+                !!page.summary &&
+                    <div className={styles.summaryDetails}>
+                        {page.summary.plain_text}
+                    </div>
+            }
         </div>
     )
 }

@@ -1,3 +1,5 @@
+@import "../styles/color.scss";
+
 @keyframes moveInLeft {
     0% {
         transform: translateX(-50px);
@@ -22,7 +24,6 @@
 .container {
     margin: 30px 0;
     font-size: 28px;
-    text-decoration: underline;
     animation: moveInBottom 1s;
 }
 
@@ -64,5 +65,10 @@
 }
 
 .linkColor {
-    color: white;
+    color: $blog-summary-text-color;
+}
+
+.summaryDetails {
+    font-size: 18px;
+    color: $summary-color;
 }
