@@ -5,6 +5,14 @@ import {RichText} from "./rich-text";
 export default function BlogSummary({page}) {
     return (
         <div className={styles.container} id={page.id}>
+            <div className={styles.summaryLastEditedTime}>
+                {
+                    page.parsed_last_edited_time === page.parsed_created_time ?
+                        page.parsed_created_time :
+                        page.parsed_last_edited_time.concat(
+                            " (updated)")
+                }
+            </div>
             <Link href={`/blogs/${page.name}`}>
                 <a className={[styles.link, styles.linkColor].join(" ")}>
                     <RichText richTexts={page.properties.Name.title}/>
