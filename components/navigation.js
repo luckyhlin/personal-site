@@ -9,6 +9,11 @@ export default function Navigation({}) {
                     Home
                 </a>
             </Link>
+            <Link href="/blogs">
+                <a>
+                    Blogs
+                </a>
+            </Link>
             <Link href="/who-am-i">
                 <a>
                     Who Am I

@@ -5,7 +5,7 @@ import {RichText} from "./rich-text";
 export default function PostSummary({page}) {
     return (
         <div className={styles.container} id={page.id}>
-            <Link href={`/posts/${page.name}`}>
+            <Link href={`/blogs/${page.name}`}>
                 <a className={[styles.link, styles.linkColor].join(" ")}>
                     <RichText richTexts={page.properties.Name.title}/>
                 </a>

@@ -13,7 +13,7 @@ export default function NotionTestPost({pages}) {
                     pages ? pages.map((page) => {
                         return (
                             <li key={page.id}>
-                                <Link href={`/posts/${page.id}`}>
+                                <Link href={`/blogs/${page.id}`}>
                                     <a>
                                         <RichText richTexts={page.properties.Name.title}/>
                                     </a>
