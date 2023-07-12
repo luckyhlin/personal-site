@@ -25,9 +25,10 @@ TODO:
   * ~~bottom padding (open with mobile screen)~~
   * ~~blog button redesign~~
   * ~~home page text rewrite~~
-* who am i page redesign
-  * add resume
+* ~~who am i page redesign~~
+  * ~~add resume~~
 * improve blog page
+  * show tag
   * show confidence level
   * try to show more info (summary)
 * log reduction
@@ -40,3 +41,4 @@ TODO:
 * new domain name
   * SSL support
 * more responsive design
+* add noindex tag to hide private pages

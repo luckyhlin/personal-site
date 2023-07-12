@@ -69,6 +69,9 @@
 .headingTextPrimary {
     display: inline-block;
     font-size: 60px;
+    @media (max-width: 768px) {
+        font-size: 48px;
+    }
     color: $home-page-text-color;
     animation: moveInLeft 2s;
 }
@@ -86,6 +89,7 @@
 
 .updatedAtContainer {
     margin: 30px 0 10px 10px;
+    animation: moveInBottom 2s;
 }
 
 .footageContainer {

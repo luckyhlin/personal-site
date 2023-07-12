@@ -1,4 +1,4 @@
-import styles from "./description.module.css"
+import styles from "./description.module.scss"
 import Link from "next/link";
 
 export default function Description() {
@@ -24,6 +24,10 @@ export default function Description() {
                             <a className={[styles.textLink, styles.textLinkColor].join(" ")}>University of Wisconsin–Madison</a>
                         </Link>
                     </span> starting this Fall (◍•ᴗ•◍)
+                </span>
+
+                <span className={styles.headingTextDescription}>
+                    黃桃罐頭很好吃哦~
                 </span>
                 {/*<span className={styles.headingTextDescription}>*/}
                 {/*    If necessary, reach me via <span className={styles.textInlineBox}>*/}

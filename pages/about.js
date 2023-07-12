@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import styles from "../styles/about.module.scss"
-import descriptionStyles from "../components/description.module.css"
+import descriptionStyles from "../components/description.module.scss"
 import Link from "next/link";
 import UpdatedAt from "../components/updatedAt";
 
@@ -12,7 +12,7 @@ export default function About() {
             <div className={styles.aboutContainer}>
                 <UpdatedAt/>
                 <div className={styles.aboutIntroParagraph}>
-                Hi, this is Hao Lin, a kind and genuine young man grew up in Shanghai, China.
+                Hi, this is Hao Lin, a cute and genuine young man grew up in Shanghai, China.
                 </div>
                 <div className={styles.aboutIntroParagraph}>
                     Welcome to my site!
@@ -67,7 +67,7 @@ export default function About() {
                         <li>travelling (prefer natural scenery)</li>
                         <li>movies & TV dramas</li>
                         <li>video clipping & photography</li>
-                        <li>staying with family & her (◍•ᴗ•◍)</li>
+                        <li>staying with family, friends & her (◍•ᴗ•◍)</li>
                         <li>and a lot more</li>
                     </ul>
                 </div>
