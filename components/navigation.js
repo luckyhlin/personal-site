@@ -25,10 +25,8 @@ export default function Navigation({ isHome }) {
                     About
                 </a>
             </Link>
-            <Link href="/resume">
-                <a>
-                    Resume
-                </a>
+            <Link href="/resume.pdf">
+                <a>Resume</a>
             </Link>
         </nav>
     )

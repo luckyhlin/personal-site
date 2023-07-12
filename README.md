@@ -18,8 +18,10 @@ Here are the supported blocks so far:
 ---
 TODO:
 
-* rich_text overflow (open Ubuntu page with mobile screen)
-* home page redesign
+* mobile compatibility
+  * rich_text overflow (open Ubuntu page with mobile screen)
+  * home page background issue (only on real mobile phone with corners, e.g. iPhone 12)
+* ~~home page redesign~~
   * ~~bottom padding (open with mobile screen)~~
   * ~~blog button redesign~~
   * ~~home page text rewrite~~
@@ -36,3 +38,5 @@ TODO:
 * page transition / loading animation
 * DNS acceleration (to increase efficiency)
 * new domain name
+  * SSL support
+* more responsive design

@@ -25,6 +25,11 @@
   font-size: 18px;
 }
 
+.aboutIntroParagraph {
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+}
+
 .aboutList {
   margin-left: 20px;
 }

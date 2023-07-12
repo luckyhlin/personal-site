@@ -11,7 +11,12 @@ export default function About() {
 
             <div className={styles.aboutContainer}>
                 <UpdatedAt/>
-                Hi, this is Hao Lin! I grow up in Shanghai, China.
+                <div className={styles.aboutIntroParagraph}>
+                Hi, this is Hao Lin, a kind and genuine young man grew up in Shanghai, China.
+                </div>
+                <div className={styles.aboutIntroParagraph}>
+                    Welcome to my site!
+                </div>
                 <h1 className={styles.aboutHeading}>Education & Career</h1>
                 <div className={styles.aboutParagraph}>
                     I am going to pursue my master's degree in computer science (MSCS) at <span
@@ -28,7 +33,10 @@ export default function About() {
                         <Link href="https://www.ji.sjtu.edu.cn/">
                             <a className={[descriptionStyles.textLink].join(" ")}>Shanghai Jiao Tong University (UMJI-SJTU Joint Institute).</a>
                         </Link>
-                    </span> After bachelor's graduation, I worked at <span
+                    </span>
+                </div>
+                <div className={styles.aboutParagraph}>
+                    After bachelor's graduation, I worked at <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.www.bytedance.com/en/">
                             <a className={[descriptionStyles.textLink].join(" ")}>ByteDance</a>
@@ -50,20 +58,22 @@ export default function About() {
                     </ul>
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Apart from academic, I am embracing the diversity and beauty of life:
+                    Apart from the academic, I am embracing the diversity and beauty of life through:
                     <ul className={styles.aboutList}>
                         <li>lots of sports (specifically biking, soccer, eight-ball pool, badminton, table tennis, tennis & frisbee)</li>
-                        <li>video clipping</li>
                         <li>gaming (specifically FPS games)</li>
                         <li>musics (I mean listening to musics LOL)</li>
                         <li>art gallery</li>
                         <li>travelling (prefer natural scenery)</li>
                         <li>movies & TV dramas</li>
-                        <li>dating (awaiting the presence of my girl (◍•ᴗ•◍))</li>
+                        <li>video clipping & photography</li>
+                        <li>staying with family & her (◍•ᴗ•◍)</li>
                         <li>and a lot more</li>
                     </ul>
                 </div>
-                To know more about me, see my resume and visit my instagram (or even my WeChat)
+                To know more about me, see my <Link href="/resume.pdf">
+                    <a>resume</a>
+                </Link> and visit my instagram (or even my WeChat)
             </div>
             {/*<div className={styles.paragraph}>*/}
             {/*    I am now in a gap year after having*/}

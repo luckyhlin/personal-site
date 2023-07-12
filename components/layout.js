@@ -1,4 +1,4 @@
-import styles from "./layout.module.css";
+import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.css";
 import Head from "next/head";
 import Image from "next/image";
@@ -59,10 +59,15 @@ export default function Layout({ title, useComment, children, home }) {
             </header>
             <main>{children}</main>
             {!home && (
-                <div className={styles.backToHome}>
-                    <Link href="/">
-                        <a>Back to home</a>
-                    </Link>
+                // <div className={styles.backToHome}>
+                //     <Link href="/">
+                //         <a>Back to home</a>
+                //     </Link>
+                // </div>
+                <div className={styles.scrollToTop}>
+                    <a onClick={scrollToTop}>
+                        Scroll to top
+                    </a>
                 </div>
             )}
             {!!useComment && (
@@ -108,4 +113,11 @@ export default function Layout({ title, useComment, children, home }) {
             </footer>
         </div>
     );
+}
+
+const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
+
+function scrollToTop() {
+    if (!isBrowser()) return;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }

@@ -1,26 +1,37 @@
 .container {
-    max-width: 50rem;
-    padding: 0 1rem;
-    margin: 1rem auto 6rem;
+  max-width: 50rem;
+  padding: 0 1rem;
+  margin: 1rem auto 6rem;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .backToHome {
-    margin: 3rem 0 3rem;
+  margin: 3rem 0 3rem;
 }
 
-.clearfix::before, .clearfix::after{
-    content: " ";
-    display: table;
-    clear: both;
+.scrollToTop {
+  margin: 2rem 0 2rem;
+  /*text-decoration: underline;*/
+  background: none;
+}
+.scrollToTop a:hover {
+  cursor: pointer;
+}
+
+.clearfix::before, .clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 
 .footer {
-    padding: 10px;
-    color: rgb(50, 50, 50);
+  padding: 10px;
+  color: rgb(50, 50, 50);
 }
+
+/*# sourceMappingURL=layout.module.css.map */
