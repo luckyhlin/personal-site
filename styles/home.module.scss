@@ -1,4 +1,5 @@
 @import "color.scss";
+@import "animation.scss";
 
 @keyframes gradient {
     0% {
@@ -15,27 +16,6 @@
     /*}*/
     100% {
         background-position: 0 0;
-    }
-}
-
-@keyframes moveInLeft {
-    0% {
-        transform: translateX(-50px);
-        opacity: 0;
-    }
-}
-
-@keyframes moveInRight {
-    0% {
-        transform: translateX(50px);
-        opacity: 0;
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
     }
 }
 
@@ -61,16 +41,29 @@
 
 .mainContainer {
     position: absolute;
-    top: 20vh;
+    @media (max-width: 768px) {
+        top: 5vh;
+    }
+    @media (min-width: 768px) {
+        top: 10vh;
+    }
     left: 0;
     /*min-height: 100vh;*/
     margin-left: 10%;
+    padding-bottom: 10%;
     width: 70%;
+    @media (max-width: 768px) {
+        width: 85%
+    }
     max-width: 1000px;
 }
 
 .headingTextBox {
-
+    margin-top: 20px;
+    @media (max-width: 768px) {
+        margin-top: 8vh;
+    }
+    color: white;
 }
 
 .headingTextPrimary {
@@ -89,6 +82,10 @@
     display: block;
     color: $blog-summary-text-color;
     font-size: 50px;
+}
+
+.updatedAtContainer {
+    margin: 30px 0 10px 10px;
 }
 
 .footageContainer {

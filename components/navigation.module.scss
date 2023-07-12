@@ -6,6 +6,15 @@
   text-align: center;
 
   a {
-    padding: 10px 20px;
+    padding: 10px 10px;
+  }
+}
+
+.homeNavigation {
+  display: block;
+  position: absolute;
+  right: 0;
+  a {
+    color: white;
   }
 }

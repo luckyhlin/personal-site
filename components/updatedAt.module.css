@@ -16,21 +16,12 @@
     opacity: 0;
   }
 }
-.aboutContainer {
-  animation: moveInLeft 2s;
+.lightColor {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.aboutParagraph {
-  margin: 10px;
-  font-size: 18px;
+.darkColor {
+  color: rgba(55, 55, 55, 0.5);
 }
 
-.aboutList {
-  margin-left: 20px;
-}
-
-.aboutHeading {
-  font-size: 32px;
-}
-
-/*# sourceMappingURL=about.module.css.map */
+/*# sourceMappingURL=updatedAt.module.css.map */

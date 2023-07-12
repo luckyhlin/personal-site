@@ -20,9 +20,9 @@ TODO:
 
 * rich_text overflow (open Ubuntu page with mobile screen)
 * home page redesign
-  * bottom padding (open with mobile screen)
-  * blog button redesign
-  * home page text rewrite
+  * ~~bottom padding (open with mobile screen)~~
+  * ~~blog button redesign~~
+  * ~~home page text rewrite~~
 * who am i page redesign
   * add resume
 * improve blog page
@@ -30,7 +30,9 @@ TODO:
   * try to show more info (summary)
 * log reduction
 * meta description tag
-* navigation bar
+* ~~navigation bar~~
 * large file acceleration
+* 404 page
+* page transition / loading animation
 * DNS acceleration (to increase efficiency)
 * new domain name

@@ -4,33 +4,17 @@
     opacity: 0;
   }
 }
+
 @keyframes moveInRight {
   0% {
     transform: translateX(50px);
     opacity: 0;
   }
 }
+
 @keyframes moveInBottom {
   0% {
     transform: translateY(50px);
     opacity: 0;
   }
 }
-.aboutContainer {
-  animation: moveInLeft 2s;
-}
-
-.aboutParagraph {
-  margin: 10px;
-  font-size: 18px;
-}
-
-.aboutList {
-  margin-left: 20px;
-}
-
-.aboutHeading {
-  font-size: 32px;
-}
-
-/*# sourceMappingURL=about.module.css.map */

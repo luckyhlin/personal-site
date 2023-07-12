@@ -7,7 +7,15 @@
 }
 .navigation a {
   padding: 10px 10px;
-  text-decoration: underline;
+}
+
+.homeNavigation {
+  display: block;
+  position: absolute;
+  right: 0;
+}
+.homeNavigation a {
+  color: white;
 }
 
 /*# sourceMappingURL=navigation.module.css.map */

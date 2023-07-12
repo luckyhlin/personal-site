@@ -1,14 +1,20 @@
 import Link from "next/link";
 import styles from "./navigation.module.css";
 
-export default function Navigation({}) {
+export default function Navigation({ isHome }) {
     return (
-        <nav className={styles.navigation}>
-            <Link href="/">
-                <a>
-                    Home
-                </a>
-            </Link>
+        <nav className={[
+            styles.navigation,
+            isHome ? styles.homeNavigation : "",
+            ].join(" ")
+        }>
+            { !isHome &&
+                <Link href="/">
+                    <a>
+                        Home
+                    </a>
+                </Link>
+            }
             <Link href="/blogs">
                 <a>
                     Blogs

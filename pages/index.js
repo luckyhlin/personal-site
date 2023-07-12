@@ -7,6 +7,8 @@ import styles from "../styles/home.module.scss";
 import {getDatabase} from "../lib/notion";
 import BlogSummary from "../components/blog-summary";
 import Description from "../components/description";
+import Navigation from "../components/navigation";
+import UpdatedAt from "../components/updatedAt";
 
 // const databaseID = process.env.NOTION_DATABASE_ID
 
@@ -14,6 +16,7 @@ export default function HomePage({pages}) {
     return (
         <div className={styles.bgContainer}>
             <div className={styles.mainContainer}>
+                <Navigation isHome={true}/>
                 <div className={styles.headingTextBox}>
                     <Link href={"/about"}>
                         <a className={styles.headingTextPrimary}>
@@ -21,13 +24,17 @@ export default function HomePage({pages}) {
                         </a>
                     </Link>
                     <Description/>
+                    <div className={styles.updatedAtContainer}>
+                        <UpdatedAt lightColor={true}/>
+                        built by Hao Lin with Love
+                    </div>
                 </div>
 
-                <Link href={"/blogs"}>
-                      <a className={styles.headingTextPrimary}>
-                          Blogs.
-                      </a>
-                </Link>
+                {/*<Link href={"/blogs"}>*/}
+                {/*      <a className={styles.headingTextPrimary}>*/}
+                {/*          Blogs.*/}
+                {/*      </a>*/}
+                {/*</Link>*/}
                 {/*<div className={styles.postSummaryContainer}>*/}
                 {/*    <span className={styles.postSummaryHeading}>*/}
                 {/*        Blog. (Under Construction)*/}

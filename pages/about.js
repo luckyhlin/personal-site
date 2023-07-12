@@ -1,6 +1,8 @@
 import Layout from "../components/layout";
-import styles from "../styles/about.module.css"
-import Description from "../components/description";
+import styles from "../styles/about.module.scss"
+import descriptionStyles from "../components/description.module.css"
+import Link from "next/link";
+import UpdatedAt from "../components/updatedAt";
 
 export default function About() {
     let title = "About"
@@ -8,18 +10,32 @@ export default function About() {
         <Layout title={title} useComment={true}>
 
             <div className={styles.aboutContainer}>
-                updated at {new Date(Date.now()).toLocaleDateString('default', {
-                    year: "numeric", month: "short", day: "2-digit"
-            })}
-                <h1>University & Company</h1>
+                <UpdatedAt/>
+                Hi, this is Hao Lin! I grow up in Shanghai, China.
+                <h1 className={styles.aboutHeading}>Education & Career</h1>
                 <div className={styles.aboutParagraph}>
-                    I am going to pursue my master degree in computer science (MSCS) at University of Wisconsin–Madison! (◍•ᴗ•◍)
+                    I am going to pursue my master's degree in computer science (MSCS) at <span
+                    className={descriptionStyles.textInlineBox}>
+                        <Link href="https://www.wisc.edu/">
+                            <a className={[descriptionStyles.textLink].join(" ")}>University of Wisconsin–Madison</a>
+                        </Link>
+                    </span> (◍•ᴗ•◍)
                 </div>
                 <div className={styles.aboutParagraph}>
                     Before that, I have received my B.Eng in electrical and computer engineering (ECE) and a data science minor degree
-                    at Shanghai Jiao Tong University. After bachelor's graduation, I worked at ByteDance for a year as an SDE, and then took a gap (now reaching the end of this gap year).
+                    at <span
+                    className={descriptionStyles.textInlineBox}>
+                        <Link href="https://www.ji.sjtu.edu.cn/">
+                            <a className={[descriptionStyles.textLink].join(" ")}>Shanghai Jiao Tong University (UMJI-SJTU Joint Institute).</a>
+                        </Link>
+                    </span> After bachelor's graduation, I worked at <span
+                    className={descriptionStyles.textInlineBox}>
+                        <Link href="https://www.www.bytedance.com/en/">
+                            <a className={[descriptionStyles.textLink].join(" ")}>ByteDance</a>
+                        </Link>
+                    </span> for a year as an SDE, and then took a gap (now reaching the end of this gap year).
                 </div>
-                <h1>Interest</h1>
+                <h1 className={styles.aboutHeading}>Interest</h1>
                 <div className={styles.aboutParagraph}>
                     My current career interest lies in computer systems and K-12 education, while my previous experiences, though preliminary, varies among many fields,
                     including:
