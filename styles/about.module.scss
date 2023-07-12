@@ -1,0 +1,18 @@
+@import "animation.scss";
+
+.aboutContainer {
+    animation: moveInLeft 2s;
+}
+
+.aboutParagraph {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.aboutList {
+    margin-left: 20px;
+}
+
+.aboutHeading {
+    font-size: 32px;
+}
