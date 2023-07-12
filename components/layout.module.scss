@@ -1,0 +1,36 @@
+.container {
+    max-width: 50rem;
+    padding: 0 1rem;
+    margin: 1rem auto 6rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.backToHome {
+    margin: 3rem 0 3rem;
+}
+
+.scrollToTop {
+    margin: 2rem 0 2rem;
+    /*text-decoration: underline;*/
+    background: none;
+
+    a:hover {
+        cursor: pointer;
+    }
+}
+
+.clearfix::before, .clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    padding: 10px;
+    color: rgb(50, 50, 50);
+}
