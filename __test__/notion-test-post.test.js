@@ -11,6 +11,7 @@ const notion = new Client({
 it("page info", async () => {
     const pages = await getDatabase(
         process.env.NOTION_DATABASE_ID,
+        true,
     )
 
     console.log(util.inspect(pages, {depth: null, colors: true}))

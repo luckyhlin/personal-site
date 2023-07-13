@@ -42,3 +42,4 @@ TODO:
   * SSL support
 * more responsive design
 * add noindex tag to hide private pages
+  * https://www.link-assistant.com/news/hiding-pages-from-indexation.html

@@ -71,9 +71,11 @@ export default function About() {
                         <li>and a lot more</li>
                     </ul>
                 </div>
-                To know more about me, see my <Link href="/resume.pdf">
+                To know more about me, you are free to check my <Link href="/resume.pdf">
                     <a>resume</a>
-                </Link> and visit my instagram (or even my WeChat)
+            </Link>, or contact me via <Link href="mailto:jimmylinh@icloud.com">
+                <a>email</a>
+            </Link>.
             </div>
             {/*<div className={styles.paragraph}>*/}
             {/*    I am now in a gap year after having*/}
