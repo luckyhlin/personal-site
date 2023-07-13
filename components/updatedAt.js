@@ -7,7 +7,7 @@ export default function UpdatedAt({ lightColor }) {
             lightColor ? styles.lightColor : styles.darkColor,
             ].join(" ")
         }>
-            updated at {new Date(Date.now()).toLocaleDateString('default', {
+            site updated at {new Date(Date.now()).toLocaleDateString('default', {
             year: "numeric", month: "short", day: "2-digit"
         })}
         </div>

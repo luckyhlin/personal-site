@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Layout, {siteTitle} from "../components/layout";
 import Head from "next/head";
 import utilStyles from "../styles/utils.module.css";
 import styles from "../styles/home.module.scss";
@@ -9,6 +8,8 @@ import BlogSummary from "../components/blog-summary";
 import Description from "../components/description";
 import Navigation from "../components/navigation";
 import UpdatedAt from "../components/updatedAt";
+import Name from "../components/name.js";
+import FootageText from "../components/footageText";
 
 // const databaseID = process.env.NOTION_DATABASE_ID
 
@@ -20,13 +21,12 @@ export default function HomePage({pages}) {
                 <div className={styles.headingTextBox}>
                     <Link href={"/about"}>
                         <a className={styles.headingTextPrimary}>
-                            Hao Lin
+                            <Name/>
                         </a>
                     </Link>
                     <Description/>
                     <div className={styles.updatedAtContainer}>
-                        <UpdatedAt lightColor={true}/>
-                        built by Hao Lin with Love
+                        <FootageText lightColor={true}/>
                     </div>
                 </div>
 

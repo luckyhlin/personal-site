@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import styles from "../styles/about.module.scss"
 import descriptionStyles from "../components/description.module.scss"
 import Link from "next/link";
-import UpdatedAt from "../components/updatedAt";
+import Name from "../components/name";
 
 export default function About() {
     let title = "About"
@@ -10,9 +10,8 @@ export default function About() {
         <Layout title={title} useComment={true}>
 
             <div className={styles.aboutContainer}>
-                <UpdatedAt/>
                 <div className={styles.aboutIntroParagraph}>
-                Hi, this is Hao Lin, a cute and genuine young man grew up in Shanghai, China.
+                Hi, this is <Name/>, a cute and genuine young man grew up in China.
                 </div>
                 <div className={styles.aboutIntroParagraph}>
                     Welcome to my site!
@@ -27,11 +26,11 @@ export default function About() {
                     </span> (◍•ᴗ•◍)
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Before that, I have received my B.Eng in electrical and computer engineering (ECE) and a data science minor degree
+                    Before that, I have received my B.Eng. in electrical and computer engineering (ECE) and a data science minor degree
                     at <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.ji.sjtu.edu.cn/">
-                            <a className={[descriptionStyles.textLink].join(" ")}>Shanghai Jiao Tong University (UMJI-SJTU Joint Institute).</a>
+                            <a className={[descriptionStyles.textLink].join(" ")}>Shanghai Jiao Tong University (UM-SJTU Joint Institute).</a>
                         </Link>
                     </span>
                 </div>
@@ -71,11 +70,12 @@ export default function About() {
                         <li>and a lot more</li>
                     </ul>
                 </div>
+                <h1 className={styles.aboutHeading}>Contact</h1>
                 To know more about me, you are free to check my <Link href="/resume.pdf">
                     <a>resume</a>
-            </Link>, or contact me via <Link href="mailto:jimmylinh@icloud.com">
-                <a>email</a>
-            </Link>.
+                </Link>, or contact me via <Link href="mailto:jimmylinh@icloud.com">
+                    <a>email</a>
+                </Link>.
             </div>
             {/*<div className={styles.paragraph}>*/}
             {/*    I am now in a gap year after having*/}

@@ -5,9 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Giscus from "@giscus/react";
 import Navigation from "./navigation";
+import Name from "./name";
+import FootageText from "./footageText";
 
-const name = 'Hao Lin';
-
+// parameter home is not used anymore, home page has its own layout
 export default function Layout({ title, useComment, children, home }) {
     return (
         <div className={styles.container}>
@@ -30,9 +31,9 @@ export default function Layout({ title, useComment, children, home }) {
                             className={utilStyles.borderCircle}
                             height={108}
                             width={108}
-                            alt={name}
+                            alt={Name()}
                         />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        <h1 className={utilStyles.heading2Xl}>{Name()}</h1>
                     </>
                 ) : (
                     <>
@@ -45,13 +46,13 @@ export default function Layout({ title, useComment, children, home }) {
                                 className={utilStyles.borderCircle}
                                 height={108}
                                 width={108}
-                                alt={name}
+                                alt={Name()}
                             />
                             </a>
                         </Link>
                         <h2 className={utilStyles.headingLg}>
                             <Link href="/">
-                                <a className={utilStyles.colorInherit}>{name}</a>
+                                <a className={utilStyles.colorInherit}>{Name()}</a>
                             </Link>
                         </h2>
                     </>
@@ -109,7 +110,7 @@ export default function Layout({ title, useComment, children, home }) {
             {/*    async*/}
             {/*/>*/}
             <footer className={styles.footer}>
-                Built by Hao Lin with Love (◍•ᴗ•◍)
+                <FootageText/>
             </footer>
         </div>
     );
