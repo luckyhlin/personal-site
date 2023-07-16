@@ -67,13 +67,16 @@
 }
 
 .headingTextPrimary {
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 3px;
     display: inline-block;
-    font-size: 60px;
+    font-size: 72px;
     @media (max-width: 768px) {
-        font-size: 48px;
+        font-size: 60px;
     }
     color: $home-page-text-color;
     animation: moveInLeft 2s;
+    @include dynamicText;
 }
 
 .postSummaryContainer {
@@ -82,6 +85,7 @@
 
 .postSummaryHeading {
     /*margin-left: 10px;*/
+    font-family: 'Pacifico', cursive;
     display: block;
     color: $blog-summary-text-color;
     font-size: 50px;

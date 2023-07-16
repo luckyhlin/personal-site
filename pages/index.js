@@ -26,7 +26,7 @@ export default function HomePage() {
                     </Link>
                     <Description/>
                     <div className={styles.updatedAtContainer}>
-                        <FootageText lightColor={true}/>
+                        <FootageText isHome={true}/>
                     </div>
                 </div>
 

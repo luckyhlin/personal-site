@@ -8,7 +8,13 @@
     color: rgba(255, 150, 0, 0.8);
 }
 
-.footageRainbowText {
-    @extend .rainbowText;
+.footageDynamicText {
+    @include dynamicText;
     animation: rainbow 120s linear infinite;
+}
+
+.footageRainbowText {
+    @include dynamicText;
+    animation: rainbow 120s linear infinite;
+    //background-image: linear-gradient(250deg, #1e5799, #2ce0bf, #76dd2c, #dba62b, #ff1493, #1e5799);
 }

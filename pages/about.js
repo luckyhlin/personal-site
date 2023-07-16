@@ -69,7 +69,7 @@ export default function About() {
                         <li>video clipping & photography</li>
                     </ul>
                     and <span className={styles.aboutRainbowText}
-                              id="Love" style={{fontSize: "120%"}}>staying with family, friends & her (◍•ᴗ•◍)</span>
+                              id="Love" style={{fontSize: "130%"}}>staying with family, friends & her ◍•ᴗ•◍</span>
                 </div>
                 <h1 className={styles.aboutHeading} id="Motivation">Motivation</h1>
                 <div className={styles.aboutParagraph}>

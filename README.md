@@ -1,4 +1,4 @@
-## Personal Site (WIP)
+## Personal Site
 
 The site is built upon Next.js and based upon Notion as the CMS.
 
@@ -14,6 +14,7 @@ Here are the supported blocks so far:
 | Callout            | ✔            |
 | Inline Equation    | ✔            |
 | Image              | ✔            |
+| Video              | ❌            |
 
 ---
 TODO:
@@ -29,9 +30,7 @@ TODO:
   * show confidence level
   * try to show more info (summary)
 * log reduction
-* meta description tag
 * ~~navigation bar~~
-* large file acceleration
 * 404 page
 * page transition / loading animation
 * DNS acceleration (to increase efficiency)
@@ -43,3 +42,5 @@ TODO:
 * mobile compatibility
   * rich_text overflow (open Ubuntu page with mobile screen)
   * home page background issue (only on real mobile phone with corners, e.g. iPhone 12)
+* large file acceleration
+* meta description tag

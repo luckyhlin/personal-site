@@ -13,8 +13,13 @@ export default function BlogSummary({page}) {
                             " (updated)")
                 }
             </div>
+            {
+                page.icon ? page.icon.emoji : '🍯'
+            }
             <Link href={`/blogs/${page.name}`}>
-                <a className={[styles.link, styles.linkColor].join(" ")}>
+                <a className={[styles.link, styles.linkColor].join(" ")} style={
+                    {display: "inline"}
+                }>
                     <RichText richTexts={page.properties.Name.title}/>
                 </a>
             </Link>

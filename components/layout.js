@@ -52,7 +52,10 @@ export default function Layout({ title, useComment, children, home }) {
                         </Link>
                         <h2 className={utilStyles.headingLg}>
                             <Link href="/">
-                                <a className={utilStyles.colorInherit}>{Name()}</a>
+                                <a className={[
+                                    utilStyles.colorInherit,
+                                    styles.titleFont
+                                ].join(" ")}>{"💕 "+Name()+" 💗"}</a>
                             </Link>
                         </h2>
                     </>

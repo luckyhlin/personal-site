@@ -12,3 +12,10 @@
     font-weight: auto;
     font-style: auto;
 }
+
+@font-face {
+    font-family: 'Pacifico';
+    src: url("../fonts/Pacifico-Regular.ttf");
+    font-weight: auto;
+    font-style: auto;
+}
