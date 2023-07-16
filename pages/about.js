@@ -11,10 +11,10 @@ export default function About() {
 
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutIntroParagraph}>
-                Hi, this is <Name/>, a cute and genuine young man who grew up in China.
+                    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>cute</span> and genuine young man who grew up in China.
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Welcome to my site! At present, it focuses mostly on technical blogs, written in a blend of
+                    Welcome to my site! It focuses mostly on technical blogs at present, written in a blend of
                     English (in the majority), Simplified Chinese (简体中文) and Traditional Chinese (繁體中文).
                 </div>
                 <h1 className={styles.aboutHeading}>Education & Career</h1>
@@ -58,18 +58,18 @@ export default function About() {
                     </ul>
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Apart from academics, I am embracing the diversity and beauty of life through:
+                    Apart from academics, I am embracing the diversity and beauty of life through for instance:
                     <ul className={styles.aboutList}>
                         <li>lots of sports (specifically biking, soccer, eight-ball pool, badminton, table tennis, tennis & frisbee)</li>
-                        <li>gaming (specifically FPS games)</li>
+                        <li>gaming (a HUGE fan of FPS games)</li>
                         <li>music (I mean listening to music LOL)</li>
                         <li>art gallery</li>
                         <li>traveling (prefer natural scenery)</li>
                         <li>movies & TV dramas</li>
                         <li>video clipping & photography</li>
-                        <li>staying with family, friends & her (◍•ᴗ•◍)</li>
-                        <li>and a lot more</li>
                     </ul>
+                    and <span className={styles.aboutRainbowText}
+                              id="Love" style={{fontSize: "120%"}}>staying with family, friends & her (◍•ᴗ•◍)</span>
                 </div>
                 <h1 className={styles.aboutHeading} id="Motivation">Motivation</h1>
                 <div className={styles.aboutParagraph}>
@@ -84,10 +84,10 @@ export default function About() {
                 </div>
                 <div className={styles.aboutParagraph}>
                     Therefore, this site is powered by Next.js as SSG frontend framework, Notion official API,
-                    Notion as CMS, Vercel as site host, Namecheap as domain registration, GitHub as repo host, and the open source community.
+                    Notion as CMS, Vercel as site host, giscus as comment system, Namecheap as domain registration, GitHub as repo host, and the open source community.
                 </div>
-                <div className={styles.aboutParagraph} id="Love">
-                    Importantly, this site is built with tons of Love for Computer Science and Engineering, with fucking curiosity and passion towards the
+                <div className={styles.aboutParagraph} id="Love ❤">
+                    Importantly, this site is built with <span className={styles.aboutRainbowText}>Love ❤</span> for Computer Science and Engineering, with curiosity and passion towards the
                     infinite amount of arousing knowledge, with support from family and friends, and with the pursuit of self-consistency (自洽).
                 </div>
                 <h1 className={styles.aboutHeading}>Contact</h1>

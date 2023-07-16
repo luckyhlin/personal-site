@@ -4,12 +4,18 @@ import Description from "../components/description";
 import Navigation from "../components/navigation";
 import Name from "../components/name.js";
 import FootageText from "../components/footage-text";
+import Head from "next/head";
 
 // const databaseID = process.env.NOTION_DATABASE_ID
 
 export default function HomePage() {
+    const title = Name();
     return (
         <div className={styles.bgContainer}>
+            <Head>
+                <meta property="og:title" content={title}/>
+                <title>{title}</title>
+            </Head>
             <div className={styles.mainContainer}>
                 <Navigation isHome={true}/>
                 <div className={styles.headingTextBox}>

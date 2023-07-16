@@ -22,3 +22,7 @@
 .aboutHeading {
     font-size: 32px;
 }
+
+.aboutRainbowText {
+    @extend .rainbowText
+}

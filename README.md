@@ -18,9 +18,6 @@ Here are the supported blocks so far:
 ---
 TODO:
 
-* mobile compatibility
-  * rich_text overflow (open Ubuntu page with mobile screen)
-  * home page background issue (only on real mobile phone with corners, e.g. iPhone 12)
 * ~~home page redesign~~
   * ~~bottom padding (open with mobile screen)~~
   * ~~blog button redesign~~
@@ -38,8 +35,11 @@ TODO:
 * 404 page
 * page transition / loading animation
 * DNS acceleration (to increase efficiency)
-* new domain name
-  * SSL support
+* ~~new domain name~~
+  * ~~SSL support~~
 * more responsive design
 * add noindex tag to hide private pages
   * https://www.link-assistant.com/news/hiding-pages-from-indexation.html
+* mobile compatibility
+  * rich_text overflow (open Ubuntu page with mobile screen)
+  * home page background issue (only on real mobile phone with corners, e.g. iPhone 12)

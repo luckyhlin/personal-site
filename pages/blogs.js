@@ -7,7 +7,7 @@ const databaseID = process.env.NOTION_DATABASE_ID
 
 export default function Blogs({ pages }) {
     return (
-        <Layout>
+        <Layout title="Blogs">
             <div className={styles.postSummaryContainer}>
                     <span className={styles.postSummaryHeading}>
                         Blogs.
