@@ -9,7 +9,7 @@ import Name from "./name";
 import FootageText from "./footage-text";
 
 // parameter home is not used anymore, home page has its own layout
-export default function Layout({ title, useComment, children, home }) {
+export default function Layout({ title, useComment, children, home, isPrivate }) {
     return (
         <div className={styles.container}>
             <Head>
@@ -18,6 +18,9 @@ export default function Layout({ title, useComment, children, home }) {
                 {/*    name="description"*/}
                 {/*    content="A demo of my personal site"*/}
                 {/*/>*/}
+                { isPrivate &&
+                    <meta name="robots" content="noindex, nofollow"/>
+                }
                 <meta property="og:title" content={title}/>
                 <title>{title}</title>
                 <link rel="shortcut icon" href="/images/jager.jpeg"/>
