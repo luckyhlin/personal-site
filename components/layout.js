@@ -6,14 +6,14 @@ import Link from "next/link";
 import Giscus from "@giscus/react";
 import Navigation from "./navigation";
 import Name from "./name";
-import FootageText from "./footageText";
+import FootageText from "./footage-text";
 
 // parameter home is not used anymore, home page has its own layout
 export default function Layout({ title, useComment, children, home }) {
     return (
         <div className={styles.container}>
             <Head>
-                {/* TODO: modify the content of the `name` meta tag, as it will display on Github Discussion */}
+                {/* TODO: modify the content of the `name` meta tag, as it will display on GitHub Discussion */}
                 {/*<meta*/}
                 {/*    name="description"*/}
                 {/*    content="A demo of my personal site"*/}

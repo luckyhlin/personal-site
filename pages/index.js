@@ -1,19 +1,13 @@
 import Link from "next/link";
-import Image from "next/image";
-import Head from "next/head";
-import utilStyles from "../styles/utils.module.css";
 import styles from "../styles/home.module.scss";
-import {getDatabase} from "../lib/notion";
-import BlogSummary from "../components/blog-summary";
 import Description from "../components/description";
 import Navigation from "../components/navigation";
-import UpdatedAt from "../components/updatedAt";
 import Name from "../components/name.js";
-import FootageText from "../components/footageText";
+import FootageText from "../components/footage-text";
 
 // const databaseID = process.env.NOTION_DATABASE_ID
 
-export default function HomePage({pages}) {
+export default function HomePage() {
     return (
         <div className={styles.bgContainer}>
             <div className={styles.mainContainer}>

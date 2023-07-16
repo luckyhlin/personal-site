@@ -18,7 +18,7 @@ export default function Description() {
                                 {/*            </span> for a year.*/}
                 </span>
                 <span className={styles.headingTextDescription}>
-                    I will pursue a master's degree in computer science at <span
+                    I will pursue a master's degree in computer science at the <span
                     className={styles.textInlineBox}>
                         <Link href="https://www.wisc.edu/">
                             <a className={[styles.textLink, styles.textLinkColor].join(" ")}>University of Wisconsin–Madison</a>
