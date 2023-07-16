@@ -18,9 +18,9 @@ export default function Layout({ title, useComment, children, home, isPrivate })
                 {/*    name="description"*/}
                 {/*    content="A demo of my personal site"*/}
                 {/*/>*/}
-                { isPrivate &&
-                    <meta name="robots" content="noindex, nofollow"/>
-                }
+                {/*{ isPrivate &&*/}
+                {/*    <meta name="robots" content="noindex, nofollow"/>*/}
+                {/*}*/}
                 <meta property="og:title" content={title}/>
                 <title>{title}</title>
                 <link rel="shortcut icon" href="/images/jager.jpeg"/>
