@@ -118,7 +118,7 @@ export default function Layout({ title, useComment, children, home, isPrivate })
             {/*    async*/}
             {/*/>*/}
             <footer className={styles.footer}>
-                <FootageText isPrivate={true}/>
+                <FootageText isPrivate={isPrivate}/>
             </footer>
         </div>
     );
