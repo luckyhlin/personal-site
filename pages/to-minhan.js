@@ -4,7 +4,7 @@ import * as util from "util";
 import styles from "../styles/blogs.module.css"
 import Blocks from "../components/blocks";
 
-export default function PrivateName({title, blocks}) {
+export default function ToMinhan({title, blocks}) {
     return (
         <Layout title={title} useComment={false} isPrivate={true}>
             <h1 id={title} className={styles.postTitle}>
@@ -15,22 +15,23 @@ export default function PrivateName({title, blocks}) {
     )
 }
 
-export async function getStaticPaths() {
-    const pages = await getDatabase(process.env.NOTION_DATABASE_ID, null, true)
-    return {
-        paths: pages.map((page) => {
-            return {
-                params: {
-                    privateName: page.name
-                }
-            }
-        }),
-        fallback: false
-    }
-}
+// export async function getStaticPaths() {
+//     const pages = await getDatabase(process.env.NOTION_DATABASE_ID, null, true)
+//     return {
+//         paths: pages.map((page) => {
+//             return {
+//                 params: {
+//                     privateName: page.name
+//                 }
+//             }
+//         }),
+//         fallback: false
+//     }
+// }
 
-export async function getStaticProps({ params }) {
-    const { privateName: pageName } = params
+export async function getStaticProps({ }) {
+    // const { privateName: pageName } = params
+    const pageName = 'to-minhan';
     const pages = await getDatabase(process.env.NOTION_DATABASE_ID, null, true)
     const pageID = pages.find((page) =>
         page.name === pageName

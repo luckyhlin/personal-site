@@ -53,14 +53,16 @@ export default function Layout({ title, useComment, children, home, isPrivate })
                             />
                             </a>
                         </Link>
-                        <h2 className={utilStyles.headingLg}>
-                            <Link href="/">
-                                <a className={[
-                                    utilStyles.colorInherit,
-                                    styles.titleFont
-                                ].join(" ")}>{"💕 "+Name()+" 💗"}</a>
-                            </Link>
-                        </h2>
+                        {!isPrivate &&
+                            <h2 className={utilStyles.headingLg}>
+                                <Link href="/">
+                                    <a className={[
+                                        utilStyles.colorInherit,
+                                        styles.titleFont
+                                    ].join(" ")}>{"💕 " + Name() + " 💗"}</a>
+                                </Link>
+                            </h2>
+                        }
                     </>
                 )}
             </header>
@@ -116,7 +118,7 @@ export default function Layout({ title, useComment, children, home, isPrivate })
             {/*    async*/}
             {/*/>*/}
             <footer className={styles.footer}>
-                <FootageText/>
+                <FootageText isPrivate={true}/>
             </footer>
         </div>
     );

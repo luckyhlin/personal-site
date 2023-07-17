@@ -3,18 +3,31 @@ import Name from "./name";
 import Link from "next/link";
 import styles from "./footage-text.module.scss";
 
-export default function FootageText({ isHome }) {
+export default function FootageText({ isHome, isPrivate }) {
     return (
         <>
-            built by <Name/> with <Link href="/about#Love">
+            { isPrivate ? <>
+                    <div>
+                        Yours,
+                    </div>
+                    Sincerely written by <Link href="/about#Love">
+                    <a className={styles.footageDynamicText}>
+                        <Name/>
+                    </a>
+                    </Link>
+            </>
+            : <>
+                built by <Name/> with <Link href="/about#Love">
                 <a className={
                     // lightColor ? styles.lightFootageColor : styles.darkFootageColor}>
                     isHome ? styles.footageRainbowText : styles.footageDynamicText
                 }>
-                Love
+                    Love
                 </a>
-            </Link>
-            <UpdatedAt lightColor={isHome}/>
+                </Link>
+                <UpdatedAt lightColor={isHome}/>
+            </>
+            }
         </>
     )
 }
