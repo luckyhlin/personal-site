@@ -45,7 +45,7 @@ export default function About() {
                 </div>
                 <h1 className={styles.aboutHeading}>Interest</h1>
                 <div className={styles.aboutParagraph}>
-                    My current academic interest lies in computer systems and K-12 education, while my previous experiences, though may preliminary, varies among many fields,
+                    My current academic interest lies in computer systems and K-12 education, while my previous experiences, though preliminary, cover many fields,
                     including:
                     <ul className={styles.aboutList}>
                         <li>web development (specifically backend & algorithm engineering),</li>
@@ -73,7 +73,7 @@ export default function About() {
                 </div>
                 <h1 className={styles.aboutHeading} id="Motivation">Motivation</h1>
                 <div className={styles.aboutParagraph}>
-                    I have learned programming since primary school, whereas most of my time focused on algorithms instead of applications (e.g. web programming).
+                    I have learned programming since primary school, whereas I focused mostly on algorithms instead of applications (e.g. web programming).
                     Therefore, due in part to my laziness, handcrafting a site was always an unaccomplished goal for me.
                 </div>
                 <div className={styles.aboutParagraph}>
