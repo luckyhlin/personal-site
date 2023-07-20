@@ -94,6 +94,7 @@
 
 .headingTextPrimary {
   font-family: "Pacifico", cursive;
+  padding-left: 5px;
   letter-spacing: 3px;
   display: inline-block;
   font-size: 72px;

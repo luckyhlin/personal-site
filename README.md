@@ -18,7 +18,7 @@ Here are the supported blocks so far:
 
 ---
 TODO:
-
+* remove to-minhan's relevant info from code (but keep the url)
 * ~~home page redesign~~
   * ~~bottom padding (open with mobile screen)~~
   * ~~blog button redesign~~
