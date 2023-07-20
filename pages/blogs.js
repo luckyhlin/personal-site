@@ -9,9 +9,12 @@ export default function Blogs({ pages }) {
     return (
         <Layout title="Blogs">
             <div className={styles.postSummaryContainer}>
-                    <span className={styles.postSummaryHeading}>
-                        Blogs.
-                    </span>
+                <span className={styles.postSummaryHeading}>
+                    Blogs.
+                </span>
+                <span className={styles.postSentenceHeading}>
+                    Admit one's ignorance
+                </span>
                 {!!pages && pages.map((page) => (
                         <BlogSummary page={page}/>
                     )

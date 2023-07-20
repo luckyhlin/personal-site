@@ -1,28 +1,39 @@
 import Layout from "../components/layout";
-import styles from "../styles/about.module.scss"
-import descriptionStyles from "../components/description.module.scss"
+import styles from "../styles/about.module.scss";
+import blockStyles from "../components/blocks.module.css";
+import richTextStyles from "../components/rich-text.module.css";
+import descriptionStyles from "../components/description.module.scss";
 import Link from "next/link";
 import Name from "../components/name";
 
 export default function About() {
     let title = "About " + Name()
     return (
-        <Layout title={title} useComment={true}>
+        <Layout title={title} useComment={true}
+                description={"Hi, this is Lin, a cute and genuine guy with passion & love!"}>
 
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutIntroParagraph}>
-                    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>cute</span> and genuine young man who grew up in China.
+                    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>cute</span> and
+                    genuine guy with passion & <Link href="#Love">
+                    <a className={styles.aboutRainbowText}>love!</a></Link>
                 </div>
-                <div className={styles.aboutParagraph}>
-                    Welcome to my site! It focuses mostly on technical blogs at present, written in a blend of
-                    English (in the majority), Simplified Chinese (简体中文) and Traditional Chinese (繁體中文).
+                <div className={styles.aboutParagraph} style={
+                    { marginLeft: 0 }
+                }>
+                    Welcome to my site! It is written in a blend of
+                    English, 简体 & 繁體中文, depending on MY preference.
                 </div>
-                <h1 className={styles.aboutHeading}>Education & Career</h1>
+                <span className={styles.aboutRainbowText}
+                      id="Love" style={{fontSize: "130%"}}>
+                    Thanks to my beloved family, sincere friends & girls I liked ◍•ᴗ•◍
+                    </span>
+                <h1 className={styles.aboutHeading}>🎓 Education & Career</h1>
                 <div className={styles.aboutParagraph}>
                     I am going to pursue my master's degree in computer science (MSCS) at the <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.wisc.edu/">
-                            <a className={[descriptionStyles.textLink].join(" ")}>University of Wisconsin–Madison</a>
+                            <a className={[descriptionStyles.textLink].join(" ")}>🇺🇸 University of Wisconsin–Madison</a>
                         </Link>
                     </span> (◍•ᴗ•◍)
                 </div>
@@ -31,7 +42,7 @@ export default function About() {
                     at <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.ji.sjtu.edu.cn/">
-                            <a className={[descriptionStyles.textLink].join(" ")}>Shanghai Jiao Tong University (UM-SJTU Joint Institute).</a>
+                            <a className={[descriptionStyles.textLink].join(" ")}>🇨🇳 Shanghai Jiao Tong University (UM-SJTU Joint Institute).</a>
                         </Link>
                     </span>
                 </div>
@@ -39,39 +50,44 @@ export default function About() {
                     After bachelor's graduation, I worked at <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.www.bytedance.com/en/">
-                            <a className={[descriptionStyles.textLink].join(" ")}>ByteDance</a>
+                            <a className={[descriptionStyles.textLink].join(" ")}>💙 ByteDance</a>
                         </Link>
                     </span> for a year as an SDE, and then took a gap (now reaching the end of this gap year).
                 </div>
-                <h1 className={styles.aboutHeading}>Interest</h1>
-                <div className={styles.aboutParagraph}>
-                    My current academic interest lies in computer systems and K-12 education, while my previous experiences, though preliminary, cover many fields,
-                    including:
+                <h1 className={styles.aboutHeading}>😆 Interest</h1>
+                <details className={blockStyles.blockToggle}>
+                    <summary className={blockStyles.blockToggleSummary}>
+                        My current academic interest lies in <span className={richTextStyles.code}>computer systems</span>
+                        , while my previous experiences, though may be preliminary, cover many fields (Click 🖱️ to see more)
+                    </summary>
                     <ul className={styles.aboutList}>
-                        <li>web development (specifically backend & algorithm engineering),</li>
-                        <li>artificial intelligence (specifically deep reinforcement learning),</li>
-                        <li>mechatronics (such as robots, food 3D printers, quadcopter drones & ECG),</li>
-                        <li>computer science education for K-12 students,</li>
-                        <li>mathematics (such as mathematical analysis with honors, discrete math, bayesian analysis & BEM),</li>
+                        <li>web development (frontend, backend & algorithm engineering),</li>
+                        <li>artificial intelligence (reinforcement learning),</li>
+                        <li>CS education for K-12 students,</li>
+                        <li>mathematics,</li>
+                        <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>
                         <li>many other EECS fields (such as computer architecture, game programming & semiconductor),</li>
-                        <li>and competitive programming (i.e. data structure & algorithm contests, specifically NOIP & NOI winter camp).</li>
+                        <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP & NOI winter camp).</li>
                     </ul>
-                </div>
-                <div className={styles.aboutParagraph}>
-                    Apart from academics, I am embracing the diversity and beauty of life through for instance:
+                </details>
+                <details className={blockStyles.blockToggle}>
+                    <summary className={blockStyles.blockToggleSummary}>
+                        Also, I embrace the diversity and beauty of life through a lot more activities
+                    </summary>
                     <ul className={styles.aboutList}>
-                        <li>lots of sports (specifically biking, soccer, eight-ball pool, badminton, table tennis, tennis & frisbee)</li>
-                        <li>gaming (a HUGE fan of FPS games)</li>
-                        <li>music (I mean listening to music LOL)</li>
-                        <li>art gallery</li>
-                        <li>traveling (prefer natural scenery)</li>
-                        <li>movies & TV dramas</li>
-                        <li>video clipping & photography</li>
+                        <li>⚽ sports (biking, soccer, eight-ball pool, badminton, table tennis, tennis & frisbee)</li>
+                        <li>🎮 gaming (a HUGE fan of multi-player FPS 🔫 games): APEX, 彩虹六号 (R6), CS:GO, 战地 (Battlefield 1 & 5),
+                            OverWatch, Insurgency, Division 2, CoD (Single Player only)<br/>Look for time & teammates!
+                        </li>
+                        <li>⛰️ traveling (prefer natural scenery)</li>
                     </ul>
-                    and <span className={styles.aboutRainbowText}
-                              id="Love" style={{fontSize: "130%"}}>staying with family, friends & her ◍•ᴗ•◍</span>
-                </div>
-                <h1 className={styles.aboutHeading} id="Motivation">Motivation</h1>
+                    and MORE 😂
+                </details>
+                <h1 className={styles.aboutHeading} id="Motivation">🚀 Motivation</h1>
+                <details className={blockStyles.blockToggle}>
+                    <summary className={blockStyles.blockToggleSummary}>
+                        A long story behind the construction of this site
+                    </summary>
                 <div className={styles.aboutParagraph}>
                     I have learned programming since primary school, whereas I focused mostly on algorithms instead of applications (e.g. web programming).
                     Therefore, due in part to my laziness, handcrafting a site was always an unaccomplished goal for me.
@@ -83,21 +99,24 @@ export default function About() {
                     can be my content management system (CMS).
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Therefore, this site is powered by Next.js as SSG frontend framework, Notion official API,
-                    Notion as CMS, Vercel as site host, giscus as comment system, Namecheap as domain registration, GitHub as repo host, and the open source community.
+                    Therefore, this site is powered by Next.js as an SSG frontend framework, Notion official API,
+                    Notion as CMS, Vercel as site host, giscus as comment system, Namecheap as domain registration, GitHub as repo host, and the open source community. 🤟
                 </div>
+                </details>
                 <div className={styles.aboutParagraph} id="Love ❤">
                     Importantly, this site is built with <span className={styles.aboutRainbowText}>Love ❤</span> for Computer Science and Engineering, with curiosity and passion towards the
                     infinite amount of arousing knowledge, with support from family and friends, and with the pursuit of self-consistency (自洽).
                 </div>
-                <h1 className={styles.aboutHeading}>Contact</h1>
+                <h1 className={styles.aboutHeading}>📞 Contact</h1>
                 To know more about me, you are free to check my <Link href="/resume.pdf">
-                    <a>resume</a>
-                </Link>, drop me an <Link href="mailto:jimmylinh@icloud.com">
-                    <a>email</a>
-                </Link>, or follow my <Link href="https://github.com/jimmylin99">
-                    <a>GitHub</a>
-                </Link>.
+                    <a>📄 resume</a>
+                </Link>. Also, feel free to drop me an <Link href="mailto:jimmylinh@icloud.com">
+                    <a>📧 email</a>
+                </Link>
+                {/*, or follow my <Link href="https://github.com/jimmylin99">*/}
+                {/*    <a>GitHub</a>*/}
+                {/*</Link>*/}
+                .
                 <div className={styles.aboutParagraph}>
                 You are also welcome to leave comments or add emoji below with a signed-in GitHub account.
                 </div>

@@ -9,7 +9,7 @@ import Name from "./name";
 import FootageText from "./footage-text";
 
 // parameter home is not used anymore, home page has its own layout
-export default function Layout({ title, useComment, children, home, isPrivate }) {
+export default function Layout({ title, useComment, description, children, home, isPrivate }) {
     return (
         <div className={styles.container}>
             <Head>
@@ -21,6 +21,12 @@ export default function Layout({ title, useComment, children, home, isPrivate })
                 {/*{ isPrivate &&*/}
                 {/*    <meta name="robots" content="noindex, nofollow"/>*/}
                 {/*}*/}
+                { description &&
+                <meta
+                    name="description"
+                    content={description}
+                />
+                }
                 <meta property="og:title" content={title}/>
                 <title>{title}</title>
                 <link rel="shortcut icon" href="/images/jager.jpeg"/>
@@ -30,7 +36,7 @@ export default function Layout({ title, useComment, children, home, isPrivate })
                     <>
                         <Image
                             priority
-                            src="/images/jager.jpeg"
+                            src="/images/lin.jpeg"
                             className={utilStyles.borderCircle}
                             height={108}
                             width={108}
@@ -45,10 +51,17 @@ export default function Layout({ title, useComment, children, home, isPrivate })
                             <a>
                             <Image
                                 priority
-                                src="/images/jager.jpeg"
+                                src="/images/lin.jpeg"
                                 className={utilStyles.borderCircle}
-                                height={108}
-                                width={108}
+                                style={
+                                    {
+                                        borderWidth: "5px",
+                                        borderStyle: "solid",
+                                        borderColor: "rgba(255, 255, 255, 0.5)"
+                                    }
+                                }
+                                height={144}
+                                width={144}
                                 alt={Name()}
                             />
                             </a>
@@ -75,7 +88,7 @@ export default function Layout({ title, useComment, children, home, isPrivate })
                 // </div>
                 <div className={styles.scrollToTop}>
                     <a onClick={scrollToTop}>
-                        Scroll to top
+                        ☝ Go to the top
                     </a>
                 </div>
             )}

@@ -1,3 +1,5 @@
+@import "../styles/animation.scss";
+
 .navigation {
   max-width: 50rem;
   margin-bottom: 1rem;
@@ -8,6 +10,7 @@
   a {
     padding: 10px 10px;
   }
+  text-decoration-line: overline;
 }
 
 .homeNavigation {
@@ -17,4 +20,12 @@
   a {
     color: white;
   }
+  text-decoration-line: overline;
+}
+
+.navDynamicText {
+  @include dynamicText;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: 600;
 }

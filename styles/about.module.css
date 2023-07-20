@@ -16,6 +16,14 @@
     opacity: 0;
   }
 }
+@keyframes rainbow {
+  0% {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 1024px;
+  }
+}
 .aboutContainer {
   animation: moveInLeft 2s;
 }
@@ -35,7 +43,23 @@
 }
 
 .aboutHeading {
+  margin-top: 20px;
   font-size: 32px;
+}
+@media (max-width: 768px) {
+  .aboutHeading {
+    font-size: 28px;
+  }
+}
+
+.aboutRainbowText {
+  font-family: "Pacifico", cursive;
+  font-size: 120%;
+  color: transparent;
+  background-image: linear-gradient(250deg, rgb(225, 171, 255), rgb(245, 0, 255), rgb(221, 122, 255), rgb(241, 131, 160));
+  animation: rainbow 64s linear infinite;
+  background-size: 60% 100%;
+  -webkit-background-clip: text;
 }
 
 /*# sourceMappingURL=about.module.css.map */

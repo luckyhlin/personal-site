@@ -20,7 +20,11 @@
 }
 
 .aboutHeading {
+    margin-top: 20px;
     font-size: 32px;
+    @media (max-width: 768px) {
+        font-size: 28px;
+    }
 }
 
 .aboutRainbowText {

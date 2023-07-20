@@ -16,6 +16,14 @@
     opacity: 0;
   }
 }
+@keyframes rainbow {
+  0% {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 1024px;
+  }
+}
 @keyframes gradient {
   0% {
     background-position: 0 0;
@@ -40,7 +48,7 @@
 /*}*/
 .bgContainer {
   overflow: auto;
-  background-image: linear-gradient(to right bottom, #5227dc, #e73cc5, #0a98cc, #0070f3);
+  background-image: linear-gradient(to right bottom, rgba(163, 147, 231, 0.7), rgba(248, 106, 211, 0.7), rgba(179, 98, 255, 0.7), rgba(239, 146, 245, 0.7));
   background-size: 200% 200%;
   background-position: 100% 100%;
   animation: gradient 15s ease infinite;
@@ -69,13 +77,13 @@
 }
 @media (max-width: 768px) {
   .mainContainer {
-    width: 85%;
+    width: 86%;
   }
 }
 
 .headingTextBox {
   margin-top: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 @media (max-width: 768px) {
   .headingTextBox {
@@ -84,14 +92,16 @@
 }
 
 .headingTextPrimary {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
   display: inline-block;
-  font-size: 60px;
+  font-size: 72px;
   color: rgb(255, 255, 255);
   animation: moveInLeft 2s;
 }
 @media (max-width: 768px) {
   .headingTextPrimary {
-    font-size: 48px;
+    font-size: 60px;
   }
 }
 
@@ -101,9 +111,17 @@
 
 .postSummaryHeading {
   /*margin-left: 10px;*/
+  font-family: "Pacifico", cursive;
   display: block;
   color: rgb(70, 70, 70);
   font-size: 50px;
+}
+
+.postSentenceHeading {
+  font-family: "Pacifico", cursive;
+  display: block;
+  font-size: 24px;
+  margin: 1rem 0;
 }
 
 .updatedAtContainer {

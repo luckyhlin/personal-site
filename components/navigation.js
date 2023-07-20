@@ -10,19 +10,19 @@ export default function Navigation({ isHome }) {
         }>
             { !isHome &&
                 <Link href="/">
-                    <a>
+                    <a className={styles.navDynamicText}>
                         Home
                     </a>
                 </Link>
             }
-            <Link href="/blogs">
-                <a>
-                    Blogs
-                </a>
-            </Link>
             <Link href="/about">
                 <a>
                     About
+                </a>
+            </Link>
+            <Link href="/blogs">
+                <a>
+                    Blogs
                 </a>
             </Link>
             <Link href="/resume.pdf">
