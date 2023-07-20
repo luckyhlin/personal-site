@@ -16,8 +16,8 @@
 
 .code {
     color: saddlebrown;
-    padding: 0.2em 0.4em;
+    padding: 0.2em 0.2em;
     border-radius: 3px;
-    background-color: darksalmon;
+    background-color: rgba(233, 150, 122, 0.5);
     font-family: monospace;
 }

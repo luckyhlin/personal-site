@@ -1,7 +1,7 @@
 import {getBlocks, getDatabase, getPageTitle} from "../../lib/notion";
 import Layout from "../../components/layout";
 import * as util from "util";
-import styles from "../../styles/blogs.module.css"
+import styles from "../../styles/blogs.module.scss"
 import Blocks from "../../components/blocks";
 
 export default function Post({title, blocks}) {
