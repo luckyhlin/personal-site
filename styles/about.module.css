@@ -45,6 +45,7 @@
 .aboutHeading {
   margin-top: 20px;
   font-size: 32px;
+  color: rgb(135, 138, 135);
 }
 @media (max-width: 768px) {
   .aboutHeading {

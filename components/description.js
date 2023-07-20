@@ -4,6 +4,11 @@ import Link from "next/link";
 export default function Description() {
     return (
         <>
+                <span className={styles.headingTextDescription} style={
+                    { fontSize: "140%" }
+                }>
+                    我是宇宙超级无敌可爱机智の<br/>🍑黃桃大罐頭💛
+                </span>
                 <span className={styles.headingTextDescription}>
                     I am now reaching the end of a gap year.
                                 {/*            after having both received my B.Eng from <span*/}
@@ -24,10 +29,6 @@ export default function Description() {
                             <a className={[styles.textLink, styles.textLinkColor].join(" ")}>University of Wisconsin–Madison</a>
                         </Link>
                     </span> starting this Fall (◍•ᴗ•◍)
-                </span>
-
-                <span className={styles.headingTextDescription}>
-                    黃桃罐頭很好吃哦~
                 </span>
                 {/*<span className={styles.headingTextDescription}>*/}
                 {/*    If necessary, reach me via <span className={styles.textInlineBox}>*/}

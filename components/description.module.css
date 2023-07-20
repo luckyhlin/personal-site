@@ -38,15 +38,16 @@
  */
 .headingTextDescription {
   display: block;
-  font-size: 28px;
+  font-weight: 600;
+  font-size: 32px;
   margin-top: 28px;
-  color: #e0ffe0;
+  color: #ffffff;
   position: relative;
   animation: moveInRight 2s;
 }
 @media (max-width: 768px) {
   .headingTextDescription {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -68,7 +69,7 @@
 
 .textInlineBox {
   display: inline-block;
-  background: rgba(169, 169, 169, 0.2);
+  background: rgba(201, 201, 201, 0.2);
   padding: 0 10px;
   margin: 0 -4px;
 }

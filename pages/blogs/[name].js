@@ -6,7 +6,7 @@ import Blocks from "../../components/blocks";
 
 export default function Post({title, blocks}) {
     return (
-        <Layout title={title} useComment={true}>
+        <Layout title={title} useComment={true} pageType="isBlogs">
             <h1 id={title} className={styles.postTitle}>
                 {title}
             </h1>

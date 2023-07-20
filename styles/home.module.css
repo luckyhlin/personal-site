@@ -77,7 +77,8 @@
 }
 @media (max-width: 768px) {
   .mainContainer {
-    width: 86%;
+    margin-left: 8%;
+    width: 88%;
   }
 }
 

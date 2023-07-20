@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./navigation.module.css";
 
-export default function Navigation({ isHome }) {
+export default function Navigation({ isHome, isAbout, isBlogs }) {
     return (
         <nav className={[
             styles.navigation,
@@ -10,20 +10,20 @@ export default function Navigation({ isHome }) {
         }>
             { !isHome &&
                 <Link href="/">
-                    <a className={styles.navDynamicText}>
+                    <a>
                         Home
                     </a>
                 </Link>
             }
             <Link href="/about">
-                <a>
-                    About
-                </a>
+                { isAbout ? <a className={styles.navDynamicText}>About</a> :
+                    <a>About</a>
+                }
             </Link>
             <Link href="/blogs">
-                <a>
-                    Blogs
-                </a>
+                { isBlogs ? <a className={styles.navDynamicText}>Blogs</a> :
+                    <a>Blogs</a>
+                }
             </Link>
             <Link href="/resume.pdf">
                 <a>Resume</a>

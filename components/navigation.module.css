@@ -30,7 +30,6 @@
   overflow: hidden;
   display: inline-block;
   text-align: center;
-  text-decoration-line: overline;
 }
 .navigation a {
   padding: 10px 10px;
@@ -56,7 +55,7 @@
   -webkit-background-clip: text;
   font-family: inherit;
   font-size: 100%;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=navigation.module.css.map */

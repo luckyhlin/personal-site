@@ -7,14 +7,18 @@ const databaseID = process.env.NOTION_DATABASE_ID
 
 export default function Blogs({ pages }) {
     return (
-        <Layout title="Blogs">
+        <Layout title="Blogs" pageType="isBlogs">
             <div className={styles.postSummaryContainer}>
                 <span className={styles.postSummaryHeading}>
                     Blogs.
                 </span>
                 <span className={styles.postSentenceHeading}>
-                    Admit one's ignorance
+                    Admit one's ignorance.
                 </span>
+                At present, I focus on technical blogs.
+                {/*<span className={styles.postSentenceHeading}>*/}
+                {/*    Learn to say: I don't know.*/}
+                {/*</span>*/}
                 {!!pages && pages.map((page) => (
                         <BlogSummary page={page}/>
                     )

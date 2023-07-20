@@ -10,7 +10,6 @@
   a {
     padding: 10px 10px;
   }
-  text-decoration-line: overline;
 }
 
 .homeNavigation {
@@ -27,5 +26,5 @@
   @include dynamicText;
   font-family: inherit;
   font-size: 100%;
-  font-weight: 600;
+  font-weight: 700;
 }

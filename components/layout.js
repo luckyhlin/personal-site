@@ -9,7 +9,7 @@ import Name from "./name";
 import FootageText from "./footage-text";
 
 // parameter home is not used anymore, home page has its own layout
-export default function Layout({ title, useComment, description, children, home, isPrivate }) {
+export default function Layout({ title, useComment, description, children, home, pageType, isPrivate }) {
     return (
         <div className={styles.container}>
             <Head>
@@ -46,22 +46,15 @@ export default function Layout({ title, useComment, description, children, home,
                     </>
                 ) : (
                     <>
-                        <Navigation/>
+                        <Navigation isAbout={pageType === 'isAbout'} isBlogs={pageType === 'isBlogs'}/>
                         <Link href="/">
                             <a>
                             <Image
                                 priority
                                 src="/images/lin.jpeg"
                                 className={utilStyles.borderCircle}
-                                style={
-                                    {
-                                        borderWidth: "5px",
-                                        borderStyle: "solid",
-                                        borderColor: "rgba(255, 255, 255, 0.5)"
-                                    }
-                                }
-                                height={144}
-                                width={144}
+                                height={108}
+                                width={108}
                                 alt={Name()}
                             />
                             </a>
@@ -106,7 +99,7 @@ export default function Layout({ title, useComment, description, children, home,
                     inputPosition="top"
                     theme="light"
                     lang="en"
-                    loading="lazy"
+                    loading="eager"
                 />
             )}
             {/*{!!useComment && (*/}

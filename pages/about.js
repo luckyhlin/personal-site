@@ -9,7 +9,7 @@ import Name from "../components/name";
 export default function About() {
     let title = "About " + Name()
     return (
-        <Layout title={title} useComment={true}
+        <Layout title={title} useComment={true} pageType="isAbout"
                 description={"Hi, this is Lin, a cute and genuine guy with passion & love!"}>
 
             <div className={styles.aboutContainer}>
@@ -19,15 +19,26 @@ export default function About() {
                     <a className={styles.aboutRainbowText}>love!</a></Link>
                 </div>
                 <div className={styles.aboutParagraph} style={
-                    { marginLeft: 0 }
+                    { marginLeft: 0}
                 }>
                     Welcome to my site! It is written in a blend of
                     English, 简体 & 繁體中文, depending on MY preference.
                 </div>
-                <span className={styles.aboutRainbowText}
-                      id="Love" style={{fontSize: "130%"}}>
-                    Thanks to my beloved family, sincere friends & girls I liked ◍•ᴗ•◍
-                    </span>
+                <div className={styles.aboutRainbowText}
+                     id="Love"
+                     style={{
+                         fontSize: "130%",
+                         paddingBottom: "5px",
+                         lineHeight: "160%",
+                    }
+                }>
+                    Thanks to my beloved FAMILY,<br/>
+                    super sincere warm FRIENDS,<br/>
+                    nice teachers who guided me &<br/>
+                    ❤ kind-hearted ❤ girls who made my heart flutter ◍•ᴗ•◍
+                    <br/>LOVE YOU ALL!!!
+                </div>
+
                 <h1 className={styles.aboutHeading}>🎓 Education & Career</h1>
                 <div className={styles.aboutParagraph}>
                     I am going to pursue my master's degree in computer science (MSCS) at the <span
@@ -57,8 +68,10 @@ export default function About() {
                 <h1 className={styles.aboutHeading}>😆 Interest</h1>
                 <details className={blockStyles.blockToggle}>
                     <summary className={blockStyles.blockToggleSummary}>
-                        My current academic interest lies in <span className={richTextStyles.code}>computer systems</span>
-                        , while my previous experiences, though may be preliminary, cover many fields (Click 🖱️ to see more)
+                        My current academic interest lies in <span className={richTextStyles.code}>
+                            computer systems
+                        </span>, while my previous experiences,
+                        though may be preliminary, cover many fields (Click 🖱️ to see more)
                     </summary>
                     <ul className={styles.aboutList}>
                         <li>web development (frontend, backend & algorithm engineering),</li>
@@ -75,15 +88,17 @@ export default function About() {
                         Also, I embrace the diversity and beauty of life through a lot more activities
                     </summary>
                     <ul className={styles.aboutList}>
-                        <li>⚽ sports (biking, soccer, eight-ball pool, badminton, table tennis, tennis & frisbee)</li>
+                        <li>⚽ sports (biking, soccer, eight-ball pool, badminton, table tennis, tennis & frisbee)
+                        我是运动小天才！
+                        </li>
                         <li>🎮 gaming (a HUGE fan of multi-player FPS 🔫 games): APEX, 彩虹六号 (R6), CS:GO, 战地 (Battlefield 1 & 5),
-                            OverWatch, Insurgency, Division 2, CoD (Single Player only)<br/>Look for time & teammates!
+                            OverWatch, Insurgency, Division 2, CoD (single player only)<br/>Look for time & teammates! 😎
                         </li>
                         <li>⛰️ traveling (prefer natural scenery)</li>
                     </ul>
                     and MORE 😂
                 </details>
-                <h1 className={styles.aboutHeading} id="Motivation">🚀 Motivation</h1>
+                <h1 className={styles.aboutHeading} id="Motivation">🚆 Motivation</h1>
                 <details className={blockStyles.blockToggle}>
                     <summary className={blockStyles.blockToggleSummary}>
                         A long story behind the construction of this site
