@@ -1,0 +1,11 @@
+.postTitle {
+  font-size: 2.2rem;
+  margin: 20px 0;
+}
+@media (max-width: 768px) {
+  .postTitle {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=blogs.module.css.map */
