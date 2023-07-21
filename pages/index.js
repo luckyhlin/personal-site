@@ -15,6 +15,10 @@ export default function HomePage() {
             <Head>
                 <meta property="og:title" content={title}/>
                 <title>{title}</title>
+                <meta
+                    name="description"
+                    content="我是宇宙超级无敌可爱机智の🍑黃桃大罐頭💛"
+                />
             </Head>
             <div className={styles.mainContainer}>
                 <Navigation isHome={true}/>

@@ -24,36 +24,15 @@
     background-position-x: 1024px;
   }
 }
-.aboutContainer {
-  animation: moveInLeft 2s;
+.lightFootageColor {
+  color: rgba(255, 255, 0, 0.8);
 }
 
-.aboutParagraph {
-  margin: 10px;
-  font-size: 18px;
+.darkFootageColor {
+  color: rgba(255, 150, 0, 0.8);
 }
 
-.aboutIntroParagraph {
-  margin: 10px 0 10px 0;
-  font-size: 20px;
-}
-
-.aboutList {
-  margin-left: 20px;
-}
-
-.aboutHeading {
-  margin-top: 20px;
-  font-size: 32px;
-  color: rgb(135, 138, 135);
-}
-@media (max-width: 768px) {
-  .aboutHeading {
-    font-size: 28px;
-  }
-}
-
-.aboutRainbowText {
+.footageDynamicText {
   font-family: "Pacifico", cursive;
   font-size: 120%;
   color: transparent;
@@ -62,6 +41,19 @@
   background-size: 60% 100%;
   -webkit-background-clip: text;
   padding: 1px;
+  animation: rainbow 120s linear infinite;
 }
 
-/*# sourceMappingURL=about.module.css.map */
+.footageRainbowText {
+  font-family: "Pacifico", cursive;
+  font-size: 120%;
+  color: transparent;
+  background-image: linear-gradient(250deg, rgb(225, 171, 255), rgb(245, 0, 255), rgb(221, 122, 255), rgb(241, 131, 160));
+  animation: rainbow 64s linear infinite;
+  background-size: 60% 100%;
+  -webkit-background-clip: text;
+  padding: 1px;
+  animation: rainbow 120s linear infinite;
+}
+
+/*# sourceMappingURL=footage-text.module.css.map */

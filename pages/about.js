@@ -34,14 +34,14 @@ export default function About() {
                 }>
                     Thanks to my beloved FAMILY,<br/>
                     super sincere warm FRIENDS,<br/>
-                    nice teachers who guided me &<br/>
-                    ❤ kind-hearted ❤ girls who made my heart flutter ◍•ᴗ•◍
+                    nice teachers who guided me,<br/>
+                    ❤ kind-hearted girls & my first love (the 'white moonlight') ❤ who made my heart flutter ◍•ᴗ•◍
                     <br/>LOVE YOU ALL!!!
                 </div>
 
                 <h1 className={styles.aboutHeading}>🎓 Education & Career</h1>
                 <div className={styles.aboutParagraph}>
-                    I am going to pursue my master's degree in computer science (MSCS) at the <span
+                    I will pursue my master's degree in computer science (MSCS) at the <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.wisc.edu/">
                             <a className={[descriptionStyles.textLink].join(" ")}>🇺🇸 University of Wisconsin–Madison</a>

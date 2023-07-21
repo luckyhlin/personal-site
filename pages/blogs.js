@@ -15,7 +15,7 @@ export default function Blogs({ pages }) {
                 <span className={styles.postSentenceHeading}>
                     Admit one's ignorance.
                 </span>
-                At present, I focus on technical blogs.
+                At present, I focus on technical blogs. Hope to update regularly.
                 {/*<span className={styles.postSentenceHeading}>*/}
                 {/*    Learn to say: I don't know.*/}
                 {/*</span>*/}

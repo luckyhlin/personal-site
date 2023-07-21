@@ -18,9 +18,9 @@ export default function Layout({ title, useComment, description, children, home,
                 {/*    name="description"*/}
                 {/*    content="A demo of my personal site"*/}
                 {/*/>*/}
-                {/*{ isPrivate &&*/}
-                {/*    <meta name="robots" content="noindex, nofollow"/>*/}
-                {/*}*/}
+                { isPrivate &&
+                    <meta name="robots" content="noindex, nofollow"/>
+                }
                 { description &&
                 <meta
                     name="description"

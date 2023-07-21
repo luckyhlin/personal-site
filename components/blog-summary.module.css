@@ -42,16 +42,16 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background: rgba(104, 168, 255, 0.87);
+    background: rgba(104, 168, 255, 0.3);
     opacity: 0;
     transition: all 0.5s;
   }
   .link:hover::after {
     /*transform: scale(1.5);*/
-    left: -20px;
-    top: -10px;
-    width: calc(100% + 40px);
-    height: calc(100% + 20px);
+    left: -10px;
+    top: -5px;
+    width: calc(100% + 20px);
+    height: calc(100% + 10px);
     opacity: 0.5;
     box-shadow: 0 5px 10px white;
   }

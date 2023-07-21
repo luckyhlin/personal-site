@@ -16,6 +16,14 @@
     opacity: 0;
   }
 }
+@keyframes rainbow {
+  0% {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 1024px;
+  }
+}
 .lightColor {
   color: rgba(255, 255, 255, 0.5);
 }

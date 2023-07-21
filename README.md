@@ -1,6 +1,6 @@
 ## Personal Site
 
-The site is built upon Next.js and based upon Notion as the CMS.
+The site is built upon Next.js and based upon Notion as the CMS. See my `about` page for details.
 
 Here are the supported blocks so far:
 
@@ -18,7 +18,6 @@ Here are the supported blocks so far:
 
 ---
 TODO:
-* remove to-minhan's relevant info from code (but keep the url)
 * ~~home page redesign~~
   * ~~bottom padding (open with mobile screen)~~
   * ~~blog button redesign~~
@@ -36,11 +35,17 @@ TODO:
 * DNS acceleration (to increase efficiency)
 * ~~new domain name~~
   * ~~SSL support~~
-* more responsive design
-* add noindex tag to hide private pages
-  * https://www.link-assistant.com/news/hiding-pages-from-indexation.html
+* ~~more responsive design~~
+* ~~add noindex tag to hide private pages~~
+  * ~~https://www.link-assistant.com/news/hiding-pages-from-indexation.html~~
+  * ~~robots.txt is added to reduce crawlers~~
 * mobile compatibility
   * rich_text overflow (open Ubuntu page with mobile screen)
   * home page background issue (only on real mobile phone with corners, e.g. iPhone 12)
 * large file acceleration
-* meta description tag
+* ~~meta description tag~~
+* support new blocks (e.g. video block)
+* add new features / components (e.g. gaming / music information synchronized display)
+
+### License
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
