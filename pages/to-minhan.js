@@ -7,7 +7,6 @@ import Blocks from "../components/blocks";
 export default function ToMinhan({title, blocks}) {
     return (
         <Layout title={title} useComment={false} isPrivate={true}>
-            This is a private page. No worry for your privacy leakage.
             <h1 id={title} className={styles.postTitle}>
                 {title}
             </h1>

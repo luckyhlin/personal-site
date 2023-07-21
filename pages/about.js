@@ -60,7 +60,7 @@ export default function About() {
                 <div className={styles.aboutParagraph}>
                     After bachelor's graduation, I worked at <span
                     className={descriptionStyles.textInlineBox}>
-                        <Link href="https://www.www.bytedance.com/en/">
+                        <Link href="https://www.bytedance.com/en/">
                             <a className={[descriptionStyles.textLink].join(" ")}>💙 ByteDance</a>
                         </Link>
                     </span> for a year as an SDE, and then took a gap (now reaching the end of this gap year).
