@@ -133,7 +133,10 @@ export default function About() {
                     <summary className={blockStyles.blockToggleSummary}>
                         Here is a list of friends who help the construction of this site!
                     </summary>
-                    <div className={styles.aboutParagraph}>han酱, cheng酱, ma老師, 梨酱, chi酱 &<br/>豆子💛</div>
+                    <div className={styles.aboutParagraph}>
+                        han酱, cheng酱, ma老師, 腿醬, 梨酱, chi酱 &
+                        豆子💛
+                    </div>
                     <div className={styles.aboutParagraph}>Thanks to 頷, who (passively) becomes the
                         catalyst towards the completion of this site💖</div>
                 </details>
