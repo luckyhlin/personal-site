@@ -59,7 +59,7 @@ export default function About() {
                         though may be preliminary, cover many fields (Click 🖱️ to see more)
                     </summary>
                     <ul className={styles.aboutList}>
-                        <li>CS education for K-12 students,</li>
+                        <li>CS education for K-12 students 🧒,</li>
                         <li>web development (frontend, backend & algorithm engineering),</li>
                         <li>artificial intelligence (reinforcement learning),</li>
                         <li>mathematics,</li>
@@ -121,7 +121,7 @@ export default function About() {
                 You are also welcome to leave comments or add emoji below with a signed-in GitHub account.
                 </div>
 
-                <h1 className={styles.aboutHeading} style={
+                <h1 className={styles.aboutHeading} id="Love" style={
                     { color: "rgba(225, 171, 255, 1)"}
                 }>😘 Acknowledgement</h1>
                 <details className={blockStyles.blockToggle} style={
@@ -133,12 +133,11 @@ export default function About() {
                     <summary className={blockStyles.blockToggleSummary}>
                         Here is a list of friends who help the construction of this site!
                     </summary>
-                    <div className={styles.aboutParagraph}>han酱, cheng酱, 梨酱, chi酱, 豆子💛</div>
+                    <div className={styles.aboutParagraph}>han酱, cheng酱, ma老師, 梨酱, chi酱 &<br/>豆子💛</div>
                     <div className={styles.aboutParagraph}>Thanks to 頷, who (passively) becomes the
                         catalyst towards the completion of this site💖</div>
                 </details>
                 <div className={styles.aboutRainbowText}
-                     id="Love"
                      style={{
                          fontSize: "130%",
                          paddingBottom: "5px",
