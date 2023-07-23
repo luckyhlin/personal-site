@@ -24,24 +24,9 @@ export default function About() {
                     Welcome to my site! It is written in a blend of
                     English, 简体 & 繁體中文, depending on MY preference.
                 </div>
-                <div className={styles.aboutRainbowText}
-                     id="Love"
-                     style={{
-                         fontSize: "130%",
-                         paddingBottom: "5px",
-                         lineHeight: "160%",
-                    }
-                }>
-                    Thanks to my beloved FAMILY,<br/>
-                    super sincere warm FRIENDS,<br/>
-                    nice teachers who guided me,<br/>
-                    ❤ kind-hearted girls & my first love (the 'white moonlight') ❤ who made my heart flutter ◍•ᴗ•◍
-                    <br/>LOVE YOU ALL!!!
-                </div>
-
                 <h1 className={styles.aboutHeading}>🎓 Education & Career</h1>
                 <div className={styles.aboutParagraph}>
-                    I will pursue my master's degree in computer science (MSCS) at the <span
+                    I will pursue my master of science degree in computer science (MSCS) at the <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.wisc.edu/">
                             <a className={[descriptionStyles.textLink].join(" ")}>🇺🇸 University of Wisconsin–Madison</a>
@@ -74,9 +59,9 @@ export default function About() {
                         though may be preliminary, cover many fields (Click 🖱️ to see more)
                     </summary>
                     <ul className={styles.aboutList}>
+                        <li>CS education for K-12 students,</li>
                         <li>web development (frontend, backend & algorithm engineering),</li>
                         <li>artificial intelligence (reinforcement learning),</li>
-                        <li>CS education for K-12 students,</li>
                         <li>mathematics,</li>
                         <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>
                         <li>many other EECS fields (such as computer architecture, game programming & semiconductor),</li>
@@ -104,7 +89,7 @@ export default function About() {
                         A long story behind the construction of this site
                     </summary>
                 <div className={styles.aboutParagraph}>
-                    I have learned programming since primary school, whereas I focused mostly on algorithms instead of applications (e.g. web programming).
+                    I have learned programming since primary school, whereas I focused mostly on algorithms instead of applications.
                     Therefore, due in part to my laziness, handcrafting a site was always an unaccomplished goal for me.
                 </div>
                 <div className={styles.aboutParagraph}>
@@ -114,13 +99,13 @@ export default function About() {
                     can be my content management system (CMS).
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Therefore, this site is powered by Next.js as an SSG frontend framework, Notion official API,
-                    Notion as CMS, Vercel as site host, giscus as comment system, Namecheap as domain registration, GitHub as repo host, and the open source community. 🤟
+                    Therefore, technically, this site is powered by Next.js as an SSG frontend framework, Notion official API,
+                    Notion as CMS, Vercel as site host, giscus as comment system, Cloudinary as image storage, Namecheap as domain registration, GitHub as repo host, and the open source community. 🤟
                 </div>
                 </details>
                 <div className={styles.aboutParagraph} id="Love ❤">
                     Importantly, this site is built with <span className={styles.aboutRainbowText}>Love ❤</span> for Computer Science and Engineering, with curiosity and passion towards the
-                    infinite amount of arousing knowledge, with support from family and friends, and with the pursuit of self-consistency (自洽).
+                    infinite amount of arousing knowledge, with support from family and friends, and with the pursuit of self-consistency (自洽) to also have a sense of 『我属于我自己』.
                 </div>
                 <h1 className={styles.aboutHeading}>📞 Contact</h1>
                 To know more about me, you are free to check my <Link href="/resume.pdf">
@@ -134,6 +119,40 @@ export default function About() {
                 .
                 <div className={styles.aboutParagraph}>
                 You are also welcome to leave comments or add emoji below with a signed-in GitHub account.
+                </div>
+
+                <h1 className={styles.aboutHeading} style={
+                    { color: "rgba(225, 171, 255, 1)"}
+                }>😘 Acknowledgement</h1>
+                <details className={blockStyles.blockToggle} style={
+                    {
+                        background: "linear-gradient(90deg, rgba(225, 171, 255, 0.5), rgba(245, 0, 255, 0.3), rgba(221, 122, 255, 0.3), rgba(241, 131, 160, 0.3))",
+                        color: "white"
+                    }
+                }>
+                    <summary className={blockStyles.blockToggleSummary}>
+                        Here is a list of friends who help the construction of this site!
+                    </summary>
+                    <div className={styles.aboutParagraph}>han酱, cheng酱, 梨酱, chi酱, 豆子💛</div>
+                    <div className={styles.aboutParagraph}>Thanks to 頷, who (passively) becomes the
+                        catalyst towards the completion of this site💖</div>
+                </details>
+                <div className={styles.aboutRainbowText}
+                     id="Love"
+                     style={{
+                         fontSize: "130%",
+                         paddingBottom: "5px",
+                         lineHeight: "160%",
+                         animationDuration: "25s",
+                         animationDirection: "alternate",
+                         opacity: "0.8",
+                     }
+                     }>
+                    Thanks to my beloved FAMILY,<br/>
+                    super sincere warm FRIENDS,<br/>
+                    nice teachers who guided me,<br/>
+                    ❤ kind-hearted girls ❤ who made my heart flutter ◍•ᴗ•◍
+                    <br/>LOVE YOU ALL!!!
                 </div>
             </div>
             {/*<div className={styles.paragraph}>*/}

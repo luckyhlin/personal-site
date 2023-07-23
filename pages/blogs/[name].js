@@ -1,15 +1,17 @@
-import {getBlocks, getDatabase, getPageTitle} from "../../lib/notion";
+import {getBlocks, getDatabase, getPageMetaInfo} from "../../lib/notion";
 import Layout from "../../components/layout";
-import * as util from "util";
 import styles from "../../styles/blogs.module.scss"
 import Blocks from "../../components/blocks";
+import BlogInfo from "../../components/blog-info";
 
-export default function Post({title, blocks}) {
+export default function Post({title, blocks, metaInfo}) {
     return (
         <Layout title={title} useComment={true} pageType="isBlogs">
             <h1 id={title} className={styles.postTitle}>
                 {title}
             </h1>
+            <BlogInfo metaInfo={metaInfo} isDetail={true}/>
+            <hr className={styles.blogHorizontalLine}/>
             <Blocks blocks={blocks}/>
         </Layout>
     )
@@ -35,18 +37,19 @@ export async function getStaticProps({ params }) {
     const pageID = pages.find((page) =>
         page.name === pageName
     ).id
-    const title = await getPageTitle(pageID)
-    console.log(title)
+    const {title, metaInfo} = await getPageMetaInfo(pageID)
+    console.log("blog: ", title)
     const blocks = await getBlocks(pageID, {
         level: 1
     })
-    console.log(util.inspect(blocks.slice(-15), {depth: null, colors: true}))
+    // console.log(util.inspect(blocks.slice(-15), {depth: null, colors: true}))
     // console.log(util.inspect(blocks[23], {depth: null, colors: true}))
 
     return {
         props: {
             title: title,
-            blocks: blocks
+            blocks: blocks,
+            metaInfo: metaInfo,
         }
     }
 }

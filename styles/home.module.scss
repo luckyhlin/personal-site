@@ -81,11 +81,11 @@
     animation: moveInLeft 2s;
 }
 
-.postSummaryContainer {
+.blogSummaryContainer {
     margin-top: 10px;
 }
 
-.postSummaryHeading {
+.blogSummaryHeading {
     /*margin-left: 10px;*/
     font-family: 'Pacifico', cursive;
     display: block;
@@ -93,11 +93,15 @@
     font-size: 50px;
 }
 
-.postSentenceHeading {
+.blogSentenceHeading {
     font-family: 'Pacifico', cursive;
     display: block;
     font-size: 24px;
     margin: 1rem 0;
+}
+
+.blogSubSentence {
+    margin-bottom: 20px;
 }
 
 .updatedAtContainer {

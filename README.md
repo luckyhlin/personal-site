@@ -24,15 +24,15 @@ TODO:
   * ~~home page text rewrite~~
 * ~~who am i page redesign~~
   * ~~add resume~~
-* improve blog page
-  * show tag
-  * show confidence level
-  * try to show more info (summary)
-* log reduction
+* ~~improve blog page~~
+  * ~~show tag~~
+  * ~~show confidence level~~
+  * ~~try to show more info (summary)~~
+* ~~log reduction~~
 * ~~navigation bar~~
 * 404 page
 * page transition / loading animation
-* DNS acceleration (to increase efficiency)
+* CDN acceleration (to increase site & image efficiency)
 * ~~new domain name~~
   * ~~SSL support~~
 * ~~more responsive design~~
@@ -42,10 +42,10 @@ TODO:
 * mobile compatibility
   * rich_text overflow (open Ubuntu page with mobile screen)
   * home page background issue (only on real mobile phone with corners, e.g. iPhone 12)
-* large file acceleration
 * ~~meta description tag~~
 * support new blocks (e.g. video block)
 * add new features / components (e.g. gaming / music information synchronized display)
+* ~~check correctness of the site updated time~~
 
 ### License
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
