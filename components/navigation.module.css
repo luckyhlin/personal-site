@@ -39,6 +39,7 @@
   display: block;
   position: absolute;
   right: 0;
+  color: white;
   text-decoration-line: overline;
 }
 .homeNavigation a {
