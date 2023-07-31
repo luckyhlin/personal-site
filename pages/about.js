@@ -34,7 +34,7 @@ export default function About() {
                     </span> (◍•ᴗ•◍)
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Before that, I received my B.Eng. in electrical and computer engineering (ECE) and a data science minor degree
+                    Before that, I received my B.Eng. in electrical and computer engineering (ECE) graduated with 🌟 honors research program & a minor degree in data science (DS)
                     at <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.ji.sjtu.edu.cn/">
@@ -50,6 +50,10 @@ export default function About() {
                         </Link>
                     </span> for a year as an SDE, and then took a gap (now reaching the end of this gap year).
                 </div>
+                <div className={styles.aboutParagraph}>
+                    I love computer science & engineering (CSE) since childhood. Before college, I started a computer & electronics social club,
+                    won algorithm contests, and DIY software & hardware.
+                </div>
                 <h1 className={styles.aboutHeading}>😆 Interest</h1>
                 <details className={blockStyles.blockToggle}>
                     <summary className={blockStyles.blockToggleSummary}>
@@ -61,7 +65,7 @@ export default function About() {
                     <ul className={styles.aboutList}>
                         <li>CS education for K-12 students 🧒,</li>
                         <li>web development (frontend, backend & algorithm engineering),</li>
-                        <li>artificial intelligence (reinforcement learning),</li>
+                        <li>artificial intelligence (deep reinforcement learning),</li>
                         <li>mathematics,</li>
                         <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>
                         <li>many other EECS fields (such as computer architecture, game programming & semiconductor),</li>
@@ -86,7 +90,7 @@ export default function About() {
                 <h1 className={styles.aboutHeading} id="Motivation">🚆 Motivation</h1>
                 <details className={blockStyles.blockToggle}>
                     <summary className={blockStyles.blockToggleSummary}>
-                        A long story behind the construction of this site
+                        A story behind the construction of this site
                     </summary>
                 <div className={styles.aboutParagraph}>
                     I have learned programming since primary school, whereas I focused mostly on algorithms instead of applications.
@@ -152,7 +156,7 @@ export default function About() {
                      }>
                     Thanks to my beloved FAMILY,<br/>
                     super sincere warm FRIENDS,<br/>
-                    nice teachers who guided me,<br/>
+                    nice teachers who guided me &<br/>
                     ❤ kind-hearted girls ❤ who made my heart flutter ◍•ᴗ•◍
                     <br/>LOVE YOU ALL!!!
                 </div>

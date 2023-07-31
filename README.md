@@ -30,7 +30,7 @@ TODO:
   * ~~try to show more info (summary)~~
 * ~~log reduction~~
 * ~~navigation bar~~
-* 404 page
+* ~~404 page~~
 * page transition / loading animation
 * CDN acceleration (to increase site & image efficiency)
 * ~~new domain name~~
@@ -46,6 +46,7 @@ TODO:
 * support new blocks (e.g. video block)
 * add new features / components (e.g. gaming / music information synchronized display)
 * ~~check correctness of the site updated time~~
+* add back-to-all-blogs button
 
 ### License
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).

@@ -88,12 +88,12 @@ export default function Layout({ title, useComment, description, children, home,
             {!!useComment && (
                 <Giscus
                     id="comments"
-                    repo="jimmylin99/personal-site"
+                    repo="luckyhlin/personal-site"
                     repoId="R_kgDOHsJs8Q"
                     category="Announcements"
                     categoryId="DIC_kwDOHsJs8c4CVf2Q"
                     mapping="title"
-                    term="Welcome to @giscus/react component!"
+                    term="Welcome to your comments!"
                     reactionsEnabled="1"
                     emitMetadata="0"
                     inputPosition="top"
