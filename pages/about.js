@@ -5,6 +5,7 @@ import richTextStyles from "../components/rich-text.module.css";
 import descriptionStyles from "../components/description.module.scss";
 import Link from "next/link";
 import Name from "../components/name";
+import Image from "next/image";
 
 export default function About() {
     let title = "About " + Name()
@@ -18,12 +19,12 @@ export default function About() {
                     genuine guy with passion & <Link href="#Love">
                     <a className={styles.aboutRainbowText}>love!</a></Link>
                 </div>
-                <div className={styles.aboutParagraph} style={
-                    { marginLeft: 0}
-                }>
-                    Welcome to my site! It is written in a blend of
-                    English, 简体 & 繁體中文, depending on MY preference.
-                </div>
+                {/*<div className={styles.aboutParagraph} style={*/}
+                {/*    { marginLeft: 0}*/}
+                {/*}>*/}
+                {/*    Welcome! The language is in*/}
+                {/*    English with some Chinese (简体 & 繁體中文).*/}
+                {/*</div>*/}
                 <h1 className={styles.aboutHeading}>🎓 Education & Career</h1>
                 <div className={styles.aboutParagraph}>
                     I will pursue my master of science degree in computer science (MSCS) at the <span
@@ -34,21 +35,21 @@ export default function About() {
                     </span> (◍•ᴗ•◍)
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Before that, I received my B.Eng. in electrical and computer engineering (ECE) graduated with 🌟 honors research program & a minor degree in data science (DS)
-                    at <span
+                    Prior to that, I earned my B.Eng. in electrical and computer engineering (ECE), with 🌟 honors research program & a minor degree in data science (DS)
+                    at the <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.ji.sjtu.edu.cn/">
-                            <a className={[descriptionStyles.textLink].join(" ")}>🇨🇳 Shanghai Jiao Tong University (UM-SJTU Joint Institute).</a>
+                            <a className={[descriptionStyles.textLink].join(" ")}>🇨🇳 Shanghai Jiao Tong University (UM-SJTU Joint Institute 上交密院).</a>
                         </Link>
                     </span>
                 </div>
                 <div className={styles.aboutParagraph}>
-                    After bachelor's graduation, I worked at <span
+                    Following my bachelor's, I worked at <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.bytedance.com/en/">
                             <a className={[descriptionStyles.textLink].join(" ")}>💙 ByteDance</a>
                         </Link>
-                    </span> for a year as an SDE, and then took a gap (now reaching the end of this gap year).
+                    </span> for a year as an SDE, and then took a gap year.
                 </div>
                 <div className={styles.aboutParagraph}>
                     I love computer science & engineering (CSE) since childhood. Before college, I started a computer & electronics social club,
@@ -69,7 +70,7 @@ export default function About() {
                         <li>mathematics,</li>
                         <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>
                         <li>many other EECS fields (such as computer architecture, game programming & semiconductor),</li>
-                        <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP & NOI winter camp).</li>
+                        <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP 🥇 & NOI winter camp 🥉).</li>
                     </ul>
                 </details>
                 <details className={blockStyles.blockToggle}>
@@ -103,13 +104,13 @@ export default function About() {
                     can be my content management system (CMS).
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Therefore, technically, this site is powered by Next.js as an SSG frontend framework, Notion official API,
-                    Notion as CMS, Vercel as site host, giscus as comment system, Cloudinary as image storage, Namecheap as domain registration, GitHub as repo host, and the open source community. 🤟
+                    Therefore, technically, this site is powered by a Jamstack architecture pattern: Next.js as an SSG frontend framework, Notion official API,
+                    Notion as CMS, Vercel as site host & CDN, giscus as comment system, Cloudinary as image storage, Namecheap as domain registration, GitHub as repo host, and the open source community. 🤟
                 </div>
                 </details>
                 <div className={styles.aboutParagraph} id="Love ❤">
                     Importantly, this site is built with <span className={styles.aboutRainbowText}>Love ❤</span> for Computer Science and Engineering, with curiosity and passion towards the
-                    infinite amount of arousing knowledge, with support from family and friends, and with the pursuit of self-consistency (自洽) to also have a sense of 『我属于我自己』.
+                    infinite amount of arousing knowledge, with support from family and friends, and with the pursuit of self-consistency (自洽) to also have a sense of 『我属于我自己』(I belong to myself).
                 </div>
                 <h1 className={styles.aboutHeading}>📞 Contact</h1>
                 To know more about me, you are free to check my <Link href="/resume.pdf">
@@ -122,7 +123,14 @@ export default function About() {
                 {/*</Link>*/}
                 .
                 <div className={styles.aboutParagraph}>
-                You are also welcome to leave comments or add emoji below with a signed-in GitHub account.
+                You are also welcome to leave comments or add emoji below with a signed-in GitHub account, and follow me
+                    on <Link href="https://github.com/luckyhlin">
+                        <a>GitHub <Image
+                        src="/images/github-icon.png"
+                        height={24}
+                        width={24}
+                        />.</a>
+                    </Link>
                 </div>
 
                 <h1 className={styles.aboutHeading} id="Love" style={
