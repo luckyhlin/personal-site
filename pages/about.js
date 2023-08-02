@@ -52,7 +52,7 @@ export default function About() {
                     </span> for a year as an SDE, and then took a gap year.
                 </div>
                 <div className={styles.aboutParagraph}>
-                    I love computer science & engineering (CSE) since childhood. Before college, I started a computer & electronics social club,
+                    I love computer science & engineering (CSE) since childhood. Before college, I founded a computer & electronics social club,
                     won algorithm contests, and DIY software & hardware.
                 </div>
                 <h1 className={styles.aboutHeading}>😆 Interest</h1>

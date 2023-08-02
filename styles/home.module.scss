@@ -51,7 +51,7 @@
     /*min-height: 100vh;*/
     margin-left: 10%;
     padding-bottom: 10%;
-    width: 70%;
+    width: 80%;
     @media (max-width: 768px) {
         margin-left: 8%;
         width: 88%;
@@ -62,7 +62,7 @@
 .headingTextBox {
     margin-top: 20px;
     @media (max-width: 768px) {
-        margin-top: 8vh;
+        margin-top: 5vh;
     }
     color: rgb(255, 255, 255);
 }
@@ -75,7 +75,7 @@
     display: inline-block;
     font-size: 72px;
     @media (max-width: 768px) {
-        font-size: 60px;
+        font-size: 68px;
     }
     color: $home-page-text-color;
     animation: moveInLeft 2s;
@@ -91,12 +91,18 @@
     display: block;
     color: $blog-summary-text-color;
     font-size: 50px;
+    @media (max-width: 768px) {
+        font-size: 38px;
+    }
 }
 
 .blogSentenceHeading {
     font-family: 'Pacifico', cursive;
     display: block;
     font-size: 24px;
+    @media (max-width: 768px) {
+        font-size: 22px;
+    }
     margin: 1rem 0;
 }
 

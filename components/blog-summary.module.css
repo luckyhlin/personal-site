@@ -47,13 +47,28 @@
   font-size: 28px;
   animation: moveInBottom 1s;
 }
+@media (max-width: 768px) {
+  .container {
+    font-size: 24px;
+  }
+}
 
 .metaInfoContainer {
-  font-size: 24px;
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .metaInfoContainer {
+    font-size: 20px;
+  }
 }
 
 .tagContainer {
   font-size: 18px;
+}
+@media (max-width: 768px) {
+  .tagContainer {
+    font-size: 16px;
+  }
 }
 
 .tag, .tagred, .tagpink, .tagpurple, .tagblue, .tagbrown, .taggray {
@@ -94,6 +109,11 @@
   padding: 0 5px;
   border-radius: 10px;
   font-size: 18px;
+}
+@media (max-width: 768px) {
+  .confLevel, .confLevel5, .confLevel4, .confLevel3, .confLevel2, .confLevel1 {
+    font-size: 16px;
+  }
 }
 .confLevel1 {
   background-color: rgba(196, 165, 165, 0.1);
@@ -173,6 +193,11 @@
   padding-left: 10px;
   font-size: 20px;
   color: rgb(70, 70, 70);
+}
+@media (max-width: 768px) {
+  .summaryDetails {
+    font-size: 18px;
+  }
 }
 
 .blogSummaryHorizontalLine {

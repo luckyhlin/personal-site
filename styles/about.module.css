@@ -32,10 +32,20 @@
   margin: 10px;
   font-size: 18px;
 }
+@media (max-width: 768px) {
+  .aboutParagraph {
+    font-size: 16px;
+  }
+}
 
 .aboutIntroParagraph {
   margin: 10px 0 10px 0;
   font-size: 20px;
+}
+@media (max-width: 768px) {
+  .aboutIntroParagraph {
+    font-size: 18px;
+  }
 }
 
 .aboutList {
@@ -49,7 +59,7 @@
 }
 @media (max-width: 768px) {
   .aboutHeading {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 

@@ -25,15 +25,24 @@
 .container {
     margin: 30px 0;
     font-size: 28px;
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
     animation: moveInBottom 1s;
 }
 
 .metaInfoContainer {
-    font-size: 24px;
+    font-size: 22px;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
 }
 
 .tagContainer {
     font-size: 18px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 .tag {
@@ -88,6 +97,9 @@
     padding: 0 5px;
     border-radius: 10px;
     font-size: 18px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 
     &1 {
         @extend .confLevel;
@@ -208,6 +220,9 @@
 .summaryDetails {
     padding-left: 10px;
     font-size: 20px;
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
     color: $summary-color;
 }
 
