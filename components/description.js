@@ -5,7 +5,8 @@ export default function Description() {
     return (
         <>
                 <span className={styles.headingTextDescription}>
-                    I am now reaching the end of a gap year.
+                    Hi, this is Lin, a cute and genuine guy with passion and love!
+                    {/*I am now reaching the end of a gap year.*/}
                                 {/*            after having both received my B.Eng from <span*/}
                                 {/*className={styles.textInlineBox}>*/}
                                 {/*                <Link href="https://www.ji.sjtu.edu.cn/">*/}
@@ -18,12 +19,12 @@ export default function Description() {
                                 {/*            </span> for a year.*/}
                 </span>
                 <span className={styles.headingTextDescription}>
-                    I will pursue a master's degree in computer science at the <span
+                    I am pursuing a master's degree in computer science at the <span
                     className={styles.textInlineBox}>
                         <Link href="https://www.wisc.edu/">
                             <a className={[styles.textLink, styles.textLinkColor].join(" ")}>University of Wisconsin–Madison</a>
                         </Link>
-                    </span> starting this Fall (◍•ᴗ•◍)
+                    </span> (◍•ᴗ•◍)
                 </span>
                 <span className={styles.headingTextDescription} style={
                     { fontSize: "140%" }

@@ -27,7 +27,7 @@ export default function About() {
                 {/*</div>*/}
                 <h1 className={styles.aboutHeading}>🎓 Education & Career</h1>
                 <div className={styles.aboutParagraph}>
-                    I will pursue my master of science degree in computer science (MSCS) at the <span
+                    I am pursuing my master of science degree in computer science (MSCS) at the <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.wisc.edu/">
                             <a className={[descriptionStyles.textLink].join(" ")}>🇺🇸 University of Wisconsin–Madison</a>
@@ -35,7 +35,7 @@ export default function About() {
                     </span> (◍•ᴗ•◍)
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Prior to that, I earned my B.Eng. in electrical and computer engineering (ECE), with 🌟 honors research program & a minor degree in data science (DS)
+                    Prior to that, I earned my B.Eng. in electrical and computer engineering (ECE), with 🌟 honors research program, and a minor degree in data science (DS)
                     at the <span
                     className={descriptionStyles.textInlineBox}>
                         <Link href="https://www.ji.sjtu.edu.cn/">
