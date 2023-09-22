@@ -17,7 +17,8 @@ export default function HomePage() {
                 <title>{title}</title>
                 <meta
                     name="description"
-                    content="Hi, this is Lin, a cute and genuine guy with passion and love! 我是宇宙超级无敌可爱机智の🍑黃桃大罐頭💛"
+                    // content="Hi, this is Lin, a cute and genuine guy with passion and love! 我是宇宙超级无敌可爱机智の🍑黃桃大罐頭💛"
+                    content="Hi, this is Hao Lin!"
                 />
             </Head>
             <div className={styles.mainContainer}>

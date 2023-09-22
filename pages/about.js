@@ -15,8 +15,10 @@ export default function About() {
 
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutIntroParagraph}>
-                    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>cute</span> and
-                    genuine guy with passion & <Link href="#Love">
+                    {/*Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>cute</span> and*/}
+                    {/*genuine guy with passion & <Link href="#Love">*/}
+                    {/*<a className={styles.aboutRainbowText}>love!</a></Link>*/}
+                    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>passionate</span> guy with curiosity & <Link href="#Love">
                     <a className={styles.aboutRainbowText}>love!</a></Link>
                 </div>
                 {/*<div className={styles.aboutParagraph} style={*/}
@@ -64,11 +66,12 @@ export default function About() {
                         though may be preliminary, cover many fields (Click 🖱️ to see more)
                     </summary>
                     <ul className={styles.aboutList}>
-                        <li>CS education for K-12 students 🧒,</li>
+                        <li>high performance computing,</li>
                         <li>web development (frontend, backend & algorithm engineering),</li>
                         <li>artificial intelligence (deep reinforcement learning),</li>
                         <li>mathematics,</li>
                         <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>
+                        <li>CS education for K-12 students 🧒,</li>
                         <li>many other EECS fields (such as computer architecture, game programming & semiconductor),</li>
                         <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP 🥇 & NOI winter camp 🥉).</li>
                     </ul>
