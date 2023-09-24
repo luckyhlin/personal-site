@@ -31,9 +31,10 @@ export default function Description() {
                 <span className={styles.headingTextDescription}
                       // style={{ fontSize: "140%" }}
                 >
-                    {/*我是宇宙超级无敌可爱机智の<br/>🍑黃桃大罐頭💛*/}
-                    It's astonishing to me that I've dedicated more than half of my life to studying CS/CE and still love it.
-                    <br/>Just as I do sports and traveling. 💛
+                    My Hobby Emoji: ⚽️🏸️🎾️🏓️🥏🏐️🎱️🎳️🧗🏻🚴🏻🚣🏻🍨️🎮️⛰️💬️
+                    <br/>我是宇宙超级无敌可爱机智の<br/>🍑黃桃大罐頭💛
+                    {/*It's astonishing to me that I've dedicated more than half of my life to studying CS/CE and still love it.*/}
+                    {/*<br/>Just as I do sports and traveling. 💛*/}
                 </span>
                 {/*<span className={styles.headingTextDescription}>*/}
                 {/*    If necessary, reach me via <span className={styles.textInlineBox}>*/}
