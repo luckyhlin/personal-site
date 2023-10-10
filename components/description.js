@@ -36,6 +36,15 @@ export default function Description() {
                     {/*It's astonishing to me that I've dedicated more than half of my life to studying CS/CE and still love it.*/}
                     {/*<br/>Just as I do sports and traveling. 💛*/}
                 </span>
+                <span className={styles.headingTextDescription}>
+                    Visit <Link href="/about">
+                            <a className={[styles.textLink, styles.textLinkColor].join(" ")}>my profile</a>
+                        </Link> to know more <span style={
+                            {
+                                color: "#9911cb"
+                            }
+                        }> (ᕑᗢᓫ∗) </span>
+                </span>
                 {/*<span className={styles.headingTextDescription}>*/}
                 {/*    If necessary, reach me via <span className={styles.textInlineBox}>*/}
                 {/*        <Link href="mailto:jimmylinh@icloud.com">*/}

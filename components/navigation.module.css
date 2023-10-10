@@ -36,6 +36,7 @@
 }
 
 .homeNavigation {
+  font-size: 120%;
   display: block;
   position: absolute;
   right: 0;

@@ -16,8 +16,9 @@ export default function Navigation({ isHome, isAbout, isBlogs }) {
                 </Link>
             }
             <Link href="/about">
-                { isAbout ? <a className={styles.navDynamicText}>About</a> :
-                    <a>About</a>
+                { isAbout ? <a className={styles.navDynamicText}>Profile</a> :
+                    isHome ? <a>Hao's Profile</a> :
+                        <a>Profile</a>
                 }
             </Link>
             <Link href="/blogs">
@@ -25,7 +26,7 @@ export default function Navigation({ isHome, isAbout, isBlogs }) {
                     <a>Blogs</a>
                 }
             </Link>
-            <a href="/resume.pdf">Resume</a>
+            <a href="/resume.pdf">{isHome ? "CV" : "Resume"}</a>
         </nav>
     )
 }
