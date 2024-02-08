@@ -11,7 +11,7 @@ export default function About() {
     let title = "About " + Name()
     return (
         <Layout title={title} useComment={true} pageType="isAbout"
-                description={"Hi, this is Lin, a cute and genuine guy with passion & love!"}>
+                description={"Hi, this is " + Name() + ", a cute and genuine guy with passion & love!"}>
 
             <div className={styles.aboutContainer}>
                 <div className={styles.aboutIntroParagraph}>
@@ -60,8 +60,14 @@ export default function About() {
                 <h1 className={styles.aboutHeading}>😆 Interest</h1>
                 <details className={blockStyles.blockToggle}>
                     <summary className={blockStyles.blockToggleSummary}>
-                        My current academic interest lies in <span className={richTextStyles.code}>
-                            computer systems
+                        My current academic interest spans in <span className={richTextStyles.code}>
+                            system
+                        </span>, <span className={richTextStyles.code}>
+                            theory
+                        </span>, <span className={richTextStyles.code}>
+                            game development
+                        </span> and <span className={richTextStyles.code}>
+                            VLSI
                         </span>, while my previous experiences,
                         though may be preliminary, cover many fields (Click 🖱️ to see more)
                     </summary>
@@ -72,9 +78,12 @@ export default function About() {
                         <li>mathematics,</li>
                         <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>
                         <li>CS education for K-12 students 🧒,</li>
-                        <li>many other EECS fields (such as computer architecture, game programming & semiconductor),</li>
+                        <li>many other EECS fields (such as computer architecture & semiconductor),</li>
                         <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP 🥇 & NOI winter camp 🥉).</li>
                     </ul>
+                    <div className={styles.aboutParagraph}>
+                        I am still figuring out which field I am gonna dive deeper, but I have pretty much enjoyed learning various topics which aspire my curiosity so far.
+                    </div>
                 </details>
                 <details className={blockStyles.blockToggle}>
                     <summary className={blockStyles.blockToggleSummary}>
