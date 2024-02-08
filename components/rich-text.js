@@ -15,6 +15,10 @@ export function RichText({ richTexts }) {
         //
         // useEffect(setDefaultColor(color))
         //
+
+        // the prefix is used to identify any links pointing to the git repo
+        // which is not a URL
+        const localRepoPrefix = "https://localrepo"
         return (
             <span
                 className={[
@@ -28,7 +32,11 @@ export function RichText({ richTexts }) {
             >
                 {!!text && (
                     text.link ?
-                        <Link href={text.link.url}>{text.content}</Link>
+                        <Link href={
+                            text.link.url.startsWith(localRepoPrefix) ?
+                                text.link.url.slice(localRepoPrefix.length) :
+                                text.link.url
+                        }>{text.content}</Link>
                     :   text.content
                 )}
                 {!!equation && (
