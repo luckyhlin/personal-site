@@ -24,7 +24,8 @@ export default function Blogs({ pages }) {
                 {/*    Learn to say: I don't know.*/}
                 {/*</span>*/}
                 {!!pages && pages.map((page) => (
-                        <BlogSummary page={page}/>
+                        !page.metaInfo.is_in_progress &&
+                            <BlogSummary page={page}/>
                     )
                 )}
                 {/*{(!pages || pages.length === 0) && (*/}
