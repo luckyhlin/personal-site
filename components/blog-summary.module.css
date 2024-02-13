@@ -71,12 +71,12 @@
   }
 }
 
-.tag, .tagred, .tagpink, .tagpurple, .tagblue, .tagbrown, .taggray {
+.tag, .taggreen, .tagred, .tagpink, .tagpurple, .tagblue, .tagbrown, .taggray {
   display: inline-block;
   padding: 0 8px;
   border-radius: 10px;
 }
-.tag:not(.tag:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .tagred:not(.tag:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .tagpink:not(.tag:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .tagpurple:not(.tag:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .tagblue:not(.tag:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .tagbrown:not(.tag:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .taggray:not(.tag:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child) {
+.tag:not(.tag:last-child):not(.taggreen:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .taggreen:not(.tag:last-child):not(.taggreen:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .tagred:not(.tag:last-child):not(.taggreen:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .tagpink:not(.tag:last-child):not(.taggreen:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .tagpurple:not(.tag:last-child):not(.taggreen:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .tagblue:not(.tag:last-child):not(.taggreen:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .tagbrown:not(.tag:last-child):not(.taggreen:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child), .taggray:not(.tag:last-child):not(.taggreen:last-child):not(.tagred:last-child):not(.tagpink:last-child):not(.tagpurple:last-child):not(.tagblue:last-child):not(.tagbrown:last-child):not(.taggray:last-child) {
   margin-right: 5px;
 }
 .taggray {
@@ -101,6 +101,10 @@
 }
 .tagred {
   background: rgba(255, 43, 66, 0.55);
+  color: #ffffff;
+}
+.taggreen {
+  background: rgba(14, 217, 14, 0.55);
   color: #ffffff;
 }
 
