@@ -82,7 +82,14 @@ export default function About() {
                         <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP 🥇 & NOI winter camp 🥉).</li>
                     </ul>
                     <div className={styles.aboutParagraph}>
-                        I am still figuring out which field I am gonna dive deeper, but I have pretty much enjoyed learning various topics which aspire my curiosity so far.
+                        <span className={descriptionStyles.textInlineBox}>
+                        <Link href="https://whimsical.com/my-eecs-diagram-XFRK8WMDYLiLARRUq2NLbr@2Ux7TurymNXQugZNAztH">
+                            <a className={[descriptionStyles.textLink].join(" ")}>To see the diagram showing my familiar areas in EECS, click this sentence</a>
+                        </Link>
+                        </span>
+                    </div>
+                    <div className={styles.aboutParagraph}>
+                    I am still figuring out which field I am gonna dive deeper, but I have pretty much enjoyed learning various topics which aspire my curiosity so far.
                     </div>
                 </details>
                 <details className={blockStyles.blockToggle}>
