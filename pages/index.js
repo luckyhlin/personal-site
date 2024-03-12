@@ -11,6 +11,30 @@ import Head from "next/head";
 export default function HomePage() {
     const title = Name();
     return (
+        // {/*<Layout>*/}
+        // {/*<h1>*/}
+        // {/*    Read <Link href="/blogs/first-post">this page</Link>!*/}
+        // {/*</h1>*/}
+        // {/*<section className={utilStyles.headingXl}>*/}
+        // {/*    <Link href="/blogs/notion-test-post">Notion Database Page Content</Link>*/}
+        // {/*</section>*/}
+        // {/*<section className={utilStyles.headingMd}>*/}
+        // {/*    <div>*/}
+        // {/*        <button onClick={handleClick}>{clickCounter}</button>*/}
+        // {/*        <button onClick={resetClick}>Press to reset the click counter</button>*/}
+        // {/*    </div>*/}
+        // {/*    <Image*/}
+        // {/*        src="/images/img.png"*/}
+        // {/*        height={144}*/}
+        // {/*        width={144}*/}
+        // {/*        alt="WhiteImg"*/}
+        // {/*    />*/}
+        // {/*    <p>Hello</p>*/}
+        // {/*</section>*/}
+        // {/*<section className={utilStyles.headingMd}>*/}
+        // {/*    <Link href="/blogs/Post">Blocks</Link>*/}
+        // {/*</section>*/}
+        // {/*</Layout>*/}
         <div className={styles.bgContainer}>
             <Head>
                 <meta property="og:title" content={title}/>
@@ -24,10 +48,10 @@ export default function HomePage() {
             <div className={styles.mainContainer}>
                 <Navigation isHome={true}/>
                 <div className={styles.headingTextBox}>
-                    <Link href={"/about"}>
-                        <a className={styles.headingTextPrimary}>
-                            <Name/>
-                        </a>
+                    <Link href={"/about"} className={styles.headingTextPrimary}>
+
+                        <Name/>
+
                     </Link>
                     <Description/>
                     <div className={styles.updatedAtContainer}>
@@ -59,31 +83,7 @@ export default function HomePage() {
                 {/*</div>*/}
             </div>
         </div>
-            // {/*<Layout>*/}
-            // {/*<h1>*/}
-            // {/*    Read <Link href="/blogs/first-post">this page</Link>!*/}
-            // {/*</h1>*/}
-            // {/*<section className={utilStyles.headingXl}>*/}
-            // {/*    <Link href="/blogs/notion-test-post">Notion Database Page Content</Link>*/}
-            // {/*</section>*/}
-            // {/*<section className={utilStyles.headingMd}>*/}
-            // {/*    <div>*/}
-            // {/*        <button onClick={handleClick}>{clickCounter}</button>*/}
-            // {/*        <button onClick={resetClick}>Press to reset the click counter</button>*/}
-            // {/*    </div>*/}
-            // {/*    <Image*/}
-            // {/*        src="/images/img.png"*/}
-            // {/*        height={144}*/}
-            // {/*        width={144}*/}
-            // {/*        alt="WhiteImg"*/}
-            // {/*    />*/}
-            // {/*    <p>Hello</p>*/}
-            // {/*</section>*/}
-            // {/*<section className={utilStyles.headingMd}>*/}
-            // {/*    <Link href="/blogs/Post">Blocks</Link>*/}
-            // {/*</section>*/}
-            // {/*</Layout>*/}
-    )
+    );
 }
 
 // export async function getStaticProps() {

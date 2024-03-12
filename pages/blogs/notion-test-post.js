@@ -14,17 +14,17 @@ export default function NotionTestPost({pages}) {
                         return (
                             <li key={page.id}>
                                 <Link href={`/blogs/${page.id}`}>
-                                    <a>
-                                        <RichText richTexts={page.properties.Name.title}/>
-                                    </a>
+
+                                    <RichText richTexts={page.properties.Name.title}/>
+
                                 </Link>
                             </li>
-                        )
+                        );
                     }) : {}
                 }
             </ol>
         </Layout>
-    )
+    );
 }
 
 export async function getStaticProps() {

@@ -32,17 +32,19 @@ export function RichText({ richTexts }) {
             >
                 {!!text && (
                     text.link ?
-                        <Link href={
-                            text.link.url.startsWith(localRepoPrefix) ?
-                                text.link.url.slice(localRepoPrefix.length) :
-                                text.link.url
-                        }>{text.content}</Link>
+                        <Link
+                            href={
+                                text.link.url.startsWith(localRepoPrefix) ?
+                                    text.link.url.slice(localRepoPrefix.length) :
+                                    text.link.url
+                            }
+                            legacyBehavior>{text.content}</Link>
                     :   text.content
                 )}
                 {!!equation && (
                     <TeX math={equation.expression} />
                 )}
             </span>
-        )
-    })
+        );
+    });
 }

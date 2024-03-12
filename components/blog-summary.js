@@ -10,12 +10,15 @@ export default function BlogSummary({page}) {
             {
                 page.icon ? page.icon.emoji.concat(" ") : '🍯 '
             }
-            <Link href={`/blogs/${page.name}`}>
-                <a className={[styles.link, styles.linkColor].join(" ")} style={
+            <Link
+                href={`/blogs/${page.name}`}
+                className={[styles.link, styles.linkColor].join(" ")}
+                style={
                     {display: "inline"}
                 }>
-                    <RichText richTexts={page.properties.Name.title}/>
-                </a>
+
+                <RichText richTexts={page.properties.Name.title}/>
+
             </Link>
             {
                 !!page.summary &&
@@ -25,5 +28,5 @@ export default function BlogSummary({page}) {
             }
             <hr className={styles.blogSummaryHorizontalLine}/>
         </div>
-    )
+    );
 }

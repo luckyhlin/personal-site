@@ -48,7 +48,7 @@ export default function Layout({ title, useComment, description, children, home,
                     <>
                         <Navigation isAbout={pageType === 'isAbout'} isBlogs={pageType === 'isBlogs'}/>
                         <Link href="/">
-                            <a>
+
                             <Image
                                 priority
                                 src="/images/lin.jpeg"
@@ -57,15 +57,17 @@ export default function Layout({ title, useComment, description, children, home,
                                 width={108}
                                 alt={Name()}
                             />
-                            </a>
+
                         </Link>
                         {!isPrivate &&
                             <h2 className={utilStyles.headingLg}>
-                                <Link href="/">
-                                    <a className={[
+                                <Link
+                                    href="/"
+                                    className={[
                                         utilStyles.colorInherit,
                                         styles.titleFont
-                                    ].join(" ")}>{"💕 " + Name() + " 💗"}</a>
+                                    ].join(" ")}>
+                                    {"💕 " + Name() + " 💗"}
                                 </Link>
                             </h2>
                         }

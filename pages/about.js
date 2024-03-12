@@ -18,8 +18,8 @@ export default function About() {
                     {/*Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>cute</span> and*/}
                     {/*genuine guy with passion & <Link href="#Love">*/}
                     {/*<a className={styles.aboutRainbowText}>love!</a></Link>*/}
-                    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>passionate</span> guy with curiosity & <Link href="#Love">
-                    <a className={styles.aboutRainbowText}>love!</a></Link>
+                    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>passionate</span> guy with curiosity & <Link href="#Love" className={styles.aboutRainbowText}>
+                    love!</Link>
                 </div>
                 {/*<div className={styles.aboutParagraph} style={*/}
                 {/*    { marginLeft: 0}*/}
@@ -31,8 +31,10 @@ export default function About() {
                 <div className={styles.aboutParagraph}>
                     I am pursuing my master of science degree in computer science (MSCS) at the <span
                     className={descriptionStyles.textInlineBox}>
-                        <Link href="https://www.wisc.edu/">
-                            <a className={[descriptionStyles.textLink].join(" ")}>🇺🇸 University of Wisconsin–Madison</a>
+                        <Link
+                            href="https://www.wisc.edu/"
+                            className={[descriptionStyles.textLink].join(" ")}>
+                            🇺🇸 University of Wisconsin–Madison
                         </Link>
                     </span> (◍•ᴗ•◍)
                 </div>
@@ -40,16 +42,20 @@ export default function About() {
                     Prior to that, I earned my B.Eng. in electrical and computer engineering (ECE), with 🌟 honors research program, and a minor degree in data science (DS)
                     at the <span
                     className={descriptionStyles.textInlineBox}>
-                        <Link href="https://www.ji.sjtu.edu.cn/">
-                            <a className={[descriptionStyles.textLink].join(" ")}>🇨🇳 Shanghai Jiao Tong University (UM-SJTU Joint Institute 上交密院).</a>
+                        <Link
+                            href="https://www.ji.sjtu.edu.cn/"
+                            className={[descriptionStyles.textLink].join(" ")}>
+                            🇨🇳 Shanghai Jiao Tong University (UM-SJTU Joint Institute 上交密院).
                         </Link>
                     </span>
                 </div>
                 <div className={styles.aboutParagraph}>
                     Following my bachelor's, I worked at <span
                     className={descriptionStyles.textInlineBox}>
-                        <Link href="https://www.bytedance.com/en/">
-                            <a className={[descriptionStyles.textLink].join(" ")}>💙 ByteDance</a>
+                        <Link
+                            href="https://www.bytedance.com/en/"
+                            className={[descriptionStyles.textLink].join(" ")}>
+                            💙 ByteDance
                         </Link>
                     </span> for a year as an SDE, and then took a gap year.
                 </div>
@@ -83,8 +89,10 @@ export default function About() {
                     </ul>
                     <div className={styles.aboutParagraph}>
                         <span className={descriptionStyles.textInlineBox}>
-                        <Link href="https://whimsical.com/my-eecs-diagram-XFRK8WMDYLiLARRUq2NLbr@2Ux7TurymNXQugZNAztH">
-                            <a className={[descriptionStyles.textLink].join(" ")}>To see the diagram showing my familiar areas in EECS, click this sentence</a>
+                        <Link
+                            href="https://whimsical.com/my-eecs-diagram-XFRK8WMDYLiLARRUq2NLbr@2Ux7TurymNXQugZNAztH"
+                            className={[descriptionStyles.textLink].join(" ")}>
+                            To see the diagram showing my familiar areas in EECS, click this sentence
                         </Link>
                         </span>
                     </div>
@@ -133,9 +141,9 @@ export default function About() {
                 </div>
                 <h1 className={styles.aboutHeading}>📞 Contact</h1>
                 To know more about me, you are free to check my <Link href="/resume.pdf">
-                    <a>📄 resume</a>
+                    📄 resume
                 </Link>. Also, feel free to drop me an <Link href="mailto:jimmylinh@icloud.com">
-                    <a>📧 email</a>
+                    📧 email
                 </Link>
                 {/*, or follow my <Link href="https://github.com/jimmylin99">*/}
                 {/*    <a>GitHub</a>*/}
@@ -144,12 +152,12 @@ export default function About() {
                 <div className={styles.aboutParagraph}>
                 You are also welcome to leave comments or add emoji below with a signed-in GitHub account, and follow me
                     on <Link href="https://github.com/luckyhlin">
-                        <a>GitHub <Image
-                        src="/images/github-icon.png"
-                        height={24}
-                        width={24}
-                        />.</a>
-                    </Link>
+                    GitHub<Image
+                    src="/images/github-icon.png"
+                    height={24}
+                    width={24}
+                    />.
+                </Link>
                 </div>
 
                 <h1 className={styles.aboutHeading} id="Love" style={
@@ -209,5 +217,5 @@ export default function About() {
             {/*    via `jimmylinh AT icloud DOT com`.*/}
             {/*</div>*/}
         </Layout>
-    )
+    );
 }
