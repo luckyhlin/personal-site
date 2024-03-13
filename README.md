@@ -10,11 +10,15 @@ Here are the supported blocks so far:
 | Heading            | ✔️           |
 | Bulleted Item List | ✔️           |
 | Numbered Item List | ✔️           |
-| Toggle             | ✔            |
-| Callout            | ✔            |
-| Inline Equation    | ✔            |
-| Image              | ✔            |
+| Toggle             | ✔️           |
+| Callout            | ✔️           |
+| Inline Equation    | ✔️           |
+| Image              | ✔️           |
 | Video              | ❌            |
+| Separation Line    | ❌            |
+| Table              | ❌            |
+| Page Reference     | ❌            |
+| Block Equation     | ❌            |
 
 ---
 TODO:
