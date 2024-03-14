@@ -18,7 +18,8 @@ export default function About() {
                     {/*Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>cute</span> and*/}
                     {/*genuine guy with passion & <Link href="#Love">*/}
                     {/*<a className={styles.aboutRainbowText}>love!</a></Link>*/}
-                    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>passionate</span> guy with curiosity & <Link href="#Love" className={styles.aboutRainbowText}>
+                    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>passionate</span> guy with
+                    curiosity & <Link href="#Love" className={styles.aboutRainbowText}>
                     love!</Link>
                 </div>
                 {/*<div className={styles.aboutParagraph} style={*/}
@@ -39,7 +40,8 @@ export default function About() {
                     </span> (◍•ᴗ•◍)
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Prior to that, I earned my B.Eng. in electrical and computer engineering (ECE), with 🌟 honors research program, and a minor degree in data science (DS)
+                    Prior to that, I earned my B.Eng. in electrical and computer engineering (ECE), with 🌟 honors
+                    research program, and a minor degree in data science (DS)
                     at the <span
                     className={descriptionStyles.textInlineBox}>
                         <Link
@@ -60,23 +62,49 @@ export default function About() {
                     </span> for a year as an SDE, and then took a gap year.
                 </div>
                 <div className={styles.aboutParagraph}>
-                    I love computer science & engineering (CSE) since childhood. Before college, I founded a computer & electronics social club,
+                    I love computer science & engineering (CSE) since childhood. Before college, I founded a computer &
+                    electronics social club,
                     won algorithm contests, and DIY software & hardware.
                 </div>
                 <h1 className={styles.aboutHeading}>😆 Interest</h1>
+                <div className={styles.aboutParagraph}>
+                    My current academic interest spans in
+                    <ul className={[styles.aboutList, styles.aboutSparseList].join(" ")}>
+                        <li>
+                            <span className={richTextStyles.code}>
+                                Linux system
+                            </span>
+                        </li>
+                        <li>
+                            <span className={richTextStyles.code}>
+                                theory of computation, computability and logic
+                            </span>
+                        </li>
+                        <li>
+                            <span className={richTextStyles.code}>
+                                theory of programming languages
+                            </span>
+                        </li>
+                        <li>
+                            <span className={richTextStyles.code}>
+                                VLSI
+                            </span>
+                        </li>
+                    </ul>
+                </div>
                 <details className={blockStyles.blockToggle}>
                     <summary className={blockStyles.blockToggleSummary}>
-                        My current academic interest spans in <span className={richTextStyles.code}>
-                            system
-                        </span>, <span className={richTextStyles.code}>
-                            theory
-                        </span>, <span className={richTextStyles.code}>
-                            game development
-                        </span> and <span className={richTextStyles.code}>
-                            VLSI
-                        </span>, while my previous experiences,
-                        though may be preliminary, cover many fields (Click 🖱️ to see more)
+                        My experiences also covered many fields shallowly (Click 🖱️ to see more)
                     </summary>
+                    <div className={styles.aboutParagraph}>
+                        <span className={descriptionStyles.textInlineBox}>
+                        <Link
+                            href="https://whimsical.com/my-eecs-diagram-XFRK8WMDYLiLARRUq2NLbr@2Ux7TurymNXQugZNAztH"
+                            className={[descriptionStyles.textLink].join(" ")}>
+                            To see the diagram showing my familiar areas in EECS, click here
+                        </Link>
+                        </span>
+                    </div>
                     <ul className={styles.aboutList}>
                         <li>high performance computing,</li>
                         <li>web development (frontend, backend & algorithm engineering),</li>
@@ -85,19 +113,15 @@ export default function About() {
                         <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>
                         <li>CS education for K-12 students 🧒,</li>
                         <li>many other EECS fields (such as computer architecture & semiconductor),</li>
-                        <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP 🥇 & NOI winter camp 🥉).</li>
+                        <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP
+                            🥇 & NOI
+                            winter camp 🥉).
+                        </li>
                     </ul>
                     <div className={styles.aboutParagraph}>
-                        <span className={descriptionStyles.textInlineBox}>
-                        <Link
-                            href="https://whimsical.com/my-eecs-diagram-XFRK8WMDYLiLARRUq2NLbr@2Ux7TurymNXQugZNAztH"
-                            className={[descriptionStyles.textLink].join(" ")}>
-                            To see the diagram showing my familiar areas in EECS, click this sentence
-                        </Link>
-                        </span>
-                    </div>
-                    <div className={styles.aboutParagraph}>
-                    I am still figuring out which field I am gonna dive deeper, but I have pretty much enjoyed learning various topics which aspire my curiosity so far.
+                        I am still figuring out which field I am gonna dive deeper, but I have pretty much
+                        enjoyed
+                        learning various topics which have aspired my curiosity so far.
                     </div>
                 </details>
                 <details className={blockStyles.blockToggle}>
@@ -106,10 +130,12 @@ export default function About() {
                     </summary>
                     <ul className={styles.aboutList}>
                         <li>⚽ sports (biking, soccer, eight-ball pool, badminton, table tennis, tennis & frisbee)
-                        我是运动小天才！
+                            我是运动小天才！
                         </li>
-                        <li>🎮 gaming (a HUGE fan of multi-player FPS 🔫 games): APEX, 彩虹六号 (R6), CS:GO, 战地 (Battlefield 1 & 5),
-                            OverWatch, Insurgency, Division 2, CoD (single player only)<br/>Look for time & teammates! 😎
+                        <li>🎮 gaming (a HUGE fan of multi-player FPS 🔫 games): APEX, 彩虹六号 (R6), CS:GO, 战地
+                            (Battlefield 1 & 5),
+                            OverWatch, Insurgency, Division 2, CoD (single player only)<br/>Look for time & teammates!
+                            😎
                         </li>
                         <li>⛰️ traveling (prefer natural scenery)</li>
                     </ul>
@@ -120,48 +146,58 @@ export default function About() {
                     <summary className={blockStyles.blockToggleSummary}>
                         A story behind the construction of this site
                     </summary>
-                <div className={styles.aboutParagraph}>
-                    I have learned programming since primary school, whereas I focused mostly on algorithms instead of applications.
-                    Therefore, due in part to my laziness, handcrafting a site was always an unaccomplished goal for me.
-                </div>
-                <div className={styles.aboutParagraph}>
-                    Things have changed since I started to manage knowledge on the amazing software, Notion, where I found it a great place to write memos, especially
-                    technical stuff. After one or two years, I realized it was time to produce more cohesive memos to better organize and memorize important topics.
-                    During my gap year, Notion published exciting news that their API would be out of beta. I knew it was time to handcraft a site, where Notion
-                    can be my content management system (CMS).
-                </div>
-                <div className={styles.aboutParagraph}>
-                    Therefore, technically, this site is powered by a Jamstack architecture pattern: Next.js as an SSG frontend framework, Notion official API,
-                    Notion as CMS, Vercel as site host & CDN, giscus as comment system, Cloudinary as image storage, Namecheap as domain registration, GitHub as repo host, and the open source community. 🤟
-                </div>
+                    <div className={styles.aboutParagraph}>
+                        I have learned programming since primary school, whereas I focused mostly on algorithms instead
+                        of applications.
+                        Therefore, due in part to my laziness, handcrafting a site was always an unaccomplished goal for
+                        me.
+                    </div>
+                    <div className={styles.aboutParagraph}>
+                        Things have changed since I started to manage knowledge on the amazing software, Notion, where I
+                        found it a great place to write memos, especially
+                        technical stuff. After one or two years, I realized it was time to produce more cohesive memos
+                        to better organize and memorize important topics.
+                        During my gap year, Notion published exciting news that their API would be out of beta. I knew
+                        it was time to handcraft a site, where Notion
+                        can be my content management system (CMS).
+                    </div>
+                    <div className={styles.aboutParagraph}>
+                        Therefore, technically, this site is powered by a Jamstack architecture pattern: Next.js as an
+                        SSG frontend framework, Notion official API,
+                        Notion as CMS, Vercel as site host & CDN, giscus as comment system, Cloudinary as image storage,
+                        Namecheap as domain registration, GitHub as repo host, and the open source community. 🤟
+                    </div>
                 </details>
                 <div className={styles.aboutParagraph} id="Love ❤">
-                    Importantly, this site is built with <span className={styles.aboutRainbowText}>Love ❤</span> for Computer Science and Engineering, with curiosity and passion towards the
-                    infinite amount of arousing knowledge, with support from family and friends, and with the pursuit of self-consistency (自洽) to also have a sense of 『我属于我自己』(I belong to myself).
+                    Importantly, this site is built with <span className={styles.aboutRainbowText}>Love ❤</span> for
+                    Computer Science and Engineering, with curiosity and passion towards the
+                    infinite amount of arousing knowledge, with support from family and friends, and with the pursuit of
+                    self-consistency (自洽) to also have a sense of 『我属于我自己』(I belong to myself).
                 </div>
                 <h1 className={styles.aboutHeading}>📞 Contact</h1>
                 To know more about me, you are free to check my <Link href="/resume.pdf">
-                    📄 resume
-                </Link>. Also, feel free to drop me an <Link href="mailto:jimmylinh@icloud.com">
-                    📧 email
-                </Link>
+                📄 resume
+            </Link>. Also, feel free to drop me an <Link href="mailto:jimmylinh@icloud.com">
+                📧 email
+            </Link>
                 {/*, or follow my <Link href="https://github.com/jimmylin99">*/}
                 {/*    <a>GitHub</a>*/}
                 {/*</Link>*/}
                 .
                 <div className={styles.aboutParagraph}>
-                You are also welcome to leave comments or add emoji below with a signed-in GitHub account, and follow me
+                    You are also welcome to leave comments or add emoji below with a signed-in GitHub account, and
+                    follow me
                     on <Link href="https://github.com/luckyhlin">
                     GitHub<Image
                     src="/images/github-icon.png"
                     height={24}
                     width={24}
-                    />.
+                />.
                 </Link>
                 </div>
 
                 <h1 className={styles.aboutHeading} id="Love" style={
-                    { color: "rgba(225, 171, 255, 1)"}
+                    {color: "rgba(225, 171, 255, 1)"}
                 }>😘 Acknowledgement</h1>
                 <details className={blockStyles.blockToggle} style={
                     {
@@ -177,7 +213,8 @@ export default function About() {
                         豆子💛
                     </div>
                     <div className={styles.aboutParagraph}>Thanks to 頷, who (passively) becomes the
-                        catalyst towards the completion of this site💖</div>
+                        catalyst towards the completion of this site💖
+                    </div>
                 </details>
                 <div className={styles.aboutRainbowText}
                      style={{

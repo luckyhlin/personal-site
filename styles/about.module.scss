@@ -22,7 +22,15 @@
 
 
 .aboutList {
+    margin-top: 10px;
+    margin-bottom: 20px;
     margin-left: 20px;
+}
+
+.aboutSparseList {
+    li {
+        margin-bottom: 10px;
+    }
 }
 
 .aboutHeading {
