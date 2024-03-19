@@ -32,13 +32,16 @@ export function RichText({ richTexts }) {
             >
                 {!!text && (
                     text.link ?
+                        <span className={styles.link}>
                         <Link
                             href={
                                 text.link.url.startsWith(localRepoPrefix) ?
                                     text.link.url.slice(localRepoPrefix.length) :
                                     text.link.url
                             }
-                            legacyBehavior>{text.content}</Link>
+                            legacyBehavior>{text.content}
+                        </Link>
+                        </span>
                     :   text.content
                 )}
                 {!!equation && (

@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import styles from "../styles/about.module.scss";
 import blockStyles from "../components/blocks.module.css";
-import richTextStyles from "../components/rich-text.module.css";
+import richTextStyles from "../components/rich-text.module.scss";
 import descriptionStyles from "../components/description.module.scss";
 import Link from "next/link";
 import Name from "../components/name";
@@ -72,22 +72,17 @@ export default function About() {
                     <ul className={[styles.aboutList, styles.aboutSparseList].join(" ")}>
                         <li>
                             <span className={richTextStyles.code}>
-                                Linux system
+                                Computer Systems
                             </span>
                         </li>
                         <li>
                             <span className={richTextStyles.code}>
-                                theory of computation, computability and logic
+                                Theory of Computation, Computability and Logic
                             </span>
                         </li>
                         <li>
                             <span className={richTextStyles.code}>
-                                theory of programming languages
-                            </span>
-                        </li>
-                        <li>
-                            <span className={richTextStyles.code}>
-                                VLSI
+                                Theory of Programming Languages
                             </span>
                         </li>
                     </ul>
@@ -98,11 +93,12 @@ export default function About() {
                     </summary>
                     <div className={styles.aboutParagraph}>
                         <span className={descriptionStyles.textInlineBox}>
-                        <Link
-                            href="https://whimsical.com/my-eecs-diagram-XFRK8WMDYLiLARRUq2NLbr@2Ux7TurymNXQugZNAztH"
-                            className={[descriptionStyles.textLink].join(" ")}>
-                            To see the diagram showing my familiar areas in EECS, click here
-                        </Link>
+                            <span style={{margin: "0 0.1em"}}>🔗️</span>
+                            <Link
+                                href="https://whimsical.com/my-eecs-diagram-XFRK8WMDYLiLARRUq2NLbr@2Ux7TurymNXQugZNAztH"
+                                className={[descriptionStyles.textLink].join(" ")}>
+                                To see the diagram showing my familiar areas in EECS, click here
+                            </Link>
                         </span>
                     </div>
                     <ul className={styles.aboutList}>
@@ -111,8 +107,8 @@ export default function About() {
                         <li>artificial intelligence (deep reinforcement learning),</li>
                         <li>mathematics,</li>
                         <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>
-                        <li>CS education for K-12 students 🧒,</li>
-                        <li>many other EECS fields (such as computer architecture & semiconductor),</li>
+                        <li>CS education for K-12 students and beyond 🧒,</li>
+                        <li>many other EECS fields (such as computer architecture, semiconductor, VLSI, game development),</li>
                         <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP
                             🥇 & NOI
                             winter camp 🥉).
@@ -188,12 +184,16 @@ export default function About() {
                     You are also welcome to leave comments or add emoji below with a signed-in GitHub account, and
                     follow me
                     on <Link href="https://github.com/luckyhlin">
-                    GitHub<Image
-                    src="/images/github-icon.png"
-                    height={24}
-                    width={24}
-                />.
-                </Link>
+                        GitHub <Image
+                        src="/images/github-icon.png"
+                        height={24}
+                        width={24}
+                        alt="GitHub Icon"
+                        style={{
+                            display: "inline-block"
+                        }}
+                        />.
+                    </Link>
                 </div>
 
                 <h1 className={styles.aboutHeading} id="Love" style={

@@ -1,23 +1,50 @@
+@charset "UTF-8";
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .strikethrough {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .code {
-    color: saddlebrown;
-    padding: 0.2em 0.2em;
-    border-radius: 3px;
-    background-color: rgba(233, 150, 122, 0.5);
-    font-family: monospace;
+  color: saddlebrown;
+  padding: 0.2em 0.2em;
+  border-radius: 3px;
+  background-color: rgba(233, 150, 122, 0.5);
+  font-family: monospace;
 }
+
+.link {
+  display: inline-flex; /* Use flexbox to keep text and icon aligned */
+  align-items: center; /* Align items in the center vertically */
+  white-space: nowrap; /* Prevent the text from wrapping */
+}
+@media (max-width: 768px) {
+  .link {
+    white-space: inherit;
+  }
+}
+
+.link a {
+  text-decoration: underline;
+  text-decoration-color: rgba(122, 124, 122, 0.5);
+}
+
+.link::before {
+  content: "🔗️";
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+/*# sourceMappingURL=rich-text.module.css.map */
