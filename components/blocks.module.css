@@ -175,4 +175,24 @@ ol.blockNonTopLevelList li {
   max-height: 70vh;
 }
 
+.blockDivider {
+  height: 0;
+  width: 100%;
+  border-width: 0;
+  border-bottom-width: 1.5px;
+  border-style: solid;
+  border-color: rgb(197, 197, 197);
+  margin: 0.75em 0;
+}
+
+.blockEquation {
+  text-align: center;
+  margin: 1em 2em;
+}
+@media (max-width: 768px) {
+  .blockEquation {
+    margin: 1em 0;
+  }
+}
+
 /*# sourceMappingURL=blocks.module.css.map */

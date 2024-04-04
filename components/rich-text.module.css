@@ -21,6 +21,8 @@
   border-radius: 3px;
   background-color: rgba(233, 150, 122, 0.5);
   font-family: monospace;
+  box-decoration-break: clone;
+  display: inline-block;
 }
 
 .link {

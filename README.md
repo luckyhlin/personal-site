@@ -15,10 +15,10 @@ Here are the supported blocks so far:
 | Inline Equation    | ✔️           |
 | Image              | ✔️           |
 | Video              | ❌            |
-| Separation Line    | ❌            |
+| Divider            | ✔️           |
 | Table              | ❌            |
 | Page Reference     | ❌            |
-| Block Equation     | ❌            |
+| Block Equation     | ✔️           |
 
 ---
 TODO:

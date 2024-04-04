@@ -2,6 +2,7 @@ import {RichText} from "./rich-text";
 import styles from "./blocks.module.css"
 import { Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import {solarizedlight} from "react-syntax-highlighter/dist/cjs/styles/prism";
+import TeX from "@matejmazur/react-katex";
 
 // blocks: array of blocks (each block may contain its children)
 export default function Blocks({ blocks }) {
@@ -198,6 +199,17 @@ export function Block({ block, index, blocks }) {
                         </figcaption>
                     }
                 </figure>
+            )
+        case "divider":
+            return (
+                <div className={styles.blockDivider}>
+                </div>
+            )
+        case "equation":
+            return (
+                <div className={styles.blockEquation}>
+                    <TeX math={content.expression}/>
+                </div>
             )
         default:
             return <div>❌ Unsupported Block Type {block.type}</div>
