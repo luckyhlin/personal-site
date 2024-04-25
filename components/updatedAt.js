@@ -5,9 +5,10 @@ export default function UpdatedAt({ lightColor }) {
         <div className={[
             styles.container,
             lightColor ? styles.lightColor : styles.darkColor,
+            // styles.darkColor,
             ].join(" ")
         }>
-            site updated at {process.env.BUILD_TIME}
+            site updated at {process.env.BUILD_TIME}, since 2022
         </div>
     )
 }

@@ -5,36 +5,14 @@ import Navigation from "../components/navigation";
 import Name from "../components/name.js";
 import FootageText from "../components/footage-text";
 import Head from "next/head";
+import About from "../components/about";
+import MyGiscus from "../components/giscus";
 
 // const databaseID = process.env.NOTION_DATABASE_ID
 
 export default function HomePage() {
     const title = Name();
     return (
-        // {/*<Layout>*/}
-        // {/*<h1>*/}
-        // {/*    Read <Link href="/blogs/first-post">this page</Link>!*/}
-        // {/*</h1>*/}
-        // {/*<section className={utilStyles.headingXl}>*/}
-        // {/*    <Link href="/blogs/notion-test-post">Notion Database Page Content</Link>*/}
-        // {/*</section>*/}
-        // {/*<section className={utilStyles.headingMd}>*/}
-        // {/*    <div>*/}
-        // {/*        <button onClick={handleClick}>{clickCounter}</button>*/}
-        // {/*        <button onClick={resetClick}>Press to reset the click counter</button>*/}
-        // {/*    </div>*/}
-        // {/*    <Image*/}
-        // {/*        src="/images/img.png"*/}
-        // {/*        height={144}*/}
-        // {/*        width={144}*/}
-        // {/*        alt="WhiteImg"*/}
-        // {/*    />*/}
-        // {/*    <p>Hello</p>*/}
-        // {/*</section>*/}
-        // {/*<section className={utilStyles.headingMd}>*/}
-        // {/*    <Link href="/blogs/Post">Blocks</Link>*/}
-        // {/*</section>*/}
-        // {/*</Layout>*/}
         <div className={styles.bgContainer}>
             <Head>
                 <meta property="og:title" content={title}/>
@@ -45,19 +23,16 @@ export default function HomePage() {
                     content="Hi, this is Hao Lin!"
                 />
             </Head>
-            <div className={styles.mainContainer}>
+            <div className={styles.headerContainer}>
                 <Navigation isHome={true}/>
                 <div className={styles.headingTextBox}>
-                    <Link href={"/about"} className={styles.headingTextPrimary}>
+                    <Link href={"/"} className={styles.headingTextPrimary}>
 
                         <Name/>
 
                     </Link>
-                    <Description/>
-                    <div className={styles.updatedAtContainer}>
-                        <FootageText isHome={true}/>
-                    </div>
                 </div>
+                <Description/>
 
                 {/*<Link href={"/blogs"}>*/}
                 {/*      <a className={styles.headingTextPrimary}>*/}
@@ -81,6 +56,17 @@ export default function HomePage() {
                 {/*<div className={styles.footageContainer}>*/}
                 {/*    Built by Jimmy Lin*/}
                 {/*</div>*/}
+            </div>
+            <div className={styles.aboutContainer}>
+                <div className={styles.aboutContentContainer}>
+                    <About/>
+                </div>
+            </div>
+            <div className={styles.giscusContainer}>
+                <MyGiscus/>
+            </div>
+            <div className={styles.updatedAtContainer}>
+                <FootageText isHome={true}/>
             </div>
         </div>
     );

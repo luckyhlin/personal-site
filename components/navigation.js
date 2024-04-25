@@ -15,12 +15,12 @@ export default function Navigation({ isHome, isAbout, isBlogs }) {
                     
                 </Link>
             }
-            <Link href="/about" legacyBehavior>
-                { isAbout ? <a className={styles.navDynamicText}>Profile</a> :
-                    isHome ? <a>Hao's Profile</a> :
-                        <a>Profile</a>
-                }
-            </Link>
+            {/*<Link href="/about" legacyBehavior>*/}
+            {/*    { isAbout ? <a className={styles.navDynamicText}>Profile</a> :*/}
+            {/*        isHome ? <a>Hao's Profile</a> :*/}
+            {/*            <a>Profile</a>*/}
+            {/*    }*/}
+            {/*</Link>*/}
             <Link href="/blogs" legacyBehavior>
                 { isBlogs ? <a className={styles.navDynamicText}>Blogs</a> :
                     <a>Blogs</a>

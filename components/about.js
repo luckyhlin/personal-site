@@ -1,4 +1,3 @@
-import Layout from "../components/layout";
 import styles from "../styles/about.module.scss";
 import blockStyles from "../components/blocks.module.css";
 import richTextStyles from "../components/rich-text.module.scss";
@@ -7,21 +6,57 @@ import Link from "next/link";
 import Name from "../components/name";
 import Image from "next/image";
 
+// Notice that we have removed the '/about' page
+// but embed it into the home page
+// To change it to the '/about' page again,
+// * uncomment <Layout/>
+// * move it to the /pages folder
+// * handle Giscus in GitHub and other import issues
+// * modify contents to be more cohesive
 export default function About() {
     let title = "About " + Name()
     return (
-        <Layout title={title} useComment={true} pageType="isAbout"
-                description={"Hi, this is " + Name() + ", a cute and genuine guy with passion & love!"}>
+        // <Layout title={title} useComment={true} pageType="isAbout"
+        //         description={"Hi, this is " + Name() + ", a cute and genuine guy with passion & love!"}>
 
-            <div className={styles.aboutContainer}>
-                <div className={styles.aboutIntroParagraph}>
-                    {/*Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>cute</span> and*/}
-                    {/*genuine guy with passion & <Link href="#Love">*/}
-                    {/*<a className={styles.aboutRainbowText}>love!</a></Link>*/}
-                    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>passionate</span> guy with
-                    curiosity & <Link href="#Love" className={styles.aboutRainbowText}>
-                    love!</Link>
-                </div>
+            <AboutContent/>
+
+            // {/*<div className={styles.paragraph}>*/}
+            // {/*    I am now in a gap year after having*/}
+            // {/*both received my B.Eng from UMJI-SJTU*/}
+            // {/*and served as a full-time software engineer in ByteDance for a year.*/}
+            // {/*    /!*I may move on to University of Wisconsin-Madison and pursue*!/*/}
+            // {/*    /!*my M.S. Computer Science degree.*!/*/}
+            // {/*</div>*/}
+            // {/*<div className={styles.paragraph}>*/}
+            // {/*    My academic and professional interests lie in computer science,*/}
+            // {/*    specifically high performance systems and artificial intelligence.*/}
+            // {/*    I am also skilled in various sports such as soccer, badminton.*/}
+            // {/*    FPS gaming is also my favorite, like APEX, CSGO, R6 (my avatar is*/}
+            // {/*    a famous character in this game).*/}
+            // {/*</div>*/}
+            // {/*<div className={styles.paragraph}>*/}
+            // {/*    These activities usually*/}
+            // {/*    need a team of members to move on, so I wish to meet new friends*/}
+            // {/*    who share similar hobbies with me. Please feel free to reach me*/}
+            // {/*    via `jimmylinh AT icloud DOT com`.*/}
+            // {/*</div>*/}
+        // </Layout>
+    );
+}
+
+function AboutContent() {
+    return (
+        <div className={styles.aboutContainer}>
+                {/*<div className={styles.aboutIntroParagraph}>*/}
+                {/*    /!*Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>cute</span> and*!/*/}
+                {/*    /!*genuine guy with passion & <Link href="#Love">*!/*/}
+                {/*    /!*<a className={styles.aboutRainbowText}>love!</a></Link>*!/*/}
+                {/*    Hi, this is <Name/>, a <span className={styles.aboutRainbowText}>passionate</span> guy with*/}
+                {/*    curiosity & <Link href="#Love" className={styles.aboutRainbowText}>*/}
+                {/*    love!</Link>*/}
+                {/*</div>*/}
+
                 {/*<div className={styles.aboutParagraph} style={*/}
                 {/*    { marginLeft: 0}*/}
                 {/*}>*/}
@@ -62,7 +97,7 @@ export default function About() {
                     </span> for a year as an SDE, and then took a gap year.
                 </div>
                 <div className={styles.aboutParagraph}>
-                    I love computer science & engineering (CSE) since childhood. Before college, I founded a computer &
+                    I love math, computer science & engineering since childhood. Before college, I founded a computer &
                     electronics social club,
                     won algorithm contests, and DIY software & hardware.
                 </div>
@@ -89,26 +124,29 @@ export default function About() {
                 </div>
                 <details className={blockStyles.blockToggle}>
                     <summary className={blockStyles.blockToggleSummary}>
-                        My experiences also covered many fields shallowly (Click 🖱️ to see more)
+                        My experiences also covered many fields (Click Me 🖱️)
                     </summary>
-                    <div className={styles.aboutParagraph}>
-                        <span className={descriptionStyles.textInlineBox}>
-                            <span style={{margin: "0 0.1em"}}>🔗️</span>
-                            <Link
-                                href="https://whimsical.com/my-eecs-diagram-XFRK8WMDYLiLARRUq2NLbr@2Ux7TurymNXQugZNAztH"
-                                className={[descriptionStyles.textLink].join(" ")}>
-                                To see the diagram showing my familiar areas in EECS, click here
-                            </Link>
-                        </span>
-                    </div>
+                    {/*<div className={styles.aboutParagraph}>*/}
+                    {/*    <span className={descriptionStyles.textInlineBox}>*/}
+                    {/*        <span style={{margin: "0 0.1em"}}>🔗️</span>*/}
+                    {/*        <Link*/}
+                    {/*            href="https://whimsical.com/my-eecs-diagram-XFRK8WMDYLiLARRUq2NLbr@2Ux7TurymNXQugZNAztH"*/}
+                    {/*            className={[descriptionStyles.textLink].join(" ")}>*/}
+                    {/*            To see the diagram showing my familiar areas in EECS, click here*/}
+                    {/*        </Link>*/}
+                    {/*    </span>*/}
+                    {/*</div>*/}
                     <ul className={styles.aboutList}>
+                        <li>VLSI,</li>
                         <li>high performance computing,</li>
                         <li>web development (frontend, backend & algorithm engineering),</li>
                         <li>artificial intelligence (deep reinforcement learning),</li>
                         <li>mathematics,</li>
                         <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>
                         <li>CS education for K-12 students and beyond 🧒,</li>
-                        <li>many other EECS fields (such as computer architecture, semiconductor, VLSI, game development),</li>
+                        <li>many other EECS fields (such as computer architecture, semiconductor, quantum computing, game
+                            development),
+                        </li>
                         <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP
                             🥇 & NOI
                             winter camp 🥉).
@@ -140,7 +178,7 @@ export default function About() {
                 <h1 className={styles.aboutHeading} id="Motivation">🚆 Motivation</h1>
                 <details className={blockStyles.blockToggle}>
                     <summary className={blockStyles.blockToggleSummary}>
-                        A story behind the construction of this site
+                        Stories behind the site
                     </summary>
                     <div className={styles.aboutParagraph}>
                         I have learned programming since primary school, whereas I focused mostly on algorithms instead
@@ -163,37 +201,54 @@ export default function About() {
                         Notion as CMS, Vercel as site host & CDN, giscus as comment system, Cloudinary as image storage,
                         Namecheap as domain registration, GitHub as repo host, and the open source community. 🤟
                     </div>
+                    <div className={styles.aboutParagraph}>
+                        The current domain name 'EverHao.me' was creatively coined by ChatGPT.
+                        The term 'Ever' suggests continuity, persistence, and perseverance.
+                        Alternatively, it poses a rhetorical question, 'Ever Hao? Me!',
+                        highlighting a personal and engaging invitation to explore the content
+                        related to 'Hao'.
+                    </div>
                 </details>
                 <div className={styles.aboutParagraph} id="Love ❤">
                     Importantly, this site is built with <span className={styles.aboutRainbowText}>Love ❤</span> for
-                    Computer Science and Engineering, with curiosity and passion towards the
+                    Math, Computer Science and Engineering, with curiosity and passion towards the
                     infinite amount of arousing knowledge, with support from family and friends, and with the pursuit of
                     self-consistency (自洽) to also have a sense of 『我属于我自己』(I belong to myself).
                 </div>
                 <h1 className={styles.aboutHeading}>📞 Contact</h1>
-                To know more about me, you are free to check my <Link href="/resume.pdf">
-                📄 resume
-            </Link>. Also, feel free to drop me an <Link href="mailto:jimmylinh@icloud.com">
-                📧 email
-            </Link>
+                <div className={styles.aboutParagraph}>
+                    To know more about me, you are free to check my 📄 <Link href="/resume">
+                        resume
+                    </Link> (I use the term "resume" and "CV" interchangeably).
+                    Also, feel free to drop me an 📧 <Link href="mailto:jimmylinh@icloud.com">
+                        email
+                    </Link>.
+                </div>
                 {/*, or follow my <Link href="https://github.com/jimmylin99">*/}
                 {/*    <a>GitHub</a>*/}
                 {/*</Link>*/}
-                .
                 <div className={styles.aboutParagraph}>
                     You are also welcome to leave comments or add emoji below with a signed-in GitHub account, and
                     follow me
                     on <Link href="https://github.com/luckyhlin">
-                        GitHub <Image
-                        src="/images/github-icon.png"
-                        height={24}
-                        width={24}
-                        alt="GitHub Icon"
-                        style={{
-                            display: "inline-block"
-                        }}
-                        />.
-                    </Link>
+                        GitHub
+                    </Link> <Image
+                    src="/images/github-icon.png"
+                    height={24}
+                    width={24}
+                    alt="GitHub Icon"
+                    style={{
+                        display: "inline-block"
+                    }}/> & <Link href="https://www.linkedin.com/in/hao-lin-530368280/">
+                        LinkedIn
+                    </Link> <Image
+                    src="/images/linkedin-icon.png"
+                    height={24}
+                    width={24}
+                    alt="LinkedIn Icon"
+                    style={{
+                        display: "inline-block"
+                    }}/>.
                 </div>
 
                 <h1 className={styles.aboutHeading} id="Love" style={
@@ -206,14 +261,14 @@ export default function About() {
                     }
                 }>
                     <summary className={blockStyles.blockToggleSummary}>
-                        Here is a list of friends who help the construction of this site!
+                        Here is a list of friends who helped the construction of this site!
                     </summary>
                     <div className={styles.aboutParagraph}>
                         han酱, cheng酱, ma老師, 腿醬, 梨酱, chi酱 &
-                        豆子💛
+                        豆子 💛
                     </div>
                     <div className={styles.aboutParagraph}>Thanks to 頷, who (passively) becomes the
-                        catalyst towards the completion of this site💖
+                        catalyst towards the completion of this site 💖
                     </div>
                 </details>
                 <div className={styles.aboutRainbowText}
@@ -233,26 +288,5 @@ export default function About() {
                     <br/>LOVE YOU ALL!!!
                 </div>
             </div>
-            {/*<div className={styles.paragraph}>*/}
-            {/*    I am now in a gap year after having*/}
-            {/*both received my B.Eng from UMJI-SJTU*/}
-            {/*and served as a full-time software engineer in ByteDance for a year.*/}
-            {/*    /!*I may move on to University of Wisconsin-Madison and pursue*!/*/}
-            {/*    /!*my M.S. Computer Science degree.*!/*/}
-            {/*</div>*/}
-            {/*<div className={styles.paragraph}>*/}
-            {/*    My academic and professional interests lie in computer science,*/}
-            {/*    specifically high performance systems and artificial intelligence.*/}
-            {/*    I am also skilled in various sports such as soccer, badminton.*/}
-            {/*    FPS gaming is also my favorite, like APEX, CSGO, R6 (my avatar is*/}
-            {/*    a famous character in this game).*/}
-            {/*</div>*/}
-            {/*<div className={styles.paragraph}>*/}
-            {/*    These activities usually*/}
-            {/*    need a team of members to move on, so I wish to meet new friends*/}
-            {/*    who share similar hobbies with me. Please feel free to reach me*/}
-            {/*    via `jimmylinh AT icloud DOT com`.*/}
-            {/*</div>*/}
-        </Layout>
-    );
+    )
 }

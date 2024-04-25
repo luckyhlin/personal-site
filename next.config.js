@@ -11,6 +11,16 @@ module.exports = {
                 source: '/slide-1',
                 destination: 'https://docs.google.com/presentation/d/18qZpsj2KUSb_I5RkAqmgjazQjBmAILwUdlUgYjVNGtM/edit?usp=sharing',
                 permanent: false,
+            },
+            {
+                source: '/resume',
+                destination: '/resume.pdf',
+                permanent: true,
+            },
+            {
+                source: '/cv',
+                destination: '/resume.pdf',
+                permanent: true,
             }
         ]
     },

@@ -3,7 +3,7 @@ import utilStyles from "../styles/utils.module.css";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Giscus from "@giscus/react";
+import MyGiscus from "./giscus";
 import Navigation from "./navigation";
 import Name from "./name";
 import FootageText from "./footage-text";
@@ -88,21 +88,7 @@ export default function Layout({ title, useComment, description, children, home,
                 </div>
             )}
             {!!useComment && (
-                <Giscus
-                    id="comments"
-                    repo="luckyhlin/personal-site"
-                    repoId="R_kgDOHsJs8Q"
-                    category="Announcements"
-                    categoryId="DIC_kwDOHsJs8c4CVf2Q"
-                    mapping="title"
-                    term="Welcome to your comments!"
-                    reactionsEnabled="1"
-                    emitMetadata="0"
-                    inputPosition="top"
-                    theme="light"
-                    lang="en"
-                    loading="eager"
-                />
+                <MyGiscus/>
             )}
             {/*{!!useComment && (*/}
             {/*    <div className="giscus"></div>*/}

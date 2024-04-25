@@ -37,6 +37,9 @@
     font-size: 16px;
   }
 }
+.aboutParagraph a {
+  text-decoration: underline;
+}
 
 .aboutIntroParagraph {
   margin: 10px 0 10px 0;
