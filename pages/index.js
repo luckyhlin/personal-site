@@ -7,6 +7,8 @@ import FootageText from "../components/footage-text";
 import Head from "next/head";
 import About from "../components/about";
 import MyGiscus from "../components/giscus";
+import Image from "next/image";
+import utilStyles from "../styles/utils.module.css";
 
 // const databaseID = process.env.NOTION_DATABASE_ID
 
@@ -25,14 +27,29 @@ export default function HomePage() {
             </Head>
             <div className={styles.headerContainer}>
                 <Navigation isHome={true}/>
-                <div className={styles.headingTextBox}>
-                    <Link href={"/"} className={styles.headingTextPrimary}>
+                <div className={styles.imageContainer}>
+                    <Image
+                        priority
+                        src="/images/lin.jpeg"
+                        className={[
+                            utilStyles.borderCircle,
+                            styles.headingImage,
+                        ].join(" ")}
+                        height={162}
+                        width={162}
+                        alt={Name()}
+                    />
+                    <div className={styles.headingTextBox}>
+                        <Link href={"/"} className={styles.headingTextPrimary}>
 
-                        <Name/>
+                            <Name/>
 
-                    </Link>
+                        </Link>
+                    </div>
+                    <Description/>
                 </div>
-                <Description/>
+
+
 
                 {/*<Link href={"/blogs"}>*/}
                 {/*      <a className={styles.headingTextPrimary}>*/}

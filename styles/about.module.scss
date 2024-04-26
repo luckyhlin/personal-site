@@ -28,6 +28,9 @@
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
+    li::marker {
+        color: #ffb5b5;
+    }
 }
 
 .aboutSparseList {

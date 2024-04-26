@@ -56,6 +56,9 @@
   margin-bottom: 20px;
   margin-left: 20px;
 }
+.aboutList li::marker {
+  color: #ffb5b5;
+}
 
 .aboutSparseList li {
   margin-bottom: 10px;

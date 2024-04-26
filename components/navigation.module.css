@@ -39,10 +39,15 @@
   font-size: 120%;
   display: block;
   position: absolute;
-  right: 0;
-  top: -3vh;
+  right: 20%;
+  top: 5vh;
   color: white;
   text-decoration-line: overline;
+}
+@media (max-width: 768px) {
+  .homeNavigation {
+    right: 5%;
+  }
 }
 .homeNavigation a {
   color: white;

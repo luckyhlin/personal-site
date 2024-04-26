@@ -106,6 +106,10 @@ ol.blockNonTopLevelList li {
   list-style-position: inside;
 }
 
+.listItem::marker {
+  color: #ffb5b5;
+}
+
 .blockParagraph {
   margin-top: 0.5em;
   margin-bottom: 0.5em;

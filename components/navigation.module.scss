@@ -16,8 +16,11 @@
   font-size: 120%;
   display: block;
   position: absolute;
-  right: 0;
-  top: -3vh;
+  right: 20%;
+  top: 5vh;
+  @media (max-width: 768px) {
+    right: 5%;
+  }
   color: white;
   a {
     color: white;

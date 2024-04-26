@@ -80,7 +80,7 @@ export function Block({ block, index, blocks }) {
                     styles.blockTopLevelList :
                     styles.blockNonTopLevelList
                 }>
-                    <li>
+                    <li className={styles.listItem}>
                         <RichText richTexts={content.rich_text}/>
                         {has_children && (
                             <div className={styles.blockChildren}>
@@ -97,7 +97,7 @@ export function Block({ block, index, blocks }) {
                     styles.blockTopLevelList :
                     styles.blockNonTopLevelList
                 }>
-                    <li>
+                    <li className={styles.listItem}>
                         <RichText richTexts={content.rich_text}/>
                         {has_children && (
                             <div className={styles.blockChildren}>

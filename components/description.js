@@ -1,12 +1,16 @@
 import styles from "./description.module.scss"
-import Link from "next/link";
-import Name from "../components/name";
 
 export default function Description() {
     return <>
             <span className={styles.headingTextDescription}>
                 {/*Hi, this is <Name/>, a cute and genuine guy with passion and love!*/}
                 Hi, this is Hao, a passionate guy with curiosity & love!
+                <br/>
+                MBTI may be ISFP-T 😄️
+                <br/>
+                ⚽️🏸️🎾️🏓️🥏🏐️🎱️🎳️🧗🏻🚴🏻🚣🏻🍨️🎮️⛰️💬️
+                <br/>
+                我是宇宙超级无敌可爱机智の<br/>🍑黃桃大罐頭💛
                 {/*I am now reaching the end of a gap year.*/}
                             {/*            after having both received my B.Eng from <span*/}
                             {/*className={styles.textInlineBox}>*/}
@@ -29,16 +33,14 @@ export default function Description() {
             {/*        </Link>*/}
             {/*    </span> (◍•ᴗ•◍)*/}
             {/*</span>*/}
-            <span className={styles.headingTextDescription}
-                  // style={{ fontSize: "140%" }}
-            >
-                MBTI may be ISFP-T 😄️
-                <br/>
-                Hobby Emoji: ⚽️🏸️🎾️🏓️🥏🏐️🎱️🎳️🧗🏻🚴🏻🚣🏻🍨️🎮️⛰️💬️
-                {/*<br/>我是宇宙超级无敌可爱机智の<br/>🍑黃桃大罐頭💛*/}
-                {/*It's astonishing to me that I've dedicated more than half of my life to studying CS/CE and still love it.*/}
-                {/*<br/>Just as I do sports and traveling. 💛*/}
-            </span>
+            {/*<span className={styles.headingTextDescription}*/}
+            {/*      // style={{ fontSize: "140%" }}*/}
+            {/*>*/}
+
+            {/*    */}
+            {/*    /!*It's astonishing to me that I've dedicated more than half of my life to studying CS/CE and still love it.*!/*/}
+            {/*    /!*<br/>Just as I do sports and traveling. 💛*!/*/}
+            {/*</span>*/}
 
             {/*<span className={styles.headingTextDescription}>*/}
             {/*    Visit <Link*/}
