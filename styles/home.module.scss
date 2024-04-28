@@ -35,10 +35,10 @@
 .headerContainer {
     position: relative;
     @media (max-width: 768px) {
-        padding-top: 5vh;
+        padding-top: 1vh;
     }
     @media (min-width: 768px) {
-        padding-top: 10vh;
+        padding-top: 2vh;
     }
     //left: 0;
     /*min-height: 100vh;*/
@@ -64,7 +64,7 @@
 }
 
 .headingTextBox {
-    margin-top: 20px;
+    margin-top: 15px;
     @media (max-width: 768px) {
         margin-top: 2vh;
     }
@@ -75,7 +75,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5em;
+    margin-top: 3em;
+    @media (max-width: 768px) {
+        margin-top: 5em;
+    }
 }
 
 .headingImage {
@@ -90,7 +93,7 @@
     display: inline-block;
     font-size: 72px;
     @media (max-width: 768px) {
-        font-size: 48px;
+        font-size: 56px;
     }
     color: $home-page-text-color;
     animation: moveInLeft 2s;

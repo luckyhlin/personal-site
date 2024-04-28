@@ -25,10 +25,11 @@ export default function FootageText({ isHome, isPrivate }) {
             
                 Love
             
-            </Link>, <span className={
+            </Link>, <Link href="/blogs"
+                           className={
                 // lightColor ? styles.lightFootageColor : styles.darkFootageColor}>
                 isHome ? styles.footageRainbowText : styles.footageDynamicText
-            }>Curiosity</span> & <Link
+            }>Curiosity</Link> & <Link
                 href="https://github.com/luckyhlin/personal-site"
                 className={
                 // lightColor ? styles.lightFootageColor : styles.darkFootageColor}>

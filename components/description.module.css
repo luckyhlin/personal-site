@@ -38,6 +38,7 @@
  */
 .headingTextDescription {
   display: block;
+  margin-top: 10px;
   font-weight: 600;
   font-size: 32px;
   color: #ffffff;

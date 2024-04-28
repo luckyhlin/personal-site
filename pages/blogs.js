@@ -17,7 +17,7 @@ export default function Blogs({ pages }) {
                     Admit one's ignorance.
                 </span>
                 <div className={styles.blogSubSentence}>
-                    At present, I focus on technical blogs. Hope to update it regularly.
+                    At present, I focus on technical blogs.
                 </div>
                 <hr className={summaryStyles.blogSummaryHorizontalLine}/>
                 {/*<span className={styles.postSentenceHeading}>*/}

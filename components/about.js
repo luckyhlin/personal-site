@@ -66,12 +66,15 @@ function AboutContent() {
             {/*</div>*/}
             <h1 className={styles.aboutHeading}>🐻️ Work LIFE Balance</h1>
             <div className={styles.aboutParagraph}>
-                "Busy working, or busy dying." -- The Shawshank Redemption
+                <span style={{
+                    fontStyle: "italic",
+                }}>"Busy living, or busy dying." -- The Shawshank Redemption
+                </span>
             </div>
             <div className={styles.aboutParagraph}>
-                I embrace the diversity and beauty of life via
+                Always embrace the diversity and beauty of life:
                 <ul className={styles.aboutList}>
-                    <li>⚽ sports (biking, soccer, eight-ball pool, badminton, table tennis, wall climbing, tennis &
+                    <li>⚽ sports (biking, soccer, eight-ball pool, badminton, table tennis, wall climbing, snowboarding, tennis &
                         frisbee)
                         我是运动小天才！
                     </li>
@@ -82,7 +85,8 @@ function AboutContent() {
                     </li>
                     <li>⛰️ traveling (prefer natural scenery)</li>
                     <li>🎬️ movies (philosophical & romantic)</li>
-                    <li>🎧️ musics (I really like my Sony headphone lol)</li>
+                    <li>🎧️ music (I really like my Sony headphone & its denoising feature lol)</li>
+                    <li>🕺🏻 dancing (tho I am poor at remembering gestures, I really like shaking with rhythms)</li>
                     <li>🤔️ thinking (pursue consistency logically on science & philosophically on life)</li>
                     <li>💬️ chatting (super outgoing & energetic when with ppl in the correct vibe 🥰)</li>
                 </ul>
@@ -124,7 +128,7 @@ function AboutContent() {
             <div className={styles.aboutParagraph}>
                 I love math, computer science & engineering since childhood. Before college, I founded a computer &
                 electronics social club,
-                won algorithm contests, and DIY software & hardware.
+                won algorithm contests, and DIYed software & hardware projects.
             </div>
             <h1 className={styles.aboutHeading}>😆 Academic Interests</h1>
             <div className={styles.aboutParagraph}>
@@ -270,7 +274,7 @@ function AboutContent() {
                 }
             }>
                 <summary className={blockStyles.blockToggleSummary}>
-                    Here is a list of friends who helped the construction of this site!
+                    Here is a list of friends who helped evaluate this site!
                 </summary>
                 <div className={styles.aboutParagraph}>
                     han酱, cheng酱, ma老師, 腿醬, 梨酱, chi酱 &
