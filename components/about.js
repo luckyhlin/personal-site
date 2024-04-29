@@ -297,7 +297,7 @@ function AboutContent() {
                 Thanks to my beloved FAMILY,<br/>
                 super sincere warm FRIENDS,<br/>
                 nice teachers who guided me &<br/>
-                ❤ kind-hearted girls ❤ who made my heart flutter ◍•ᴗ•◍
+                ❤ Girls ❤ who made my heart flutter ◍•ᴗ•◍
                 <br/>LOVE YOU ALL!!!
             </div>
         </div>

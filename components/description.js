@@ -4,7 +4,7 @@ export default function Description() {
     return <>
             <span className={styles.headingTextDescription}>
                 {/*Hi, this is <Name/>, a cute and genuine guy with passion and love!*/}
-                Hi, this is Hao, a passionate straight guy with curiosity & love!
+                Hi, this is Hao, a passionate guy with curiosity & love!
                 <br/>
                 My MBTI may be ISFP-T 😄️
                 <br/>
