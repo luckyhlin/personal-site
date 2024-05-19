@@ -5,7 +5,6 @@ import descriptionStyles from "../components/description.module.scss";
 import Link from "next/link";
 import Name from "../components/name";
 import Image from "next/image";
-import utilStyles from "../styles/utils.module.css";
 
 // Notice that we have removed the '/about' page
 // but embed it into the home page
@@ -74,27 +73,36 @@ function AboutContent() {
             <div className={styles.aboutParagraph}>
                 Always embrace the diversity and beauty of life:
                 <ul className={styles.aboutList}>
-                    <li>⚽ sports (biking, soccer, eight-ball pool, badminton, table tennis, wall climbing, snowboarding, tennis &
-                        frisbee)
-                        我是运动小天才！
+                    <li>⚽ sports (biking, soccer, eight-ball pool, badminton, table tennis, wall climbing, snowboarding, sailing, tennis,
+                        frisbee & a LOT)
                     </li>
                     <li>🎮 gaming (a HUGE fan of multi-player FPS 🔫 games): APEX, 彩虹六号 (R6), CS:GO, 战地
                         (Battlefield 1 & 5),
-                        OverWatch, Insurgency, Division 2, CoD (single player only)<br/>Look for time & teammates!
-                        😎
+                        OverWatch, Insurgency, Division 2, CoD & FPS VR game developed by myself 😎<br/>Looking for teammates (and time lol)!
                     </li>
                     <li>⛰️ traveling (prefer natural scenery)</li>
-                    <li>🎬️ movies (philosophical & romantic)</li>
+                    <li>🎬️ TV and movies (drama films, crime TV shows, or romantic TV shows with pretty actress 😁️)</li>
                     <li>🎧️ music (I really like my Sony headphone & its denoising feature lol)</li>
                     <li>🕺🏻 dancing (tho I am poor at remembering gestures, I really like shaking with rhythms)</li>
-                    <li>🤔️ thinking (pursue consistency logically on science & philosophically on life)</li>
-                    <li>💬️ chatting (super outgoing & energetic when with ppl in the correct vibe 🥰)</li>
+                    <li>🤔️ thinking (in pursuit of consistency logically on science & philosophically on life)</li>
+                    <li>💬️ chatting (tho being ISFP-T, super outgoing & energetic when with ppl in the correct vibe 🥰)</li>
                 </ul>
                 and MORE 😂
             </div>
             <h1 className={styles.aboutHeading}>🎓 Education & Career</h1>
             <div className={styles.aboutParagraph}>
-                I am pursuing my master of science degree in computer science (MSCS) at the <span
+                This summer, I feel excited to spend my time in California, interning in <span
+                className={descriptionStyles.textInlineBox}>
+                    <Link href="https://www.nvidia.com/"
+                          className={[descriptionStyles.textLink].join(" ")}>
+                        💚 NVIDIA,
+                    </Link>
+                </span> as an Software Development Engineer (SDE) for DFX team under VLSI department.
+            </div>
+            <div className={styles.aboutParagraph}>
+                I am pursuing my master of science degree in computer science <span style={{
+                color: "purple"
+            }}>(CS)</span> at <span
                 className={descriptionStyles.textInlineBox}>
                         <Link
                             href="https://www.wisc.edu/"
@@ -104,10 +112,15 @@ function AboutContent() {
                     </span> (◍•ᴗ•◍)
             </div>
             <div className={styles.aboutParagraph}>
-                Prior to that, I earned my B.Eng. in electrical and computer engineering (ECE), with 🌟 honors
-                research program, and a minor degree in data science (DS)
-                at the <span
-                className={descriptionStyles.textInlineBox}>
+                Prior to that, I earned my B.Eng. in electrical and computer engineering <span style={{
+                    color: "purple"
+            }}>
+                (ECE)
+            </span>, with 🌟 honors
+                research program, and a minor degree in data science <span style={{
+                color: "purple"
+            }}>(DS)</span> at <span
+                    className={descriptionStyles.textInlineBox}>
                         <Link
                             href="https://www.ji.sjtu.edu.cn/"
                             className={[descriptionStyles.textLink].join(" ")}>
@@ -127,8 +140,8 @@ function AboutContent() {
             </div>
             <div className={styles.aboutParagraph}>
                 I love math, computer science & engineering since childhood. Before college, I founded a computer &
-                electronics social club,
-                won algorithm contests, and DIYed software & hardware projects.
+                electronics club,
+                won competitive programming contests, and DIYed software & hardware projects.
             </div>
             <h1 className={styles.aboutHeading}>😆 Academic Interests</h1>
             <div className={styles.aboutParagraph}>

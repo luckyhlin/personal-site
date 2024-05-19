@@ -49,6 +49,16 @@
     right: 5%;
   }
 }
+@media (min-width: 2048px) {
+  .homeNavigation {
+    right: 25%;
+  }
+}
+@media (min-width: 3000px) {
+  .homeNavigation {
+    right: 30%;
+  }
+}
 .homeNavigation a {
   color: white;
 }

@@ -26,7 +26,7 @@
 /*}*/
 
 .bgContainer {
-    overflow: auto;
+    //overflow: auto;
     background: rgba(255, 233, 233, 1);
     display: block;
     position: relative;
@@ -131,7 +131,7 @@
 }
 
 .aboutContainer {
-    padding: 3em 8% 2em 8%;
+    padding: 3em 8% 1em 8%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -151,9 +151,12 @@
 }
 
 .updatedAtContainer {
-    padding: 30px 0 10px 10%;
+    padding: 20px 0 10px 10%;
+    @media (max-width: 768px) {
+        padding: 30px 0 10px 5%;
+    }
     animation: moveInBottom 2s;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0);
     color: rgba(84, 84, 84, 0.8);
 }
 
@@ -163,10 +166,15 @@
 }
 
 .giscusContainer {
+    margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
     //max-width: 1500px;
 
     background: rgba(255, 255, 255, 0.51);
     padding: 3em 8% 0 8%;
+    @media (max-width: 768px) {
+        margin-top: 1em;
+        padding: 3em 3% 0 3%;
+    }
 }

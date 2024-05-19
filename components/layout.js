@@ -7,11 +7,12 @@ import MyGiscus from "./giscus";
 import Navigation from "./navigation";
 import Name from "./name";
 import FootageText from "./footage-text";
+import ScrollToTop from "./scroll-to-top";
 
 // parameter home is not used anymore, home page has its own layout
 export default function Layout({ title, useComment, description, children, home, pageType, isPrivate }) {
     return (
-        <div className={styles.container}>
+        <div id="container" className={styles.container}>
             <Head>
                 {/* TODO: modify the content of the `name` meta tag, as it will display on GitHub Discussion */}
                 {/*<meta*/}
@@ -81,11 +82,7 @@ export default function Layout({ title, useComment, description, children, home,
                 //         <a>Back to home</a>
                 //     </Link>
                 // </div>
-                <div className={styles.scrollToTop}>
-                    <a onClick={scrollToTop}>
-                        ☝ Go to the top
-                    </a>
-                </div>
+                <ScrollToTop/>
             )}
             {!!useComment && (
                 <MyGiscus/>
@@ -116,11 +113,4 @@ export default function Layout({ title, useComment, description, children, home,
             </footer>
         </div>
     );
-}
-
-const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
-
-function scrollToTop() {
-    if (!isBrowser()) return;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }

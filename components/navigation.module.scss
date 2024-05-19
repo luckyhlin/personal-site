@@ -21,6 +21,12 @@
   @media (max-width: 768px) {
     right: 5%;
   }
+  @media (min-width: 2048px) {
+    right: 25%;
+  }
+  @media (min-width: 3000px) {
+    right: 30%;
+  }
   color: white;
   a {
     color: white;

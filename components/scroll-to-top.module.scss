@@ -1,0 +1,32 @@
+.scrollToTop {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  z-index: 99; /* Make sure it does not overlap */
+
+  //margin: 2rem 0 2rem;
+
+  //text-decoration: underline;
+  color: rgba(250, 250, 250, 0.9);
+  padding: 10px;
+  background: rgba(255, 0, 0, 0.4);
+  border-radius: 20px;
+
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  transition: all .5s;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    transform: translateY(-1px);
+    opacity: 0.6;
+  }
+
+  @media (max-width: 768px) {
+    padding: 8px;
+  }
+}
+
+.show {
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Fully visible */
+}

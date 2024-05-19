@@ -6,11 +6,9 @@ export default function Description() {
                 {/*Hi, this is <Name/>, a cute and genuine guy with passion and love!*/}
                 Hi, this is Hao, a passionate guy with curiosity & love!
                 <br/>
-                My MBTI may be ISFP-T 😄️
+                ⚽️🏸️🎾️🏓️🥏🏐️🎱️🎳️🧗🏻🚴🏻🚣🏻🏂🏻️🍨️🎮️⛰️⛵️💬️
                 <br/>
-                ⚽️🏸️🎾️🏓️🥏🏐️🎱️🎳️🧗🏻🚴🏻🚣🏻🏂🏻️🍨️🎮️⛰️💬️
-                <br/>
-                我是宇宙超级无敌可爱机智の<br/>🍑黃桃大罐頭💛
+                我是宇宙超级无敌可爱机智の<br/>🍑大罐頭💛
                 {/*I am now reaching the end of a gap year.*/}
                             {/*            after having both received my B.Eng from <span*/}
                             {/*className={styles.textInlineBox}>*/}

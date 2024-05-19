@@ -9,6 +9,7 @@ import About from "../components/about";
 import MyGiscus from "../components/giscus";
 import Image from "next/image";
 import utilStyles from "../styles/utils.module.css";
+import ScrollToTop from "../components/scroll-to-top";
 
 // const databaseID = process.env.NOTION_DATABASE_ID
 
@@ -75,15 +76,16 @@ export default function HomePage() {
                 {/*</div>*/}
             </div>
             <div className={styles.aboutContainer}>
-                <div className={styles.aboutContentContainer}>
+                <div id="container" className={styles.aboutContentContainer}>
                     <About/>
                 </div>
-            </div>
-            <div className={styles.giscusContainer}>
-                <MyGiscus/>
-            </div>
-            <div className={styles.updatedAtContainer}>
-                <FootageText isHome={true}/>
+                <div className={styles.giscusContainer}>
+                    <MyGiscus/>
+                </div>
+                <div className={styles.updatedAtContainer}>
+                    <FootageText isHome={true}/>
+                </div>
+                <ScrollToTop/>
             </div>
         </div>
     );
