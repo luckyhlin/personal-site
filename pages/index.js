@@ -31,7 +31,7 @@ export default function HomePage() {
                 <div className={styles.imageContainer}>
                     <Image
                         priority
-                        src="/images/lin.jpeg"
+                        src="/images/hao-v.jpg"
                         className={[
                             utilStyles.borderCircle,
                             styles.headingImage,

@@ -4,7 +4,9 @@ import 'katex/dist/katex.min.css';
 import TeX from "@matejmazur/react-katex";
 
 export function RichText({ richTexts }) {
+    let counter = 0;
     return richTexts.map((value) => {
+        counter += 1;
         const {
             text,
             equation,
@@ -29,6 +31,7 @@ export function RichText({ richTexts }) {
                     underline ? styles.underline : "",
                 ].join(" ")}
                 style={color !== "default" ? { color } : {}}
+                key={counter}
             >
                 {!!text && (
                     text.link ?

@@ -5,20 +5,21 @@ The site is built upon Next.js and based upon Notion as the CMS. See my `about` 
 Here are the supported blocks so far:
 
 | Block Type         | Availability |
-|--------------------|--------------|
-| Paragraph          | ✔️           |
-| Heading            | ✔️           |
-| Bulleted Item List | ✔️           |
-| Numbered Item List | ✔️           |
-| Toggle             | ✔️           |
-| Callout            | ✔️           |
-| Inline Equation    | ✔️           |
-| Image              | ✔️           |
-| Video              | ❌            |
-| Divider            | ✔️           |
-| Table              | ❌            |
-| Page Reference     | ❌            |
-| Block Equation     | ✔️           |
+|--------------------|:-----------:|
+| Paragraph          |     ✔️      |
+| Heading            |     ✔️      |
+| Bulleted Item List |     ✔️      |
+| Numbered Item List |     ✔️      |
+| Toggle             |     ✔️      |
+| Callout            |     ✔️      |
+| Inline Equation    |     ✔️      |
+| Image              |     ✔️      |
+| Video              |      ❌      |
+| Divider            |     ✔️      |
+| Table              |      ❌      |
+| Page Reference     |      ❌      |
+| Block Equation     |     ✔️      |
+| Quote              |     ✔️      |
 
 ---
 TODO:
@@ -43,7 +44,7 @@ TODO:
 * ~~add noindex tag to hide private pages~~
   * ~~https://www.link-assistant.com/news/hiding-pages-from-indexation.html~~
   * ~~robots.txt is added to reduce crawlers~~
-* mobile compatibility
+* mobile compatibility (probably already solved?)
   * rich_text overflow (open Ubuntu page with mobile screen)
   * home page background issue (only on real mobile phone with corners, e.g. iPhone 12)
 * ~~meta description tag~~
@@ -51,6 +52,8 @@ TODO:
 * add new features / components (e.g. gaming / music information synchronized display)
 * ~~check correctness of the site updated time~~
 * add back-to-all-blogs button
+* ~~add scroll-to-top floating button~~
+* add login feature to use private features (check transit) / visit private pages
 
 ### License
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).

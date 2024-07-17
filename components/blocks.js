@@ -8,7 +8,7 @@ import TeX from "@matejmazur/react-katex";
 export default function Blocks({ blocks }) {
     if (!blocks) return null
     return blocks.map((block, index, blocks) =>
-        <Block block={block} index={index} blocks={blocks}/>
+        <Block block={block} index={index} blocks={blocks} key={index}/>
     )
 }
 
@@ -70,8 +70,10 @@ export function Block({ block, index, blocks }) {
             )
         case "quote":
             return (
-                <div className={styles.blockQuote}>
-                    <RichText richTexts={block.quote.rich_text}/>
+                <div className={styles.blockQuoteContainer}>
+                    <div className={styles.blockQuote}>
+                        <RichText richTexts={block.quote.rich_text}/>
+                    </div>
                 </div>
             )
         case "bulleted_list_item":

@@ -6,8 +6,9 @@ export default function ScrollToTop() {
     const [rightOffset, setRightOffset] = useState(0);
     const buttonRef = useRef(null);
 
+    const toggleYDirectionThreshold = 400; // pixels
     const toggleVisibility = () => {
-        if (window.scrollY > 20) {
+        if (window.scrollY > toggleYDirectionThreshold) {
             setIsVisible(true);
         } else {
             setIsVisible(false);
@@ -25,7 +26,6 @@ export default function ScrollToTop() {
                 let additionalOffset = windowWidth < 1024 ? 0 : 8; // em
                 additionalOffset = additionalOffset * containerFontSize; // px
                 const buttonWidth = buttonRef.current.getBoundingClientRect().width;
-                console.log(`buttonWidth ${buttonWidth}`);
                 if (buttonWidth + additionalOffset > windowWidth - containerRight) {
                     additionalOffset = windowWidth - containerRight - buttonWidth + 60;
                 }

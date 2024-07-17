@@ -45,6 +45,7 @@
   color: #ffffff;
   position: relative;
   animation: moveInRight 2s;
+  text-align: center;
 }
 @media (max-width: 1024px) {
   .headingTextDescription {

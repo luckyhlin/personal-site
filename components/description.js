@@ -4,26 +4,35 @@ export default function Description() {
     return <>
             <span className={styles.headingTextDescription}>
                 {/*Hi, this is <Name/>, a cute and genuine guy with passion and love!*/}
-                Hi, this is Hao, a passionate guy with curiosity & love!
-                <br/>
+                {/*Hi, this is Hao, a passionate guy with curiosity & love!*/}
+                {/*<br/>*/}
                 ⚽️🏸️🎾️🏓️🥏🏐️🎱️🎳️🧗🏻🚴🏻🚣🏻🏂🏻️🍨️🎮️⛰️⛵️💬️
+                {/*<br/>*/}
+                {/*我是宇宙超级无敌可爱机智の<br/>🍑大罐頭💛*/}
+                {/*<br/>*/}
+                {/*[Fact] I am a guy*/}
+                {/*<br/>*/}
+                {/*[Idea] I am a cute guy*/}
                 <br/>
-                我是宇宙超级无敌可爱机智の<br/>🍑大罐頭💛
+                <div style={{
+                    fontStyle: "italic",
+                }}>"Busy living, or busy dying." -- The Shawshank Redemption
+                </div>
                 {/*I am now reaching the end of a gap year.*/}
-                            {/*            after having both received my B.Eng from <span*/}
-                            {/*className={styles.textInlineBox}>*/}
-                            {/*                <Link href="https://www.ji.sjtu.edu.cn/">*/}
-                            {/*                    <a className={[styles.textLink, styles.textLinkColor].join(" ")}>UMJI-SJTU</a>*/}
-                            {/*                </Link>*/}
-                            {/*            </span> and served as a full-time software engineer in <span className={styles.textInlineBox}>*/}
-                            {/*                <Link href="https://www.bytedance.com/en/">*/}
-                            {/*                    <a className={[styles.textLink, styles.textLinkColor].join(" ")}>ByteDance</a>*/}
-                            {/*                </Link>*/}
-                            {/*            </span> for a year.*/}
+                {/*            after having both received my B.Eng from <span*/}
+                {/*className={styles.textInlineBox}>*/}
+                {/*                <Link href="https://www.ji.sjtu.edu.cn/">*/}
+                {/*                    <a className={[styles.textLink, styles.textLinkColor].join(" ")}>UMJI-SJTU</a>*/}
+                {/*                </Link>*/}
+                {/*            </span> and served as a full-time software engineer in <span className={styles.textInlineBox}>*/}
+                {/*                <Link href="https://www.bytedance.com/en/">*/}
+                {/*                    <a className={[styles.textLink, styles.textLinkColor].join(" ")}>ByteDance</a>*/}
+                {/*                </Link>*/}
+                {/*            </span> for a year.*/}
             </span>
-            {/*<span className={styles.headingTextDescription}>*/}
-            {/*    I am pursuing a master's degree in computer science at the <span*/}
-            {/*    className={styles.textInlineBox}>*/}
+        {/*<span className={styles.headingTextDescription}>*/}
+        {/*    I am pursuing a master's degree in computer science at the <span*/}
+        {/*    className={styles.textInlineBox}>*/}
             {/*        <Link*/}
             {/*            href="https://www.wisc.edu/"*/}
             {/*            className={[styles.textLink, styles.textLinkColor].join(" ")}>*/}

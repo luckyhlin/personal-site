@@ -8,7 +8,7 @@ export default function BlogInfo({metaInfo, isDetail}) {
                 tags &&
                     <div className={styles.tagContainer}>
                         {tags.map((tag) =>
-                            <div className={styles["tag".concat(tag.color)]}>
+                            <div className={styles["tag".concat(tag.color)]} key={tag.name}>
                                 {tag.name}
                             </div>
                         )}

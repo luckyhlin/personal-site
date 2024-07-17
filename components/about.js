@@ -64,12 +64,12 @@ function AboutContent() {
             {/*    English with some Chinese (简体 & 繁體中文).*/}
             {/*</div>*/}
             <h1 className={styles.aboutHeading}>🐻️ Work LIFE Balance</h1>
-            <div className={styles.aboutParagraph}>
-                <span style={{
-                    fontStyle: "italic",
-                }}>"Busy living, or busy dying." -- The Shawshank Redemption
-                </span>
-            </div>
+            {/*<div className={styles.aboutParagraph}>*/}
+            {/*    <span style={{*/}
+            {/*        fontStyle: "italic",*/}
+            {/*    }}>"Busy living, or busy dying." -- The Shawshank Redemption*/}
+            {/*    </span>*/}
+            {/*</div>*/}
             <div className={styles.aboutParagraph}>
                 Always embrace the diversity and beauty of life:
                 <ul className={styles.aboutList}>
@@ -91,13 +91,13 @@ function AboutContent() {
             </div>
             <h1 className={styles.aboutHeading}>🎓 Education & Career</h1>
             <div className={styles.aboutParagraph}>
-                This summer, I feel excited to spend my time in California, interning in <span
+                This summer, I feel excited to spend my time in California, interning at <span
                 className={descriptionStyles.textInlineBox}>
                     <Link href="https://www.nvidia.com/"
                           className={[descriptionStyles.textLink].join(" ")}>
                         💚 NVIDIA,
                     </Link>
-                </span> as an Software Development Engineer (SDE) for DFX team under VLSI department.
+                </span> as an Software Engineer (SWE).
             </div>
             <div className={styles.aboutParagraph}>
                 I am pursuing my master of science degree in computer science <span style={{
@@ -136,7 +136,7 @@ function AboutContent() {
                             className={[descriptionStyles.textLink].join(" ")}>
                             💙 ByteDance
                         </Link>
-                    </span> for a year as an SDE, and then took a gap year.
+                    </span> for a year as an SWE, and then took a gap year.
             </div>
             <div className={styles.aboutParagraph}>
                 I love math, computer science & engineering since childhood. Before college, I founded a computer &

@@ -56,13 +56,35 @@
     overflow: hidden;
 }
 
-.blockQuote {
+.blockQuoteContainer {
+    position: relative;
     display: block;
     border-left: 0.3em solid #878a87;
-    background: rgba(0, 0, 0, 10%);
-    padding-left: 1em;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
+    background: rgba(0, 0, 0, 8%);
+    padding: 1.9em 0.5em 1.9em 1.9em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.blockQuote {
+    &::before {
+        content: '“';
+        font-family: Arial, sans-serif;
+        position: absolute;
+        top: -0.3em;
+        left: 0.1em;
+        font-size: 5em;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    &::after {
+        content: '”';
+        font-family: Arial, sans-serif;
+        position: absolute;
+        right: 0.1em;
+        bottom: -0.8em;
+        font-size: 5em;
+        color: rgba(255, 255, 255, 0.5);
+    }
 }
 
 .blockChildren {

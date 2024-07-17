@@ -37,7 +37,7 @@ export default function Layout({ title, useComment, description, children, home,
                     <>
                         <Image
                             priority
-                            src="/images/lin.jpeg"
+                            src="/images/hao-v.jpg"
                             className={utilStyles.borderCircle}
                             height={108}
                             width={108}
@@ -52,7 +52,7 @@ export default function Layout({ title, useComment, description, children, home,
 
                             <Image
                                 priority
-                                src="/images/lin.jpeg"
+                                src="/images/hao-v.jpg"
                                 className={utilStyles.borderCircle}
                                 height={108}
                                 width={108}
