@@ -97,7 +97,7 @@ function AboutContent() {
                           className={[descriptionStyles.textLink].join(" ")}>
                         💚 NVIDIA,
                     </Link>
-                </span> as an Software Engineer (SWE).
+                </span> as a Software Engineer (SWE).
             </div>
             <div className={styles.aboutParagraph}>
                 I am pursuing my master of science degree in computer science <span style={{

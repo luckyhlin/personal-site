@@ -1,0 +1,203 @@
+/* components/carousel.module.scss */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.gameSection {
+  //padding: 3em 8% 1em 8%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1100px;
+  @media (max-width: 768px) {
+    //padding-left: 5%;
+    //padding-right: 5%;
+  }
+  //padding: 60px 50px;
+  //max-width: 100%;
+
+  .test {
+    background: #e0ffe0;
+    margin: 100px;
+  }
+
+  .lineTitle {
+    margin-bottom: 48px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+    width: 400px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      border-radius: 2px;
+    }
+
+    &::before {
+      width: 100%;
+      background: #f2f2f2;
+    }
+
+    &::after {
+      width: 32px;
+      background: #e73700;
+    }
+  }
+
+  .item {
+    margin: 0 10px 60px;
+    width: 320px;
+    height: 400px;
+    @media (max-width: 768px) {
+      width: 320px;
+      height: 400px;
+    }
+    display: flex;
+    align-items: flex-end;
+    background-color: #343434;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+
+    &.active {
+      //width: 500px;
+      box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .imageContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      //z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    }
+
+    .itemDesc {
+      padding: 0 24px 12px;
+      color: #fff;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      transform: translateY(calc(100% - 54px));
+      transition: all 0.4s ease-in-out;
+
+      p {
+        opacity: 0;
+        transform: translateY(32px);
+        transition: all 0.4s ease-in-out 0.2s;
+      }
+
+      &.active {
+        transform: none;
+
+        p {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+
+//@media (min-width: 992px) and (max-width: 1199px) {
+//  .gameSection {
+//    padding: 50px 30px;
+//
+//    .lineTitle {
+//      margin-bottom: 32px;
+//    }
+//
+//    .item {
+//      margin: 0 12px 60px;
+//      width: 260px;
+//      height: 360px;
+//
+//      &.active {
+//        width: 400px;
+//      }
+//
+//      .itemDesc {
+//        transform: translateY(calc(100% - 46px));
+//      }
+//    }
+//  }
+//}
+//
+//@media (min-width: 768px) and (max-width: 991px) {
+//  .gameSection {
+//    padding: 50px 30px 40px;
+//
+//    .lineTitle {
+//      width: 330px;
+//      margin-bottom: 32px;
+//    }
+//
+//    .item {
+//      margin: 0 12px 60px;
+//      width: 240px;
+//      height: 330px;
+//
+//      &.active {
+//        width: 360px;
+//      }
+//
+//      .itemDesc {
+//        transform: translateY(calc(100% - 42px));
+//      }
+//    }
+//  }
+//}
+//
+//@media (max-width: 767px) {
+//  .gameSection {
+//    padding: 30px 15px 20px;
+//
+//    .lineTitle {
+//      width: 250px;
+//      margin-bottom: 20px;
+//    }
+//
+//    .item {
+//      margin: 0 10px 40px;
+//      width: 200px;
+//      height: 280px;
+//
+//      &.active {
+//        width: 270px;
+//        box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+//      }
+//
+//      .itemDesc {
+//        padding: 0 14px 5px;
+//        transform: translateY(calc(100% - 42px));
+//      }
+//    }
+//  }
+//}

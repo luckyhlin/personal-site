@@ -1,0 +1,107 @@
+/* components/carousel.module.scss */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.gameSection {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1100px;
+}
+.gameSection .test {
+  background: #e0ffe0;
+  margin: 100px;
+}
+.gameSection .lineTitle {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+  width: 400px;
+}
+.gameSection .lineTitle::before, .gameSection .lineTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.gameSection .lineTitle::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+.gameSection .lineTitle::after {
+  width: 32px;
+  background: #e73700;
+}
+.gameSection .item {
+  margin: 0 10px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #343434;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .gameSection .item {
+    width: 320px;
+    height: 400px;
+  }
+}
+.gameSection .item.active {
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.gameSection .item .imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gameSection .item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+.gameSection .item .itemDesc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+}
+.gameSection .item .itemDesc p {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+}
+.gameSection .item .itemDesc.active {
+  transform: none;
+}
+.gameSection .item .itemDesc.active p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=carousel.module.css.map */

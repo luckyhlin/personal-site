@@ -22,6 +22,15 @@ Here are the supported blocks so far:
 | Quote              |     ✔️      |
 
 ---
+# Installation
+
+Have `npm` and `node` installed.
+On MacOS, you can use `brew install node`.
+On all systems, you can try install `nvm` first.
+
+To install all packages, use `npm install` under the root directory of this project.
+
+---
 TODO:
 * ~~home page redesign~~
   * ~~bottom padding (open with mobile screen)~~
