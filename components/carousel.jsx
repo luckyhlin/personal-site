@@ -5,41 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './carousel.module.scss';
 
-const games = [
-    {
-        title: '⚽ sports',
-        description: 'biking, soccer, eight-ball pool, badminton, table tennis, wall climbing, snowboarding, sailing, tennis,\n' +
-            '                        frisbee & a LOT',
-        imageUrl: 'https://www.yudiz.com/codepen/expandable-animated-card-slider/dota-2.jpg'
-    },
-    {
-        title: 'The Witcher 3',
-        description: 'The Witcher 3 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment\'s Warcraft III.',
-        imageUrl: 'https://www.yudiz.com/codepen/expandable-animated-card-slider/winter-3.jpg'
-    },
-    {
-        title: 'RDR 2',
-        description: 'RDR 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment\'s Warcraft III.',
-        imageUrl: 'https://www.yudiz.com/codepen/expandable-animated-card-slider/rdr-2.jpg'
-    },
-    {
-        title: 'PUBG Mobile',
-        description: 'PUBG 2 is a multiplayer online battle arena by Valve. The game is a sequel to Defense of the Ancients, which was a community-created mod for Blizzard Entertainment\'s Warcraft III.',
-        imageUrl: 'https://www.yudiz.com/codepen/expandable-animated-card-slider/pubg.jpg'
-    },
-    {
-        title: 'Fortnite',
-        description: 'Battle royale where 100 players fight to be the last person standing. which was a community-created mod for Blizzard Entertainment\'s Warcraft III.',
-        imageUrl: 'https://www.yudiz.com/codepen/expandable-animated-card-slider/fortnite.jpg'
-    },
-    {
-        title: 'Far Cry 5',
-        description: 'Far Cry 5 is a 2018 first-person shooter game developed by Ubisoft. which was a community-created mod for Blizzard Entertainment\'s Warcraft III.',
-        imageUrl: 'https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg'
-    }
-];
-
-const Carousel = () => {
+const Carousel = ({ items }) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const settings = {
@@ -53,7 +19,22 @@ const Carousel = () => {
         centerMode: true,
         centerPadding: "10px",
         beforeChange: (current, next) => setActiveIndex(next),
+        variableWidth: true, // critical option!
+        arrows: false,
         responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 1,
+                    swipeToSlide: true,
+                    focusOnSelect: true,
+                    className: "center",
+                    centerMode: true,
+                    centerPadding: "10px",
+                }
+            },
             {
                 breakpoint: 768,
                 settings: {
@@ -68,55 +49,46 @@ const Carousel = () => {
                 }
             },
         ],
-        // autoplay: true,
-        // autoplaySpeed: 3000,
-        variableWidth: true, // critical option!
-        // beforeChange: (current, next) => {
-        //     let deltaIdx = next - (current + 1);
-        //     deltaIdx = (deltaIdx + games.length) % games.length; // map to [0, length-1]
-        //     let nextIdx = (current + deltaIdx + 1) % games.length;
-        //     console.log(current, deltaIdx, nextIdx);
-        //     // if click at center, deltaIdx = 0
-        //     // if click at left, deltaIdx = length-1
-        //     // if click at right, deltaIdx = 1
-        //     setActiveIndex(nextIdx);
-        // },
+        autoplay: true,
+        autoplaySpeed: 5000,
     };
 
     return (
-        <section className={styles.gameSection}>
-            <h2 className={styles.lineTitle}>Trending Games</h2>
-            <div className={`${styles.item}`} style={{ backgroundImage: `url("https://www.yudiz.com/codepen/expandable-animated-card-slider/far-cry-5.jpg")` }}>abc</div>
-            {/*<Slider {...settings}>*/}
-            {/*    <div>*/}
-            {/*        <h3 className={styles.test}>1</h3>*/}
-            {/*    </div>*/}
-            {/*    <div>*/}
-            {/*        <h3 className={styles.test}>2</h3>*/}
-            {/*    </div>*/}
-            {/*    <div>*/}
-            {/*        <h3 className={styles.test}>3</h3>*/}
-            {/*    </div>*/}
-            {/*    <div>*/}
-            {/*        <h3 className={styles.test}>4</h3>*/}
-            {/*    </div>*/}
-            {/*</Slider>*/}
+        <section className={styles.carouselSection}>
+            {/*<h2 className={styles.lineTitle}>Trending Games</h2>*/}
             <Slider {...settings}>
-                {games.map((game, index) => (
-                    <div>
+                {items.map((item, index) => (
+                    <div key={index}>
                         <div
                             // className={styles.imageContainer}
                             className={`${styles.item} ${index === activeIndex ? styles.active : ''}`}
-                            style={{ backgroundImage: `url(${game.imageUrl})` }}
+                            style={{ ...(item.background && {background: item.background}),
+                                     ...(item.zIndex && {zIndex: item.zIndex}),
+                            }}
                         >
+                            <div className={`${styles.backgroundImage} ${index === activeIndex ? styles.activeBackground : ''}`} style={{
+                                ...(item. backgroundImage && {backgroundImage: item.backgroundImage}),
+                                ...(item.filter && index === activeIndex && {filter: item.filter}),
+                            }}></div>
+                            {/*<div className={`${index === activeIndex ? styles.overlay: ''}`}></div>*/}
                             <div className={`${styles.itemDesc} ${index === activeIndex ? styles.active : ''}`}>
-                                <h3>{game.title}</h3>
-                                <p>{game.description}</p>
+                                <h3>{item.title}</h3>
+                                {typeof item.description === 'string' ? (
+                                    <p>{item.description}</p>
+                                ) :
+                                    item.description
+                                }
                             </div>
                         </div>
                     </div>
                 ))}
             </Slider>
+            {/*<p style={{*/}
+            {/*    color: "grey",*/}
+            {/*    opacity: 0.2,*/}
+            {/*    fontSize: "12px",*/}
+            {/*    margin: "40px 20px",*/}
+            {/*}}>Photos come from Unsplash</p>*/}
         </section>
     );
 };

@@ -63,32 +63,33 @@ function AboutContent() {
             {/*    Welcome! The language is in*/}
             {/*    English with some Chinese (简体 & 繁體中文).*/}
             {/*</div>*/}
-            <h1 className={styles.aboutHeading}>🐻️ Work LIFE Balance</h1>
+            {/*<h1 className={styles.aboutHeading}>🐻️ Work LIFE Balance</h1>*/}
+            {/*/!*<div className={styles.aboutParagraph}>*!/*/}
+            {/*/!*    <span style={{*!/*/}
+            {/*/!*        fontStyle: "italic",*!/*/}
+            {/*/!*    }}>"Busy living, or busy dying." -- The Shawshank Redemption*!/*/}
+            {/*/!*    </span>*!/*/}
+            {/*/!*</div>*!/*/}
             {/*<div className={styles.aboutParagraph}>*/}
-            {/*    <span style={{*/}
-            {/*        fontStyle: "italic",*/}
-            {/*    }}>"Busy living, or busy dying." -- The Shawshank Redemption*/}
-            {/*    </span>*/}
+            {/*    Always embrace the diversity and beauty of life:*/}
+
+            {/*    <ul className={styles.aboutList}>*/}
+            {/*        <li>⚽ sports (biking, soccer, eight-ball pool, badminton, table tennis, wall climbing, snowboarding, sailing, tennis,*/}
+            {/*            frisbee & a LOT)*/}
+            {/*        </li>*/}
+            {/*        <li>🎮 gaming (a HUGE fan of multi-player FPS 🔫 games): APEX, 彩虹六号 (R6), CS:GO, 战地*/}
+            {/*            (Battlefield 1 & 5),*/}
+            {/*            OverWatch, Insurgency, Division 2, CoD & FPS VR game developed by myself 😎<br/>Looking for teammates (and time lol)!*/}
+            {/*        </li>*/}
+            {/*        <li>⛰️ traveling (prefer natural scenery)</li>*/}
+            {/*        <li>🎬️ TV and movies (drama films, crime TV shows, or romantic TV shows with pretty actress 😁️)</li>*/}
+            {/*        <li>🎧️ music (I really like my Sony headphone & its denoising feature lol)</li>*/}
+            {/*        <li>🕺🏻 dancing (tho I am poor at remembering gestures, I really like shaking with rhythms)</li>*/}
+            {/*        <li>🤔️ thinking (in pursuit of consistency logically on science & philosophically on life)</li>*/}
+            {/*        <li>💬️ chatting (tho being ISFP-T, super outgoing & energetic when with ppl in the correct vibe 🥰)</li>*/}
+            {/*    </ul>*/}
+            {/*    and MORE 😂*/}
             {/*</div>*/}
-            <div className={styles.aboutParagraph}>
-                Always embrace the diversity and beauty of life:
-                <ul className={styles.aboutList}>
-                    <li>⚽ sports (biking, soccer, eight-ball pool, badminton, table tennis, wall climbing, snowboarding, sailing, tennis,
-                        frisbee & a LOT)
-                    </li>
-                    <li>🎮 gaming (a HUGE fan of multi-player FPS 🔫 games): APEX, 彩虹六号 (R6), CS:GO, 战地
-                        (Battlefield 1 & 5),
-                        OverWatch, Insurgency, Division 2, CoD & FPS VR game developed by myself 😎<br/>Looking for teammates (and time lol)!
-                    </li>
-                    <li>⛰️ traveling (prefer natural scenery)</li>
-                    <li>🎬️ TV and movies (drama films, crime TV shows, or romantic TV shows with pretty actress 😁️)</li>
-                    <li>🎧️ music (I really like my Sony headphone & its denoising feature lol)</li>
-                    <li>🕺🏻 dancing (tho I am poor at remembering gestures, I really like shaking with rhythms)</li>
-                    <li>🤔️ thinking (in pursuit of consistency logically on science & philosophically on life)</li>
-                    <li>💬️ chatting (tho being ISFP-T, super outgoing & energetic when with ppl in the correct vibe 🥰)</li>
-                </ul>
-                and MORE 😂
-            </div>
             <h1 className={styles.aboutHeading}>🎓 Education & Career</h1>
             <div className={styles.aboutParagraph}>
                 This summer, I feel excited to spend my time in California, interning at <span
@@ -97,7 +98,7 @@ function AboutContent() {
                           className={[descriptionStyles.textLink].join(" ")}>
                         💚 NVIDIA,
                     </Link>
-                </span> as a Software Engineer (SWE).
+                </span> as a Software Engineer (SWE) for DFX Verification Methodology Team (Tools Infrastructure).
             </div>
             <div className={styles.aboutParagraph}>
                 I am pursuing my master of science degree in computer science <span style={{
@@ -136,7 +137,7 @@ function AboutContent() {
                             className={[descriptionStyles.textLink].join(" ")}>
                             💙 ByteDance
                         </Link>
-                    </span> for a year as an SWE, and then took a gap year.
+                    </span> for a year as an SWE, and then took a gap year for better life.
             </div>
             <div className={styles.aboutParagraph}>
                 I love math, computer science & engineering since childhood. Before college, I founded a computer &
@@ -149,7 +150,7 @@ function AboutContent() {
                 <ul className={[styles.aboutList, styles.aboutSparseList].join(" ")}>
                     <li>
                             <span className={richTextStyles.code}>
-                                Computer Systems
+                                Computer Systems & High Performance Computing
                             </span>
                     </li>
                     <li>
@@ -164,9 +165,9 @@ function AboutContent() {
                     </li>
                 </ul>
             </div>
-            <details className={blockStyles.blockToggle}>
+            <details className={blockStyles.blockToggle} open={true}>
                 <summary className={blockStyles.blockToggleSummary}>
-                    My experiences also covered many fields
+                    My experiences and interests covered many fields in engineering & science
                 </summary>
                 {/*<div className={styles.aboutParagraph}>*/}
                 {/*    <span className={descriptionStyles.textInlineBox}>*/}
@@ -178,26 +179,87 @@ function AboutContent() {
                 {/*        </Link>*/}
                 {/*    </span>*/}
                 {/*</div>*/}
+                <h3>Computer Engineering</h3>
                 <ul className={styles.aboutList}>
-                    <li>mathematics (analysis, discrete & numerical),</li>
-                    <li>web development (frontend, backend & algorithm engineering),</li>
-                    <li>very large scale integrated circuit (VLSI),</li>
-                    <li>high performance computing,</li>
-                    <li>artificial intelligence (deep reinforcement learning),</li>
-                    <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>
-                    <li>CS education for K-12 students and beyond 🧒,</li>
-                    <li>many other EECS fields (such as computer architecture, semiconductor, quantum computing, game
-                        development),
-                    </li>
-                    <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP
-                        🥇 & NOI
-                        winter camp 🥉).
-                    </li>
+                    <li>High Performance Computing (HPC): GPU, CUDA & Parallel Computing</li>
+                    <li>Computer Architecture</li>
+                    <li>Very Large Scale Integrated Circuit (VLSI)</li>
+                    <li>Design for Verification</li>
+                    <li>Digital Circuit & Logic</li>
                 </ul>
+                <h3>Theoretical Computer Science & Physics</h3>
+                <ul className={styles.aboutList}>
+                    <li>Competitive Programming: NOIP 🥇 & NOI Winter Camp 🥉</li>
+                    <li>Complexity Theory</li>
+                    <li>Theory of Programming Language</li>
+                    <li>Formal Verification</li>
+                    <li>Quantum Computing</li>
+                    <li>Specialized Relativity & Quantum Physics</li>
+                </ul>
+                <h3>System & Software Engineering</h3>
+                <ul className={styles.aboutList}>
+                    <li>Operating System</li>
+                    <li>Distributed System</li>
+                    <li>NPU: Smart Network Interface Card</li>
+                    <li>System Verification</li>
+                    <li>Machine Learning System</li>
+                    <li>Compiler</li>
+                    <li>Web Development</li>
+                    <li>Game Development</li>
+                    <li>Data Analysis and Visualization</li>
+                </ul>
+                <h3>Artificial Intelligence</h3>
+                <ul className={styles.aboutList}>
+                    <li>Deep Reinforcement Learning</li>
+                    <li>Bayesian Analysis</li>
+                    <li>Machine Learning</li>
+                    <li>Large Language Model</li>
+                </ul>
+                <h3>Mathematics</h3>
+                <ul className={styles.aboutList}>
+                    <li>Mathematical Analysis: Real & Complex Analysis</li>
+                    <li>Numerical Analysis: Finite & Boundary Element Method</li>
+                    <li>Discrete Mathematics</li>
+                    <li>Abstract Algebra</li>
+                    <li>Statistics</li>
+                    <li>Optimization & Linear Programming</li>
+                </ul>
+                <h3>Electrical Engineering</h3>
+                <ul className={styles.aboutList}>
+                    <li>Semiconductor Devices & Physics</li>
+                    <li>Electromagnetic</li>
+                    <li>Analog Circuit & Amplifier</li>
+                </ul>
+                <h3>Mechanical Engineering</h3>
+                <ul className={styles.aboutList}>
+                    <li>Control System</li>
+                    <li>Quadcopter Drones</li>
+                    <li>Electrical Cardio Graph</li>
+                    <li>Robots</li>
+                    <li>Food 3D Printer</li>
+                </ul>
+                {/*<ul className={styles.aboutList}>*/}
+                {/*    <li>mathematics (analysis, discrete & numerical),</li>*/}
+                {/*    <li>web development (frontend, backend & algorithm engineering),</li>*/}
+                {/*    <li>very large scale integrated circuit (VLSI),</li>*/}
+                {/*    <li>high performance computing,</li>*/}
+                {/*    <li>artificial intelligence (deep reinforcement learning),</li>*/}
+                {/*    <li>mechatronics (robots, quadcopter drones, food 3D printers & ECG),</li>*/}
+                {/*    <li>CS education for K-12 students and beyond 🧒,</li>*/}
+                {/*    <li>many other EECS fields (such as computer architecture, semiconductor, quantum computing, game*/}
+                {/*        development),*/}
+                {/*    </li>*/}
+                {/*    <li>competitive programming (i.e. data structure & algorithm contests, specifically NOIP*/}
+                {/*        🥇 & NOI*/}
+                {/*        winter camp 🥉).*/}
+                {/*    </li>*/}
+                {/*</ul>*/}
                 <div className={styles.aboutParagraph}>
-                    I am still figuring out which field I am gonna dive deeper, but I have pretty much
-                    enjoyed
-                    learning various topics which have aspired my curiosity so far.
+                    {/*I am still figuring out which field I am gonna dive deeper, but I have pretty much*/}
+                    {/*enjoyed learning various topics which have aspired my curiosity so far.*/}
+                    I take pleasure in broadening my knowledge and gradually delving deeper into various fields that have piqued my curiosity.
+                    For me, studying is not just about career advancement, financial gain, or social status, but also about intellectual fulfillment and more.
+                    I hope to maintain this curiosity throughout my life.
                 </div>
             </details>
 

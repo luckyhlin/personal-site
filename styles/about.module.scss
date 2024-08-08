@@ -2,10 +2,18 @@
 
 .aboutContainer {
     animation: moveInLeft 2s;
+
+    details {
+        h3 {
+            margin-top: 20px;
+            padding-left: 20px;
+            color: #f16666;
+        }
+    }
 }
 
 .aboutParagraph {
-    margin: 10px;
+    margin: 10px 0;
     font-size: 18px;
     @media (max-width: 768px) {
         font-size: 16px;
