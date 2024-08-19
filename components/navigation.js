@@ -26,7 +26,7 @@ export default function Navigation({ isHome, isAbout, isBlogs }) {
                     <a>Blogs</a>
                 }
             </Link>
-            <a href="/resume.pdf">{isHome ? "CV" : "Resume"}</a>
+            {/*<a href="/resume.pdf">{isHome ? "CV" : "Resume"}</a>*/}
         </nav>
     );
 }

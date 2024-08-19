@@ -6,7 +6,7 @@ export default function ScrollToTop() {
     const [rightOffset, setRightOffset] = useState(0);
     const buttonRef = useRef(null);
 
-    const toggleYDirectionThreshold = 600; // pixels
+    const toggleYDirectionThreshold = 800; // pixels
     const toggleVisibility = () => {
         if (window.scrollY > toggleYDirectionThreshold) {
             setIsVisible(true);

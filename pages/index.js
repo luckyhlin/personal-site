@@ -16,7 +16,7 @@ const hobbies = [
     {
         title: '⛰️ Traveling & Photography',
         description: 'Nature and Beauties. I need photos to remind me of the precious moments in life. They allocate meanings to my life.',
-        backgroundImage: `url('https://images.unsplash.com/photo-1721297013582-8735f45b6a8b?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
+        backgroundImage: `url('/images/bg1.jpeg')`,
     },
     {
         title: '⚽ Sports',
@@ -40,14 +40,14 @@ const hobbies = [
             </ul>
         ),
         // background: 'linear-gradient(135deg, #4aeadc 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%, #fb6962 80%, #fef84c 100%) fixed',
-        backgroundImage: `url(https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+        backgroundImage: `url('/images/bg2.jpeg')`,
         // filter: "blur(10px)",
         // zIndex: "-1",
     },
     {
         title: '🎮 Gaming',
         description: 'A HUGE fan of multi-player FPS 🔫 games: APEX, 彩虹六号 (R6), CS:GO, 战地 (Battlefield 1 & 5), OverWatch, Insurgency, Division 2, CoD & FPS VR game developed by myself',
-        backgroundImage: `url(https://images.unsplash.com/photo-1605296830714-7c02e14957ac?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)`,
+        backgroundImage: `url(/images/bg3.jpeg)`,
     },
     {
         title: '💬️ Chatting & 🤔️ Thinking',
@@ -57,7 +57,7 @@ const hobbies = [
                 <li>in pursuit of consistency logically on science & philosophically on life</li>
             </ul>
         ),
-        backgroundImage: `url('https://images.unsplash.com/photo-1580130037032-b1d3878e348b?q=80&w=2266&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
+        backgroundImage: `url('/images/bg4.jpeg')`
     },
     {
         title: '🎧 Media',
@@ -68,7 +68,7 @@ const hobbies = [
                 <li>🕺🏻 Dance</li>
             </ul>
         ),
-        backgroundImage: `url('https://images.unsplash.com/photo-1722486110900-cfb036cf1830?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`
+        backgroundImage: `url('/images/bg5.jpeg')`
     },
 ];
 
@@ -84,7 +84,7 @@ export default function HomePage() {
                 <meta
                     name="description"
                     // content="Hi, this is Lin, a cute and genuine guy with passion and love! 我是宇宙超级无敌可爱机智の🍑黃桃大罐頭💛"
-                    content="Hi, this is Hao Lin!"
+                    content="Hi, this is Jimmy!"
                 />
             </Head>
             <div className={styles.headerContainer}>
@@ -92,7 +92,7 @@ export default function HomePage() {
                 <div className={styles.imageContainer}>
                     <Image
                         priority
-                        src="/images/hao-v.jpg"
+                        src="/images/jager.jpeg"
                         className={[
                             utilStyles.borderCircle,
                             styles.headingImage,

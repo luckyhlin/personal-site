@@ -91,58 +91,59 @@ function AboutContent() {
             {/*    and MORE 😂*/}
             {/*</div>*/}
             <h1 className={styles.aboutHeading}>🎓 Education & Career</h1>
-            <div className={styles.aboutParagraph}>
-                This summer, I feel excited to spend my time in California, interning at <span
-                className={descriptionStyles.textInlineBox}>
-                    <Link href="https://www.nvidia.com/"
-                          className={[descriptionStyles.textLink].join(" ")}>
-                        💚 NVIDIA,
-                    </Link>
-                </span> as a Software Engineer (SWE) for DFX Verification Methodology Team (Tools Infrastructure).
-            </div>
-            <div className={styles.aboutParagraph}>
-                I am pursuing my master of science degree in computer science <span style={{
-                color: "purple"
-            }}>(CS)</span> at <span
-                className={descriptionStyles.textInlineBox}>
-                        <Link
-                            href="https://www.wisc.edu/"
-                            className={[descriptionStyles.textLink].join(" ")}>
-                            🇺🇸 University of Wisconsin–Madison
-                        </Link>
-                    </span> (◍•ᴗ•◍)
-            </div>
-            <div className={styles.aboutParagraph}>
-                Prior to that, I earned my B.Eng. in electrical and computer engineering <span style={{
-                    color: "purple"
-            }}>
-                (ECE)
-            </span>, with 🌟 honors
-                research program, and a minor degree in data science <span style={{
-                color: "purple"
-            }}>(DS)</span> at <span
-                    className={descriptionStyles.textInlineBox}>
-                        <Link
-                            href="https://www.ji.sjtu.edu.cn/"
-                            className={[descriptionStyles.textLink].join(" ")}>
-                            🇨🇳 Shanghai Jiao Tong University (UM-SJTU Joint Institute 上交密院).
-                        </Link>
-                    </span>
-            </div>
-            <div className={styles.aboutParagraph}>
-                Following my bachelor's, I worked at <span
-                className={descriptionStyles.textInlineBox}>
-                        <Link
-                            href="https://www.bytedance.com/en/"
-                            className={[descriptionStyles.textLink].join(" ")}>
-                            💙 ByteDance
-                        </Link>
-                    </span> for a year as an SWE, and then took a gap year for better life.
-            </div>
+            {/*<div className={styles.aboutParagraph}>*/}
+            {/*    This summer, I feel excited to spend my time in California, interning at <span*/}
+            {/*    className={descriptionStyles.textInlineBox}>*/}
+            {/*        <Link href="https://www.nvidia.com/"*/}
+            {/*              className={[descriptionStyles.textLink].join(" ")}>*/}
+            {/*            💚 NVIDIA,*/}
+            {/*        </Link>*/}
+            {/*    </span> as a Software Engineer (SWE) for DFX Verification Methodology Team (Tools Infrastructure).*/}
+            {/*</div>*/}
+            {/*<div className={styles.aboutParagraph}>*/}
+            {/*    I am pursuing my master of science degree in computer science <span style={{*/}
+            {/*    color: "purple"*/}
+            {/*}}>(CS)</span> at <span*/}
+            {/*    className={descriptionStyles.textInlineBox}>*/}
+            {/*            <Link*/}
+            {/*                href="https://www.wisc.edu/"*/}
+            {/*                className={[descriptionStyles.textLink].join(" ")}>*/}
+            {/*                🇺🇸 University of Wisconsin–Madison*/}
+            {/*            </Link>*/}
+            {/*        </span> (◍•ᴗ•◍)*/}
+            {/*</div>*/}
+            {/*<div className={styles.aboutParagraph}>*/}
+            {/*    Prior to that, I earned my B.Eng. in electrical and computer engineering <span style={{*/}
+            {/*        color: "purple"*/}
+            {/*}}>*/}
+            {/*    (ECE)*/}
+            {/*</span>, with 🌟 honors*/}
+            {/*    research program, and a minor degree in data science <span style={{*/}
+            {/*    color: "purple"*/}
+            {/*}}>(DS)</span> at <span*/}
+            {/*        className={descriptionStyles.textInlineBox}>*/}
+            {/*            <Link*/}
+            {/*                href="https://www.ji.sjtu.edu.cn/"*/}
+            {/*                className={[descriptionStyles.textLink].join(" ")}>*/}
+            {/*                🇨🇳 Shanghai Jiao Tong University (UM-SJTU Joint Institute 上交密院).*/}
+            {/*            </Link>*/}
+            {/*        </span>*/}
+            {/*</div>*/}
+            {/*<div className={styles.aboutParagraph}>*/}
+            {/*    Following my bachelor's, I worked at <span*/}
+            {/*    className={descriptionStyles.textInlineBox}>*/}
+            {/*            <Link*/}
+            {/*                href="https://www.bytedance.com/en/"*/}
+            {/*                className={[descriptionStyles.textLink].join(" ")}>*/}
+            {/*                💙 ByteDance*/}
+            {/*            </Link>*/}
+            {/*        </span> for a year as an SWE, and then took a gap year for better life.*/}
+            {/*</div>*/}
             <div className={styles.aboutParagraph}>
                 I love math, computer science & engineering since childhood. Before college, I founded a computer &
                 electronics club,
-                won competitive programming contests, and DIYed software & hardware projects.
+                won competitive programming contests, and DIYed software & hardware projects. During and after college,
+                my interest spreads over many more fields.
             </div>
             <h1 className={styles.aboutHeading}>😆 Academic Interests</h1>
             <div className={styles.aboutParagraph}>
@@ -289,13 +290,13 @@ function AboutContent() {
                     Notion as CMS, Vercel as site host & CDN, giscus as comment system, Cloudinary as image storage,
                     Namecheap as domain registration, GitHub as repo host, and the open source community. 🤟
                 </div>
-                <div className={styles.aboutParagraph}>
-                    The current domain name 'EverHao.me' was creatively coined by ChatGPT.
-                    The term 'Ever' suggests continuity, persistence, and perseverance.
-                    Alternatively, it poses a rhetorical question, 'Ever Hao? Me!',
-                    highlighting a personal and engaging invitation to explore the content
-                    related to 'Hao'.
-                </div>
+                {/*<div className={styles.aboutParagraph}>*/}
+                {/*    The current domain name 'EverHao.me' was creatively coined by ChatGPT.*/}
+                {/*    The term 'Ever' suggests continuity, persistence, and perseverance.*/}
+                {/*    Alternatively, it poses a rhetorical question, 'Ever Hao? Me!',*/}
+                {/*    highlighting a personal and engaging invitation to explore the content*/}
+                {/*    related to 'Hao'.*/}
+                {/*</div>*/}
             </details>
             <div className={styles.aboutParagraph} id="Love ❤">
                 Importantly, this site is built with <span className={styles.aboutRainbowText}>Love ❤</span> for
@@ -303,41 +304,41 @@ function AboutContent() {
                 infinite amount of arousing knowledge, with support from family and friends, and with the pursuit of
                 self-consistency (自洽) to also have a sense of 『我属于我自己』(I belong to myself).
             </div>
-            <h1 className={styles.aboutHeading}>📞 Contact</h1>
-            <div className={styles.aboutParagraph}>
-                To know more about me, you are free to check my 📄 <Link href="/resume">
-                Curriculum Vitae
-            </Link> (CV, used interchangeably with the term resume).
-                Also, feel free to drop me an 📧 <Link href="mailto:jimmylinh@icloud.com">
-                email
-            </Link>.
-            </div>
+            {/*<h1 className={styles.aboutHeading}>📞 Contact</h1>*/}
+            {/*<div className={styles.aboutParagraph}>*/}
+            {/*    To know more about me, you are free to check my 📄 <Link href="/resume">*/}
+            {/*    Curriculum Vitae*/}
+            {/*</Link> (CV, used interchangeably with the term resume).*/}
+            {/*    Also, feel free to drop me an 📧 <Link href="mailto:jimmylinh@icloud.com">*/}
+            {/*    email*/}
+            {/*</Link>.*/}
+            {/*</div>*/}
             {/*, or follow my <Link href="https://github.com/jimmylin99">*/}
             {/*    <a>GitHub</a>*/}
             {/*</Link>*/}
-            <div className={styles.aboutParagraph}>
-                You are also welcome to leave comments or add emoji below with a signed-in GitHub account, and
-                follow me
-                on <Link href="https://github.com/luckyhlin">
-                GitHub
-            </Link> <Image
-                src="/images/github-icon.png"
-                height={24}
-                width={24}
-                alt="GitHub Icon"
-                style={{
-                    display: "inline-block"
-                }}/> & <Link href="https://www.linkedin.com/in/hao-lin-530368280/">
-                LinkedIn
-            </Link> <Image
-                src="/images/linkedin-icon.png"
-                height={24}
-                width={24}
-                alt="LinkedIn Icon"
-                style={{
-                    display: "inline-block"
-                }}/>.
-            </div>
+            {/*<div className={styles.aboutParagraph}>*/}
+            {/*    You are also welcome to leave comments or add emoji below with a signed-in GitHub account, and*/}
+            {/*    follow me*/}
+            {/*    on <Link href="https://github.com/luckyhlin">*/}
+            {/*    GitHub*/}
+            {/*</Link> <Image*/}
+            {/*    src="/images/github-icon.png"*/}
+            {/*    height={24}*/}
+            {/*    width={24}*/}
+            {/*    alt="GitHub Icon"*/}
+            {/*    style={{*/}
+            {/*        display: "inline-block"*/}
+            {/*    }}/> & <Link href="https://www.linkedin.com/in/hao-lin-530368280/">*/}
+            {/*    LinkedIn*/}
+            {/*</Link> <Image*/}
+            {/*    src="/images/linkedin-icon.png"*/}
+            {/*    height={24}*/}
+            {/*    width={24}*/}
+            {/*    alt="LinkedIn Icon"*/}
+            {/*    style={{*/}
+            {/*        display: "inline-block"*/}
+            {/*    }}/>.*/}
+            {/*</div>*/}
 
             <h1 className={styles.aboutHeading} id="Love" style={
                 {color: "rgba(225, 171, 255, 1)"}

@@ -25,16 +25,17 @@ export default function FootageText({ isHome, isPrivate }) {
             
                 Love
             
-            </Link>, <Link href="/blogs"
+            </Link> & <Link href="/blogs"
                            className={
                 // lightColor ? styles.lightFootageColor : styles.darkFootageColor}>
                 isHome ? styles.footageRainbowText : styles.footageDynamicText
-            }>Curiosity</Link> & <Link
-                href="https://github.com/luckyhlin/personal-site"
-                className={
-                // lightColor ? styles.lightFootageColor : styles.darkFootageColor}>
-                isHome ? styles.footageRainbowText : styles.footageDynamicText
-            }>Open-Source</Link>
+            }>Curiosity</Link>
+            {/*    & <Link*/}
+            {/*    href="https://github.com/luckyhlin/personal-site"*/}
+            {/*    className={*/}
+            {/*    // lightColor ? styles.lightFootageColor : styles.darkFootageColor}>*/}
+            {/*    isHome ? styles.footageRainbowText : styles.footageDynamicText*/}
+            {/*}>Open-Source</Link>*/}
             <UpdatedAt lightColor={isHome}/>
         </>
         }
