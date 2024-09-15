@@ -14,7 +14,7 @@ import CustomCarousel from "../components/carousel";
 
 const hobbies = [
     {
-        title: '⛰️ Traveling & Photography',
+        title: '⛰️ WoW',
         description: 'Nature and Beauties. I need photos to remind me of the precious moments in life. They allocate meanings to my life.',
         backgroundImage: `url('/images/bg1.jpeg')`,
     },
@@ -45,12 +45,12 @@ const hobbies = [
         // zIndex: "-1",
     },
     {
-        title: '🎮 Gaming',
+        title: '🎮 Games',
         description: 'A HUGE fan of multi-player FPS 🔫 games: APEX, 彩虹六号 (R6), CS:GO, 战地 (Battlefield 1 & 5), OverWatch, Insurgency, Division 2, CoD & FPS VR game developed by myself',
         backgroundImage: `url(/images/bg3.jpeg)`,
     },
     {
-        title: '💬️ Chatting & 🤔️ Thinking',
+        title: '🥫 OwO',
         description: (
             <ul>
                 <li>tho being ISFP-T, super outgoing & energetic when with ppl in the correct vibe 🥰</li>

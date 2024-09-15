@@ -140,10 +140,7 @@ function AboutContent() {
             {/*        </span> for a year as an SWE, and then took a gap year for better life.*/}
             {/*</div>*/}
             <div className={styles.aboutParagraph}>
-                I love math, computer science & engineering since childhood. Before college, I founded a computer &
-                electronics club,
-                won competitive programming contests, and DIYed software & hardware projects. During and after college,
-                my interest spreads over many more fields.
+                I love math, computer science & engineering since childhood. During and after college, my interest spreads over many more fields, through studying and working in top tier institutes and companies.
             </div>
             <h1 className={styles.aboutHeading}>😆 Academic Interests</h1>
             <div className={styles.aboutParagraph}>
@@ -190,7 +187,7 @@ function AboutContent() {
                 </ul>
                 <h3>Theoretical Computer Science & Physics</h3>
                 <ul className={styles.aboutList}>
-                    <li>Competitive Programming: NOIP 🥇 & NOI Winter Camp 🥉</li>
+                    <li>Competitive Programming</li>
                     <li>Complexity Theory</li>
                     <li>Theory of Programming Language</li>
                     <li>Formal Verification</li>
@@ -201,7 +198,6 @@ function AboutContent() {
                 <ul className={styles.aboutList}>
                     <li>Operating System</li>
                     <li>Distributed System</li>
-                    <li>NPU: Smart Network Interface Card</li>
                     <li>System Verification</li>
                     <li>Machine Learning System</li>
                     <li>Compiler</li>
@@ -218,9 +214,9 @@ function AboutContent() {
                 </ul>
                 <h3>Mathematics</h3>
                 <ul className={styles.aboutList}>
-                    <li>Mathematical Analysis: Real & Complex Analysis</li>
-                    <li>Numerical Analysis: Finite & Boundary Element Method</li>
-                    <li>Discrete Mathematics</li>
+                    <li>Mathematical Analysis</li>
+                    <li>Numerical Methods</li>
+                    <li>Logic & Discrete Mathematics</li>
                     <li>Abstract Algebra</li>
                     <li>Statistics</li>
                     <li>Optimization & Linear Programming</li>
@@ -228,7 +224,7 @@ function AboutContent() {
                 <h3>Electrical Engineering</h3>
                 <ul className={styles.aboutList}>
                     <li>Semiconductor Devices & Physics</li>
-                    <li>Electromagnetic</li>
+                    <li>Electromagnetism</li>
                     <li>Analog Circuit & Amplifier</li>
                 </ul>
                 <h3>Mechanical Engineering</h3>
@@ -236,7 +232,7 @@ function AboutContent() {
                     <li>Control System</li>
                     <li>Quadcopter Drones</li>
                     <li>Electrical Cardio Graph</li>
-                    <li>Robots</li>
+                    <li>Robotics</li>
                     <li>Food 3D Printer</li>
                 </ul>
                 {/*<ul className={styles.aboutList}>*/}
@@ -285,7 +281,7 @@ function AboutContent() {
                     can be my content management system (CMS).
                 </div>
                 <div className={styles.aboutParagraph}>
-                    Therefore, technically, this site is powered by a Jamstack architecture pattern: Next.js as an
+                    Technically, this site is powered by a Jamstack architecture pattern: Next.js as an
                     SSG frontend framework, Notion official API,
                     Notion as CMS, Vercel as site host & CDN, giscus as comment system, Cloudinary as image storage,
                     Namecheap as domain registration, GitHub as repo host, and the open source community. 🤟
