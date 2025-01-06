@@ -8,4 +8,4 @@ package-lock.json
 .env.test
 
 #
-/test.js
+/playground.js
