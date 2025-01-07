@@ -6,14 +6,14 @@ import styles from "./footage-text.module.scss";
 export default function FootageText({ isHome, isPrivate }) {
     return <>
         { isPrivate ? <>
-                <div>
-                    Yours,
-                </div>
-                Sincerely written by <Link href="/about#Love" className={styles.footageDynamicText}>
-
-            <Name/>
-
-        </Link>
+                {/*<div>*/}
+                {/*    Yours,*/}
+                {/*</div>*/}
+                {/*Sincerely written by <Link href="/about#Love" className={styles.footageDynamicText}>*/}
+                {/* <Name/>*/}
+                {/*</Link>*/}
+            <UpdatedAt lightColor={isHome}/>
+            by <Name/>
         </>
         : <>
             built by <Name/> with <Link
