@@ -111,18 +111,25 @@ export function Block({ block, index, blocks }) {
             )
         case "to_do":
             return (
-                <div>
-                    <label htmlFor={id}>
+                <div className={styles.blockToDoContainer}>
+                    <label htmlFor={id} className={styles.blockToDoLabel}>
                         <input
                             type="checkbox"
                             id={id}
                             defaultChecked={content.checked}
                             readOnly
+                            className={styles.blockToDoHidden}
                         />
-                         {/*TODO*/}
-                        ❌
+                        <span className={`${styles.blockToDoCheckbox} ${content.checked ? "checked" : ""}`}>
+                            {content.checked ? "✔️" : "❌"}
+                        </span>
                         <RichText richTexts={content.rich_text}/>
                     </label>
+                    {children && (
+                        <div className={styles.blockChildren}>
+                            <Blocks blocks={children}/>
+                        </div>
+                    )}
                 </div>
             )
         case "toggle":
@@ -131,7 +138,7 @@ export function Block({ block, index, blocks }) {
                     <summary className={styles.blockToggleSummary}>
                         <RichText richTexts={content.rich_text}/>
                     </summary>
-                    {children && (
+                    {has_children && (
                         <div className={styles.blockChildren}>
                             <Blocks blocks={children}/>
                         </div>

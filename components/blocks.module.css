@@ -138,6 +138,39 @@ ol.blockNonTopLevelList li {
   /*padding-left: 0.3rem;*/
 }
 
+.blockToDoContainer {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.blockToDoLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.blockToDoHidden {
+  display: none;
+}
+
+.blockToDoCheckbox {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #888;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.blockToDoCheckbox.checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: white;
+}
+
 /*
     Part of the toggle block design follows
     https://codepen.io/keithpickering/pen/PeBpwG

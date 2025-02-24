@@ -13,6 +13,7 @@ Here are the supported blocks so far:
 | Toggle             |     ✔️      |
 | Callout            |     ✔️      |
 | Inline Equation    |     ✔️      |
+| Todo List          |     ✔️      |
 | Image              |     ✔️      |
 | Video              |      ❌      |
 | Divider            |     ✔️      |
