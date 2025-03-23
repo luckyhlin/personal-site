@@ -21,6 +21,11 @@ module.exports = {
                 source: '/cv',
                 destination: '/resume.pdf',
                 permanent: true,
+            },
+            {
+                source: '/us-trip',
+                destination: 'https://jimmy-lin.notion.site/US-Trip-16f90c83fb0880e5b124eae5608a29a0',
+                permanent: false,
             }
         ]
     },
